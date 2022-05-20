@@ -7,31 +7,13 @@
       <div :class="wrapperClass">
         <h2>ABLE Interactives</h2>
         <p>Interactives for ABLE courses at The University of Adelaide</p>
-<!--        <ul class="list-disc list-outside">-->
-<!--          <li class="my-2">-->
-<!--            <RouterLink to="/date-converter" :class="linkClass">Date Converter</RouterLink>-->
-<!--          </li>-->
-<!--          <li class="my-2">-->
-<!--            Lightbox Gallery ('galleryID' required as URL param. Hover over below links to see the galleryID.)-->
-<!--            <div>-->
-<!--              <RouterLink-->
-<!--                  to="/lightbox-gallery?galleryID=PPD-better-thinker"-->
-<!--                  :class="linkClass"-->
-<!--                  title="galleryID: PPD-better-thinker">-->
-<!--                8 Ways To Be A Better Thinker-->
-<!--              </RouterLink>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--              <RouterLink-->
-<!--                  to="/lightbox-gallery?galleryID=PPD-work-ethics"-->
-<!--                  :class="linkClass"-->
-<!--                  title="galleryID: PPD-work-ethics">-->
-<!--                Work Ethics-->
-<!--              </RouterLink>-->
-<!--            </div>-->
-<!--          </li>-->
+        <ul class="list-disc list-outside">
+          <li class="my-2">
+            <RouterLink to="/risks" :class="linkClass">Risks and Uncertainties</RouterLink>
+          </li>
 
-<!--        </ul>-->
+
+        </ul>
       </div>
     </div>
 
