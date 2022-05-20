@@ -1,0 +1,64 @@
+<template>
+  <div class="min-h-screen flex flex-col justify-between">
+    <div class="bg-primary-darker m-0 min-h-[30px] p-4">
+      <div :class="wrapperClass"><img class="my-2" src="@/assets/uoa-logo.png" width="160" alt="" /></div>
+    </div>
+    <div class="mb-auto">
+      <div :class="wrapperClass">
+        <h2>ABLE Interactives</h2>
+        <p>Interactives for ABLE courses at The University of Adelaide</p>
+<!--        <ul class="list-disc list-outside">-->
+<!--          <li class="my-2">-->
+<!--            <RouterLink to="/date-converter" :class="linkClass">Date Converter</RouterLink>-->
+<!--          </li>-->
+<!--          <li class="my-2">-->
+<!--            Lightbox Gallery ('galleryID' required as URL param. Hover over below links to see the galleryID.)-->
+<!--            <div>-->
+<!--              <RouterLink-->
+<!--                  to="/lightbox-gallery?galleryID=PPD-better-thinker"-->
+<!--                  :class="linkClass"-->
+<!--                  title="galleryID: PPD-better-thinker">-->
+<!--                8 Ways To Be A Better Thinker-->
+<!--              </RouterLink>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--              <RouterLink-->
+<!--                  to="/lightbox-gallery?galleryID=PPD-work-ethics"-->
+<!--                  :class="linkClass"-->
+<!--                  title="galleryID: PPD-work-ethics">-->
+<!--                Work Ethics-->
+<!--              </RouterLink>-->
+<!--            </div>-->
+<!--          </li>-->
+
+<!--        </ul>-->
+      </div>
+    </div>
+
+    <div class="bg-primary-darker m-0 min-h-[150px] p-4 text-white">
+      <div :class="wrapperClass">
+        <div class="flex justify-between my-4">
+          <p class="my-auto">&copy; The University of Adelaide</p>
+          <img src="@/assets/uoa-logo.png" width="200" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { RouterLink } from 'vue-router'
+
+const wrapperClass = 'max-w-[90%] mx-auto'
+const linkClass = 'text-primary underline hover:text-primary-dark'
+
+</script>
+
+<style>
+h2 {
+  font-size: 2rem !important;
+  line-height: 1.05;
+  margin: 2rem 0 0.7rem !important;
+  letter-spacing: 0.02rem;
+}
+</style>
