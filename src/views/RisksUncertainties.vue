@@ -8,7 +8,7 @@
         <h3 class="text-center">Risks</h3>
         <div class="text-center">
           <div v-for="(thing, index) in risks">
-            <input class="border" v-model="risks[index].text">
+            <input class="border" v-model="risks[index].text" :maxlength="35">
             <i v-if="risks.length>2" class="fas fa-minus-circle cursor-pointer" @click="deleteRisk(index)"></i>
           </div>
         </div>
@@ -22,7 +22,7 @@
         <h3 class="text-center">Uncertainties</h3>
         <div class="text-center">
           <div v-for="(thing, index) in uncertainties">
-            <input class="border" v-model="uncertainties[index].text">
+            <input class="border" v-model="uncertainties[index].text" :maxlength="35">
             <i v-if="uncertainties.length>2" class="fas fa-minus-circle cursor-pointer"
                @click="deleteUncertainties(index)"></i>
           </div>
@@ -200,7 +200,7 @@
         <h3 class="text-center">Risks</h3>
         <div class="text-center">
           <div v-for="(thing, index) in charRisks">
-            <input class="border" v-model="charRisks[index].text">
+            <input class="border" v-model="charRisks[index].text" :maxlength="35">
 
           </div>
         </div>
@@ -209,7 +209,7 @@
         <h3 class="text-center">Uncertainties</h3>
         <div class="text-center">
           <div v-for="(thing, index) in charUncertainties">
-            <input class="border" v-model="charUncertainties[index].text">
+            <input class="border" v-model="charUncertainties[index].text" :maxlength="35">
 
           </div>
         </div>
@@ -249,7 +249,7 @@ import {computed, ref} from "vue"
 import draggable from 'vuedraggable'
 
 
-const state = ref(3)
+const state = ref(0)
 const numElements = ref(4)
 const risks = ref([
   {text: "AAA", id: 0},
