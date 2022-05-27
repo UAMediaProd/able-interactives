@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply rounded py-2 px-4 border-2 border-primary-darker text-sm font-semibold text-primary-darker bg-primary-dark-lightest hover:text-white hover:bg-primary-darker disabled:opacity-40 disabled:hover:text-primary-darker disabled:bg-primary-dark-lightest;
+  }
+
+  .btn-pill-solid-primary {
+    @apply rounded-full py-0.5 px-4 my-auto text-white text-sm font-semibold bg-primary hover:bg-primary-dark disabled:opacity-50 disabled:hover:bg-primary
+  }
+
+  .btn-pill-outline-danger {
+    @apply rounded-full py-0.5 px-4 my-auto text-secondary text-sm font-semibold border-2 border-secondary bg-white hover:bg-secondary hover:text-white
+  }
+
+  .input-underline-primary {
+    @apply border-b border-primary-darker p-1 outline-0 w-full
+  }
+}

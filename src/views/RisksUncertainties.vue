@@ -1,97 +1,133 @@
 <template>
+  <!--  progress step bar -->
+  <div class="grid grid-cols-5 mx-auto mt-2 mb-4 w-[90%] min-w-[550px] max-w-[800px]">
+    <div v-for="(step, index) in ['Identify', 'Managerial Control', 'Possibility of Failure', 'Questions', 'Summary']" class="text-center">
+      <div class="flex flex-col">
+        <div class="flex justify-between w-full">
+          <div class="h-[2px] my-auto w-full mr-2" :class="index ? (index <= state ? 'bg-green-500' : 'bg-gray-200') : 'bg-white'"></div>
+          <i :class="stepClass(index)" class="w-fit"></i>
+          <div class="h-[2px] my-auto w-full ml-2" :class="index<4 ? (index < state ? 'bg-green-500' : 'bg-gray-200') : 'bg-white'"></div>
+        </div>
+        <label class="text-xs">{{ step }}</label>
+      </div>
+    </div>
+  </div>
 
   <!--  Page 1-->
-  <div v-if="state===0">
-    <h1>Identify risks and uncertainties faced by Australian SMEs.</h1>
-    <div class="grid grid-cols-2 gap-4">
-      <div class="col-span-1">
-        <h3 class="text-center">Risks</h3>
-        <div class="text-center">
-          <div v-for="(thing, index) in risks">
-            <input class="border" v-model="risks[index].text" :maxlength="35">
-            <i v-if="risks.length>2" class="fas fa-minus-circle cursor-pointer" @click="deleteRisk(index)"></i>
+  <div v-if="state===0" class="p-2">
+    <h3 class="text-center my-2">Identify risks and uncertainties faced by Australian SMEs. (2-5 each)</h3>
+    <div class="flex justify-center">
+      <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
+        <h3 class="text-center my-2"><i class="fas fa-exclamation-triangle mr-1 text-froly"></i>Risks</h3>
+        <div class="text-center rounded bg-froly-lightest pt-1 pb-3 px-2">
+          <div v-for="(thing, index) in risks" class="flex justify-between my-2">
+            <i class="fas fa-triangle text-2xs my-auto mr-1 w-[20px]"></i>
+            <input class="input-underline-primary bg-froly-lightest" v-model="risks[index].text" :maxlength="35">
+            <div class="w-[25px]">
+              <i v-if="risks.length>2" class="fas fa-minus-circle cursor-pointer text-secondary ml-2 my-auto hover:text-secondary-dark" @click="deleteRisk(index)" title="Remove"></i>
+            </div>
           </div>
         </div>
         <div class="text-center">
-          <button class="adx-button primary" @click="addRisk" :disabled="risks.length===5">
-            Add Risk
-          </button>
+          <i v-if="risks.length<5" class="fas fa-plus-circle text-froly cursor-pointer" @click="addRisk"></i>
         </div>
       </div>
-      <div class="col-span-1">
-        <h3 class="text-center">Uncertainties</h3>
-        <div class="text-center">
-          <div v-for="(thing, index) in uncertainties">
-            <input class="border" v-model="uncertainties[index].text" :maxlength="35">
-            <i v-if="uncertainties.length>2" class="fas fa-minus-circle cursor-pointer"
-               @click="deleteUncertainties(index)"></i>
+      <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
+        <h3 class="text-center my-2"><i class="fas fa-question-circle mr-1 text-sunshade"></i>Uncertainties</h3>
+        <div class="text-center rounded bg-sunshade-lightest pt-1 pb-3 px-2">
+          <div v-for="(thing, index) in uncertainties" class="flex justify-between my-2">
+            <i class="fas fa-circle text-2xs my-auto mr-1 w-[20px]"></i>
+            <input class="input-underline-primary bg-sunshade-lightest" v-model="uncertainties[index].text" :maxlength="35">
+            <div class="w-[25px]">
+              <i v-if="uncertainties.length>2" class="fas fa-minus-circle cursor-pointer text-secondary ml-2 my-auto hover:text-secondary-dark" @click="deleteUncertainties(index)" title="Remove"></i>
+            </div>
           </div>
         </div>
         <div class="text-center">
-
-          <button class="adx-button primary" @click="addUncertainties" :disabled="uncertainties.length===5">
-            Add Uncertainty
-          </button>
+          <i v-if="uncertainties.length<5" class="fas fa-plus-circle text-sunshade cursor-pointer" @click="addUncertainties"></i>
         </div>
       </div>
     </div>
 
     <div class="flex justify-end">
-      <button class="adx-button primary" @click="resetOptions" :disabled="isUnfinished">
-        Next
-      </button>
+      <button class="btn-primary uppercase" @click="resetOptions" :disabled="isUnfinished">Next</button>
     </div>
   </div>
 
   <!--  Page 2-->
-  <div v-if="state===1">
-    <h1>Arrange the risks and uncertainties you identified in the order of the “managerial control” (Low to High). </h1>
+  <div v-if="state===1" class="p-2">
+    <h3 class="text-center my-2">Arrange the risks and uncertainties you identified in the order of the “managerial control” (Low to High). </h3>
 
-    <div class="grid grid-cols-2 gap-4">
-      <div class="col-span-1">
+    <div class="flex justify-center">
+      <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
+        <h3 class="text-center mt-5 mb-4">
+          <i :class="iconClass('risk')" class="mr-1"></i>
+          Risks & Uncertainties
+          <i :class="iconClass('uncertainty')" class="ml-1"></i>
+        </h3>
         <draggable
-            class="list-group border bg-gray-400 min-h-[100px]"
-            :list="resultsListQ1"
+            class="rounded border-2 border-dashed border-primary-darker min-h-[220px] p-1"
+            :list="optionsListQ1"
+            :component-data="{ type: 'transition-group', name: !drag ? 'flip-list' : null }"
             group="Q1"
             itemKey="id"
-        >
+            @start="drag = true"
+            @end="drag = false"
+            v-bind="dragOptions">
           <template #item="{ element, index }">
-            <div class="list-group-item">{{ element.text }}</div>
+            <div :class="bgClass(element.type)" class="rounded m-1 p-2 cursor-move" >
+              <i :class="iconClass(element.type)" class="text-sm mr-2"></i>
+              <span>{{ element.text }}</span>
+            </div>
           </template>
         </draggable>
       </div>
-      <div class="col-span-1">
+      <i class="far fa-arrow-alt-right my-auto text-xl"></i>
+      <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
+        <h3 class="flex flex-col text-center my-2">
+          <i class="fas fa-long-arrow-up mx-auto mb-1"></i>
+          High
+        </h3>
         <draggable
-            class="list-group border bg-gray-400 min-h-[100px]"
-            :list="optionsListQ1"
-            group="Q1"
-            itemKey="id"
-        >
+          class="rounded border-2 border-dashed border-primary-darker min-h-[220px] p-1"
+          :list="resultsListQ1"
+          :component-data="{ type: 'transition-group', name: !drag ? 'flip-list' : null }"
+          group="Q1"
+          itemKey="id"
+          @start="drag = true"
+          @end="drag = false"
+          v-bind="dragOptions">
           <template #item="{ element, index }">
-            <div class="list-group-item">{{ element.text }}</div>
+            <div :class="bgClass(element.type)" class="rounded m-1 p-2 cursor-move" >
+              <i :class="iconClass(element.type)" class="text-sm mr-2"></i>
+              <span>{{ element.text }}</span>
+            </div>
+          </template>
+          <template #footer>
+            <div v-if="!resultsListQ1.length" class="text-center text-gray-400 h-full mt-[90px]">Drag and arrange items here</div>
           </template>
         </draggable>
+        <h3 class="flex flex-col text-center my-2">
+          Low
+          <i class="fas fa-long-arrow-down mx-auto mt-1"></i>
+        </h3>
       </div>
     </div>
     <div class="flex justify-between">
       <VDropdown placement="right">
-        <!-- This will be the popover reference (for the events and position) -->
-        <button class="adx-button primary">
-          Previous
+        <button class="btn-primary uppercase">
+          Back
         </button>
-
-        <!-- This will be the content of the popover -->
         <template #popper="{ hide }">
-          <div class="flex justify-start">
-            <span>Are you sure you want to go back? You will lose your current placement</span>
-            <button class="adx-button primary" @click="hide(); prevButton()">Confirm</button>
+          <div class="flex justify-start py-2 max-w-[350px]">
+            <i class="fas fa-exclamation-circle text-secondary text-xs my-auto m-2"></i>
+            <span class="text-xs my-auto">Are you sure you want to go back to edit your inputs? You will lose your current progress.</span>
+            <button class="btn-pill-outline-danger text-xs mx-2" @click="hide(); prevButton()">Confirm</button>
           </div>
-
         </template>
       </VDropdown>
 
-
-      <button class="adx-button primary" @click="nextButton" :disabled="optionsListQ1.length!==0">
+      <button class="btn-primary uppercase" @click="nextButton" :disabled="optionsListQ1.length!==0">
         Next
       </button>
 
@@ -99,165 +135,174 @@
   </div>
 
   <!--  Page 3-->
-  <div v-if="state===2">
-    <h1>Now arrange the risks and uncertainties in the order of the “possibility of failure” (Low to High). </h1>
+  <div v-if="state===2" class="p-2">
+    <h3 class="text-center my-2">Now arrange the risks and uncertainties in the order of the “possibility of failure” (Low to High). </h3>
 
-    <div class="grid grid-cols-2 gap-4">
-      <div class="col-span-1">
+    <div class="flex justify-center">
+      <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
+        <h3 class="text-center mt-5 mb-4">
+          <i :class="iconClass('risk')" class="mr-1"></i>
+          Risks & Uncertainties
+          <i :class="iconClass('uncertainty')" class="ml-1"></i>
+        </h3>
         <draggable
-            class="list-group border bg-gray-400 min-h-[100px]"
-            :list="resultsListQ2"
-            group="Q2"
-            itemKey="id"
+          class="rounded border-2 border-dashed border-primary-darker min-h-[220px] p-1"
+          :list="optionsListQ2"
+          :component-data="{ type: 'transition-group', name: !drag ? 'flip-list' : null }"
+          group="Q2"
+          itemKey="id"
+          @start="drag = true"
+          @end="drag = false"
+          v-bind="dragOptions"
         >
           <template #item="{ element, index }">
-            <div class="list-group-item">{{ element.text }}</div>
+            <div :class="bgClass(element.type)" class="rounded m-1 p-2 cursor-move" >
+              <i :class="iconClass(element.type)" class="text-sm mr-2"></i>
+              <span>{{ element.text }}</span>
+            </div>
           </template>
         </draggable>
       </div>
-      <div class="col-span-1">
+      <i class="far fa-arrow-alt-right my-auto text-xl"></i>
+      <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
+        <h3 class="flex flex-col text-center my-2">
+          <i class="fas fa-long-arrow-up mx-auto mb-1"></i>
+          High
+        </h3>
         <draggable
-            class="list-group border bg-gray-400 min-h-[100px]"
-            :list="optionsListQ2"
-            group="Q2"
-            itemKey="id"
+          class="rounded border-2 border-dashed border-primary-darker min-h-[220px] p-1"
+          :list="resultsListQ2"
+          :component-data="{ type: 'transition-group', name: !drag ? 'flip-list' : null }"
+          group="Q2"
+          itemKey="id"
+          @start="drag = true"
+          @end="drag = false"
+          v-bind="dragOptions"
         >
           <template #item="{ element, index }">
-            <div class="list-group-item">{{ element.text }}</div>
+            <div :class="bgClass(element.type)" class="rounded m-1 p-2 cursor-move" >
+              <i :class="iconClass(element.type)" class="text-sm mr-2"></i>
+              <span>{{ element.text }}</span>
+            </div>
+          </template>
+          <template #footer>
+            <div v-if="!resultsListQ2.length" class="text-center text-gray-400 h-full mt-[90px]">Drag and arrange items here</div>
           </template>
         </draggable>
+        <h3 class="flex flex-col text-center my-2">
+          Low
+          <i class="fas fa-long-arrow-down mx-auto mt-1"></i>
+        </h3>
       </div>
     </div>
     <div class="flex justify-between">
 
-      <button class="adx-button primary" @click="prevButton">
-        Previous
+      <button class="btn-primary uppercase" @click="prevButton">
+        Back
       </button>
-      <button class="adx-button primary" @click="nextButton" :disabled="optionsListQ2.length!==0">
+      <button class="btn-primary uppercase" @click="nextButton" :disabled="optionsListQ2.length!==0">
         Next
       </button>
 
     </div>
   </div>
 
-  <div v-if="state===3">
-    <p class="text-center">Which ones are most controllable?</p>
-    <div class="flex justify-center">
+  <div v-if="state===3" class="p-2">
+    <h3 class="text-center my-2">Which ones are most controllable?</h3>
+    <div class="flex justify-center mb-4">
       <label for="toggleQ3" class="flex items-center cursor-pointer">
-
-        <div class="ml-3 text-gray-700 font-medium">
-          Risks
-        </div>
+        <div class="mr-3">Risks</div>
 
         <!-- toggle -->
         <div class="relative">
           <!-- input -->
           <input type="checkbox" id="toggleQ3" class="sr-only" v-model="toggleQ3">
           <!-- line -->
-          <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
+          <div class="block bg-froly w-14 h-8 rounded-full"></div>
           <!-- dot -->
           <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
         </div>
         <!-- label -->
-        <div class="ml-3 text-gray-700 font-medium">
-          Uncertainties
-        </div>
+        <div class="ml-3">Uncertainties</div>
       </label>
     </div>
 
 
-    <p class="text-center">Which ones has the highest possibility of failure?</p>
+    <h3 class="text-center my-2">Which ones has the highest possibility of failure?</h3>
 
-    <div class="flex justify-center">
+    <div class="flex justify-center mb-4">
       <label for="toggleQ4" class="flex items-center cursor-pointer">
 
-        <div class="ml-3 text-gray-700 font-medium">
-          Risks
-        </div>
+        <div class="mr-3">Risks</div>
 
         <!-- toggle -->
         <div class="relative">
           <!-- input -->
           <input type="checkbox" id="toggleQ4" class="sr-only" v-model="toggleQ4">
           <!-- line -->
-          <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
+          <div class="block bg-froly w-14 h-8 rounded-full"></div>
           <!-- dot -->
           <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
         </div>
         <!-- label -->
-        <div class="ml-3 text-gray-700 font-medium">
-          Uncertainties
-        </div>
+        <div class="ml-3">Uncertainties</div>
       </label>
     </div>
 
 
-    <p class="text-center">Based on the above activity, state two characteristics of risks and two characteristics of
-      uncertainty</p>
+    <h3 class="text-center my-2">Based on the above activity, state two characteristics of risks and two characteristics of uncertainty.</h3>
 
-    <div class="grid grid-cols-2 gap-4">
-      <div class="col-span-1">
-        <h3 class="text-center">Risks</h3>
-        <div class="text-center">
-          <div v-for="(thing, index) in charRisks">
-            <input class="border" v-model="charRisks[index].text" :maxlength="35">
-
+    <div class="flex justify-center">
+      <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
+        <h3 class="text-center my-2"><i class="fas fa-exclamation-triangle mr-1 text-froly"></i>Risks</h3>
+        <div class="text-center rounded bg-froly-lightest pt-1 pb-3 px-2">
+          <div v-for="(thing, index) in charRisks" class="flex justify-start my-2">
+            <i class="fas fa-triangle text-2xs my-auto mr-1 w-[20px]"></i>
+            <input class="input-underline-primary bg-froly-lightest" v-model="charRisks[index].text" :maxlength="35">
           </div>
         </div>
       </div>
-      <div class="col-span-1">
-        <h3 class="text-center">Uncertainties</h3>
-        <div class="text-center">
-          <div v-for="(thing, index) in charUncertainties">
-            <input class="border" v-model="charUncertainties[index].text" :maxlength="35">
-
+      <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
+        <h3 class="text-center my-2"><i class="fas fa-question-circle mr-1 text-sunshade"></i>Uncertainties</h3>
+        <div class="text-center rounded bg-sunshade-lightest pt-1 pb-3 px-2">
+          <div v-for="(thing, index) in charUncertainties" class="flex justify-start my-2">
+            <i class="fas fa-circle text-2xs my-auto mr-1 w-[20px]"></i>
+            <input class="input-underline-primary bg-sunshade-lightest" v-model="charUncertainties[index].text" :maxlength="35">
           </div>
         </div>
-
       </div>
     </div>
 
-
     <div class="flex justify-between">
-
-      <button class="adx-button primary" @click="prevButton">
-        Previous
-      </button>
-      <button class="adx-button primary" @click="nextButton">
-        Next
-      </button>
+      <button class="btn-primary uppercase" @click="prevButton">Back</button>
+      <button class="btn-primary uppercase" @click="nextButton" :disabled="isUnfinished">Next</button>
 
     </div>
   </div>
 
-  <div v-if="state===4">
-    <h1>Page 5</h1>
-    <div class="flex justify-between">
-
-      <button class="adx-button primary" @click="prevButton">
-        Previous
-      </button>
-
-
+  <div v-if="state===4" class="p-2">
+    <h3>Summary</h3>
+    <div class="flex justify-start">
+      <button class="btn-primary uppercase" @click="prevButton">Back</button>
     </div>
   </div>
 
 </template>
 
 <script setup>
-import {computed, ref} from "vue"
+import { computed, ref } from "vue"
 import draggable from 'vuedraggable'
 
 
 const state = ref(0)
-const numElements = ref(4)
+const numElements = ref(5)
 const risks = ref([
-  {text: "AAA", id: 0},
-  {text: "BBB", id: 1}
+  { text: "", id: 1, type: "risk" },
+  { text: "", id: 2, type: "risk" }
 ])
 const uncertainties = ref([
-  {text: "CCC", id: 2},
-  {text: "DDD", id: 3}
+  { text: "", id: 3, type: "uncertainty" },
+  { text: "", id: 4, type: "uncertainty" }
 ])
 
 const charRisks = ref([
@@ -277,14 +322,23 @@ const resultsListQ2 = ref([])
 const toggleQ3 = ref(false)
 const toggleQ4 = ref(false)
 
+const drag = ref(false)
+const dragOptions = ref({
+  animation: 200,
+  disabled: false,
+  ghostClass: "ghost"
+})
+
 const isUnfinished = computed(() => {
   let result = false
-  risks.value.forEach(risk => {
+  let currentRisks = state.value === 0 ? risks.value : charRisks.value
+  currentRisks.forEach(risk => {
     if (!risk.text) {
       result = true
     }
   })
-  uncertainties.value.forEach(uncertainty => {
+  let currentUncertainties = state.value === 0 ? uncertainties.value : charUncertainties.value
+  currentUncertainties.forEach(uncertainty => {
     if (!uncertainty.text) {
       result = true
     }
@@ -293,16 +347,16 @@ const isUnfinished = computed(() => {
 })
 
 //Functions
-function addRisk() {
+function addRisk () {
   if (risks.value.length < 5) {
-    risks.value.push({text: "", id: numElements.value})
+    risks.value.push({ text: "", id: numElements.value, type: "risk" })
     numElements.value++
   }
 }
 
-function addUncertainties() {
+function addUncertainties () {
   if (uncertainties.value.length < 5) {
-    uncertainties.value.push({text: "", id: numElements.value})
+    uncertainties.value.push({ text: "", id: numElements.value, type: "uncertainty" })
     numElements.value++
   }
 }
@@ -342,13 +396,55 @@ function resetOptions() {
   nextButton()
 }
 
+function stepClass(step) {
+  if (step < state.value) {
+    return "fas fa-check-circle text-green-500 text-xl"
+  } else if (step === state.value) {
+    return "far fa-dot-circle text-green-500 text-xl"
+  } else {
+    return "far fa-circle text-gray-500 text-xl"
+  }
+}
+
+function iconClass(type) {
+  switch (type) {
+    case "risk":
+      return "fas fa-exclamation-triangle text-froly my-auto"
+    case "uncertainty":
+      return "fas fa-question-circle text-sunshade my-auto"
+  }
+}
+
+function bgClass(type) {
+  switch (type) {
+    case "risk":
+      return "bg-froly-lightest"
+    case "uncertainty":
+      return "bg-sunshade-lightest"
+  }
+}
+
 </script>
 
 <style>
 /* Toggle B */
 input:checked ~ .dot {
   transform: translateX(100%);
-  background-color: #48bb78;
+}
+
+input:checked ~ .block {
+  background-color: #f89621;
+}
+
+
+.flip-list-move {
+  transition: transform 0.5s;
+}
+.no-move {
+  transition: transform 0s;
+}
+.ghost {
+  opacity: 0.5;
 }
 
 </style>

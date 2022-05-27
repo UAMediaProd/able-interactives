@@ -1,19 +1,21 @@
 # able-interactives
 
-## Project setup
+## Project setup for Devs
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles development build and run on local server
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiles production build
 ```
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Run production build on local server
+```
+npm run production
+```
