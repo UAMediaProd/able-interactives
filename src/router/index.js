@@ -4,7 +4,7 @@ import HomeView from '../views/HomeView.vue'
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'ABLE Interactives',
     component: HomeView
   },
   {
@@ -14,16 +14,21 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
-    path: '/risks',
-    name: 'risks',
+    path: '/risks-and-uncertainties',
+    name: 'Risks and Uncertainties',
 
-    component: () => import(/* webpackChunkName: "about" */ '../views/RisksUncertainties.vue')
+    component: () => import('../views/RisksUncertainties.vue')
   }
 ]
 
 const router = createRouter({
   history: createWebHashHistory(),
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  document.title = to.name
+  next()
 })
 
 export default router

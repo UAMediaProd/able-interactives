@@ -9,10 +9,8 @@
         <p>Interactives for ABLE courses at The University of Adelaide</p>
         <ul class="list-disc list-outside">
           <li class="my-2">
-            <RouterLink to="/risks" :class="linkClass">Risks and Uncertainties</RouterLink>
+            <RouterLink to="/risks-and-uncertainties" :class="linkClass">Risks and Uncertainties</RouterLink>
           </li>
-
-
         </ul>
       </div>
     </div>
