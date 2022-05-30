@@ -207,6 +207,7 @@
     </div>
   </div>
 
+  <!--  page 4 -->
   <div v-if="state===3" class="p-2">
     <h3 class="text-center my-2">Which ones are most controllable?</h3>
     <div class="flex justify-center mb-4">
@@ -255,19 +256,19 @@
     <div class="flex justify-center">
       <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
         <h3 class="text-center my-2"><i class="fas fa-exclamation-triangle mr-1 text-froly"></i>Risks</h3>
-        <div class="text-center rounded bg-froly-lightest pt-1 pb-3 px-2">
+        <div class="text-center rounded border-2 border-dashed border-froly pt-1 pb-3 px-2">
           <div v-for="(thing, index) in charRisks" class="flex justify-start my-2">
             <i class="fas fa-triangle text-2xs my-auto mr-1 w-[20px]"></i>
-            <input class="input-underline-primary bg-froly-lightest" v-model="charRisks[index].text" :maxlength="35">
+            <input class="input-underline-primary" v-model="charRisks[index].text" :maxlength="35">
           </div>
         </div>
       </div>
       <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
         <h3 class="text-center my-2"><i class="fas fa-question-circle mr-1 text-sunshade"></i>Uncertainties</h3>
-        <div class="text-center rounded bg-sunshade-lightest pt-1 pb-3 px-2">
+        <div class="text-center rounded  border-2 border-dashed border-sunshade pt-1 pb-3 px-2">
           <div v-for="(thing, index) in charUncertainties" class="flex justify-start my-2">
             <i class="fas fa-circle text-2xs my-auto mr-1 w-[20px]"></i>
-            <input class="input-underline-primary bg-sunshade-lightest" v-model="charUncertainties[index].text" :maxlength="35">
+            <input class="input-underline-primary" v-model="charUncertainties[index].text" :maxlength="35">
           </div>
         </div>
       </div>
@@ -280,8 +281,105 @@
     </div>
   </div>
 
-  <div v-if="state===4" class="p-2">
-    <h3>Summary</h3>
+  <!--  page 5 -->
+  <div v-if="state===4" class="p-3">
+    <div class="flex justify-between mx-3">
+      <h3 class="my-2 mr-2">Congratulations! You have completed this activity! You can review your progress below and save this page as PDF by clicking the Print button.</h3>
+      <button class="btn-primary uppercase ml-2" @click="printPage">Print</button>
+    </div>
+
+    <hr class="my-3">
+
+    <div class="flex justify-center">
+      <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
+        <h3 class="text-center my-2">Identified Risks</h3>
+        <div class="text-center rounded bg-froly-lightest py-1 px-2">
+          <div v-for="(risk) in risks" class="flex justify-start my-2">
+            <i class="fas fa-triangle text-2xs my-auto mr-1 w-[20px]"></i>
+            <span>{{ risk.text }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
+        <h3 class="text-center my-2">Identified Uncertainties</h3>
+        <div class="text-center rounded bg-sunshade-lightest py-1 px-2">
+          <div v-for="(uncertainty) in uncertainties" class="flex justify-start my-2">
+            <i class="fas fa-circle text-2xs my-auto mr-1 w-[20px]"></i>
+            <span>{{ uncertainty.text }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3 class="text-center">Characteristics</h3>
+    <div class="flex justify-center">
+      <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
+        <div class="text-center rounded  border-2 border-dashed border-froly py-1 px-2">
+          <div v-for="(risk) in risks" class="flex justify-start my-2">
+            <i class="fas fa-triangle text-2xs my-auto mr-1 w-[20px]"></i>
+            <span>{{ risk.text }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
+        <div class="text-center rounded  border-2 border-dashed border-sunshade py-1 px-2">
+          <div v-for="(uncertainty) in uncertainties" class="flex justify-start my-2">
+            <i class="fas fa-circle text-2xs my-auto mr-1 w-[20px]"></i>
+            <span>{{ uncertainty.text }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-3">
+
+    <div class="flex justify-center">
+      <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
+        <h3 class="text-center">Managerial Control</h3>
+        <div class="flex flex-col justify-center">
+          <i class="fas fa-caret-up mx-auto mt-1"></i>
+          <span class="text-center text-sm">High</span>
+        </div>
+        <div class="rounded border-2 border-dashed border-primary-darker p-1">
+          <div v-for="item in resultsListQ1" :class="bgClass(item.type)" class="rounded m-1 p-2">
+            <i :class="iconClass(item.type)" class="text-sm mr-2"></i>
+            <span>{{ item.text }}</span>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center">
+          <span class="text-center text-sm">Low</span>
+          <i class="fas fa-caret-down mx-auto"></i>
+        </div>
+        <div class="flex justify-center">
+          <label class="mr-2">Most controllable:</label>
+          <h3 class="my-auto">{{ toggleQ3 ? 'Uncertainties' : 'Risks' }}</h3>
+        </div>
+      </div>
+
+      <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
+        <h3 class="text-center">Possibility of Failure</h3>
+        <div class="flex flex-col justify-center">
+          <i class="fas fa-caret-up mx-auto mt-1"></i>
+          <span class="text-center text-sm">High</span>
+        </div>
+        <div class="rounded border-2 border-dashed border-primary-darker p-1">
+          <div v-for="item in resultsListQ2" :class="bgClass(item.type)" class="rounded m-1 p-2">
+            <i :class="iconClass(item.type)" class="text-sm mr-2"></i>
+            <span>{{ item.text }}</span>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center">
+          <span class="text-center text-sm">Low</span>
+          <i class="fas fa-caret-down mx-auto"></i>
+        </div>
+        <div class="flex justify-center">
+          <label class="mr-2">Highest possibility of failure:</label>
+          <h3 class="my-auto">{{ toggleQ4 ? 'Uncertainties' : 'Risks' }}</h3>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-3">
+
     <div class="flex justify-start">
       <button class="btn-primary uppercase" @click="prevButton">Back</button>
     </div>
@@ -424,6 +522,10 @@ function bgClass(type) {
   }
 }
 
+function printPage() {
+  window.print()
+}
+
 </script>
 
 <style>
@@ -447,4 +549,7 @@ input:checked ~ .block {
   opacity: 0.5;
 }
 
+@media print {
+  body {-webkit-print-color-adjust: exact;}
+}
 </style>
