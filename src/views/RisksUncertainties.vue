@@ -550,6 +550,9 @@ input:checked ~ .block {
 }
 
 @media print {
-  body {-webkit-print-color-adjust: exact;}
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
 }
 </style>
