@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <div class="flex justify-end">
+    <div class="flex justify-end px-4">
       <button class="btn-primary uppercase" @click="resetOptions" :disabled="isUnfinished">Next</button>
     </div>
   </div>
@@ -113,7 +113,7 @@
         </h3>
       </div>
     </div>
-    <div class="flex justify-between">
+    <div class="flex justify-between px-4">
       <VDropdown placement="right">
         <button class="btn-primary uppercase">
           Back
@@ -195,7 +195,7 @@
         </h3>
       </div>
     </div>
-    <div class="flex justify-between">
+    <div class="flex justify-between px-4">
 
       <button class="btn-primary uppercase" @click="prevButton">
         Back
@@ -274,7 +274,7 @@
       </div>
     </div>
 
-    <div class="flex justify-between">
+    <div class="flex justify-between px-4">
       <button class="btn-primary uppercase" @click="prevButton">Back</button>
       <button class="btn-primary uppercase" @click="nextButton" :disabled="isUnfinished">Next</button>
 
@@ -283,7 +283,7 @@
 
   <!--  page 5 -->
   <div v-if="state===4" class="p-3">
-    <div class="flex justify-between mx-3">
+    <div class="flex justify-center mx-3">
       <h3 class="my-2 mr-2">Congratulations! You have completed this activity! You can review your progress below and save this page as PDF by clicking the Print button.</h3>
       <button class="btn-primary uppercase ml-2" @click="printPage">Print</button>
     </div>
@@ -380,7 +380,7 @@
 
     <hr class="my-3">
 
-    <div class="flex justify-start">
+    <div class="flex justify-start px-4">
       <button class="btn-primary uppercase" @click="prevButton">Back</button>
     </div>
   </div>
@@ -552,7 +552,7 @@ input:checked ~ .block {
 @media print {
   body {
     -webkit-print-color-adjust: exact;
-    color-adjust: exact;
+    print-color-adjust: exact;
   }
 }
 </style>
