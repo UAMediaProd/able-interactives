@@ -1,22 +1,27 @@
 <template>
   <div :class="wrapperClass">
     <h2>Slider</h2>
-    <div class="flex justify-center items-stretch">
+    <div class="flex flex-wrap justify-center items-stretch">
       <div
         v-for="(item, index) in slider"
         :key="index"
-        class="max-w-[180px] text-center shadow transition m-1"
+        class="max-w-[180px] text-center shadow m-1"
+        style="line-height: 100px"
       >
         <div
-          class="p-2  h-full"
+          class="p-2 h-full transition font-bold rounded"
           :class="
             englishScore >= item.threshold
               ? 'border cursor-pointer border-2 text-white'
               : 'border-2'
           "
-          :style=" englishScore >= item.threshold ? `background-color: ${item.color}; border-color: ${item.color}; color: white;` :  `background color: white; border-color: ${item.color}`"
+          :style=" englishScore >= item.threshold ? `background-color: ${item.color}; border-color: ${item.color}; color: white;` :  `background color: white; border-color: ${item.color}; color: ${item.color};`"
         >
-          <p>{{ item.title }}</p>
+          <span style="
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 18px;
+          ">{{ item.title }}</span>
         </div>
       </div>
     </div>
@@ -41,7 +46,7 @@
       class="tileHolder grid md:grid-cols-5 sm:grid-cols-3 gap-4 items-stretch justify-center items-center"
     >
       <div
-        class="transition text-center border border-brand-darkblue hover:bg-brand-darkblue hover:text-white hover:cursor-pointer h-[100px]"
+        class="transition px-2 text-center border border-brand-darkblue hover:bg-brand-darkblue hover:text-white hover:cursor-pointer h-[100px]"
         v-for="(tile, index) in tiles"
         style="line-height: 100px"
       >
