@@ -5,12 +5,12 @@
       <div v-for="(item, index) in slider" :key="index" class="max-w-[160px] text-center shadow transition m-4">
         <div v-if="item.grouped" class="">
           <div v-for="(item, index) in item.items" :key="index">
-            <div class="p-4"  :class="englishScore >= item.threshold ? 'bg-brand-midblue-tint border border-brand-midblue mt-[-1px]' : 'bg-brand-midblue border border-brand-midblue text-white mt-[-1px]'">
+            <div class="p-4 transition"  :class="englishScore >= item.threshold ? 'bg-brand-midblue-tint border border-brand-midblue mt-[-1px] cursor-pointer hover:bg-brand-midblue-lightest' : 'bg-brand-midblue border border-brand-midblue text-white mt-[-1px]'">
               <p>{{ item.title }}</p>
             </div>
           </div>
         </div>
-        <div v-else class="p-4" :class="englishScore >= item.threshold ? 'bg-brand-midblue-tint border border-brand-midblue' : 'bg-brand-midblue border border-brand-midblue text-white'">
+        <div v-else class="p-4" :class="englishScore >= item.threshold ? 'bg-brand-midblue-tint border border-brand-midblue cursor-pointer hover:bg-brand-midblue-lightest' : 'bg-brand-midblue border border-brand-midblue text-white'">
         <p>{{ item.title }}</p>
 
     </div>
