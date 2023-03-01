@@ -33,7 +33,7 @@
 
     <h2>Browse</h2>
 
-    <div class="tileHolder grid md:grid-cols-5 sm:grid-cols-3 gap-4 items-stretch">
+    <div class="tileHolder grid md:grid-cols-5 sm:grid-cols-3 gap-4 items-stretch justify-center items-center">
       <div class="transition text-center border border-brand-darkblue hover:bg-brand-darkblue hover:text-white hover:cursor-pointer h-[100px]" v-for="(tile,index) in tiles" style="line-height: 100px;">
      <span style="display: inline-block;
   vertical-align: middle;
@@ -46,7 +46,18 @@
     <h2>Results</h2>
 
     <div id="results">
-      {{ filterResults() }}
+      <div class="filterCont border p-1 grid grid-cols-4 gap-5">
+        <p class="m-2 mb-0" v-for="(filter,idx) in filters"><small>
+          <select>
+            <option disabled selected>{{ idx }}</option>
+            <option v-for="(option,key) in filter">{{key}}</option>
+
+          </select>
+        </small></p>
+      </div>
+
+      <p class="mt-4">{{ filterResults() }}</p>
+
     </div>
 
   </div>
@@ -126,20 +137,45 @@ const slider = {
 }
 
 const tiles = [
-  {"name": "Activating prior knowledge"},
+  {"name": "Flipped learning"},
+  {"name": "Working with TAs"},
+  {"name": "Scaffolding ideas"},
+  {"name": "Translanguaging"},
+  {"name": "Questioning"},
   {"name": "Collaborative activities"},
   {"name": "Discussion-based activities"},
-  {"name": "Scaffolding ideas"},
-  {"name": "Checking and consolidating understanding"},
-  {"name": "Translanguaging"},
-  {"name": "Working with TAs"},
-  {"name": "Questioning"},
-  {"name": "Active learning in the sciences"},
-  {"name": "Giving feedback"}
+  {"name": "Activating prior knowledge"},
+  {"name": "Checking and consolidating prior knowledge"},
+  {"name": "Giving feedback"},
+  {"name": "Summarising content"},
+  {"name": "Supporting students with subject-specific vocabulary"},
+  {"name": "Active learning in the sciences"}
 ]
 
 let englishScore = ref(0)
-let filters = ref([])
+let filters = ref({
+  "Size": {
+    "Small": false,
+    "Medium": false,
+    "Large": false
+  },
+  "Mode": {
+    "Face-to-face": false,
+    "Online": false,
+    "both": false
+  },
+  "Class time": {
+    "<5": false,
+    "5-10": false,
+    "10+": false
+  },
+  "Prep time": {
+    "<5": false,
+    "5-10": false,
+    "10+": false
+  }
+
+})
 
 function filterResults() {
   return "Holding place for results"
