@@ -11,6 +11,9 @@
           <li class="my-2">
             <RouterLink to="/risks-and-uncertainties" :class="linkClass">Risks and Uncertainties</RouterLink>
           </li>
+          <li class="my-2">
+            <RouterLink to="/elc" :class="linkClass">ELC Active Learning Tasks</RouterLink>
+          </li>
         </ul>
       </div>
     </div>

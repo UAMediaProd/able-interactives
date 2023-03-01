@@ -18,6 +18,12 @@ const routes = [
     name: 'Risks and Uncertainties',
 
     component: () => import('../views/RisksUncertainties.vue')
+  },
+  {
+    path: '/elc',
+    name: 'ELC Active Learning Tasks',
+
+    component: () => import('../views/ELC.vue')
   }
 ]
 
