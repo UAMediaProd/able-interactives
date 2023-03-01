@@ -33,9 +33,11 @@
 
     <h2>Browse</h2>
 
-    <div class="tileHolder flex flex-wrap justify-center items-center">
-      <div class="m-4 p-4 transition text-center max-w-[150px] border border-brand-darkblue hover:bg-brand-darkblue hover:text-white hover:cursor-pointer" v-for="(tile,index) in tiles">
-        <p>{{tile.name}}</p>
+    <div class="tileHolder grid md:grid-cols-5 sm:grid-cols-3 gap-4 items-stretch">
+      <div class="transition text-center border border-brand-darkblue hover:bg-brand-darkblue hover:text-white hover:cursor-pointer h-[100px]" v-for="(tile,index) in tiles" style="line-height: 100px;">
+     <span style="display: inline-block;
+  vertical-align: middle;
+  line-height: 24px;">{{tile.name}}</span>
       </div>
     </div>
 
@@ -137,15 +139,11 @@ const tiles = [
 ]
 
 let englishScore = ref(0)
-
-
-
+let filters = ref([])
 
 function filterResults() {
   return "Holding place for results"
 }
-
-
 
 </script>
 
