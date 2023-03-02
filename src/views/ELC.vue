@@ -3,9 +3,9 @@
     <h2>Slider</h2>
     <div class="flex flex-wrap justify-center items-center">
       <div
-        v-for="(item, index) in slider"
+        v-for="(item, index, idx) in slider"
         :key="index"
-        class="max-w-[200px] min-h-[140px] text-center shadow m-1"
+        class="max-w-[200px] min-h-[140px] text-center flex"
       >
 
 
@@ -43,6 +43,10 @@
             vertical-align: middle;
             line-height: 18px;
           ">{{ item.title }}</span>
+        </div>
+
+        <div v-if="idx < Object.keys(slider).length - 1">
+          <span style="line-height: 140px;" class="p-2 text-3xl font-bold">+</span>
         </div>
       </div>
     </div>
@@ -109,7 +113,7 @@ const slider = {
     "title": "Activate prior knowledge",
     "threshold": 50,
     "link": "",
-    color: "#4cc9f0"
+    color: "#a279b5"
   },
   "lectureIntro-1-Group": {
     "grouped": true,
@@ -155,7 +159,8 @@ const slider = {
     "title": "Checking and consolidating understanding",
     "threshold": 25,
     "link": "",
-    color: "#a279b5"
+    color: "#4cc9f0"
+
   },
   "lecture-4-conc-Group": {
     "grouped": true,
