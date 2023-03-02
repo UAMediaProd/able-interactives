@@ -1,21 +1,42 @@
 <template>
   <div :class="wrapperClass">
     <h2>Slider</h2>
-    <div class="flex flex-wrap justify-center items-stretch">
+    <div class="flex flex-wrap justify-center items-center">
       <div
         v-for="(item, index) in slider"
         :key="index"
-        class="max-w-[180px] text-center shadow m-1"
-        style="line-height: 100px"
+        class="max-w-[200px] min-h-[140px] text-center shadow m-1"
       >
-        <div
-          class="p-2 h-full transition font-bold rounded"
+
+
+
+        <div v-if="item.grouped" class="">
+          <div v-for="(item, index) in item.items" :key="index">
+            <div class="p-4 transition font-bold mt-[-2px] min-h-[73px]"   :class="
+            englishScore >= item.threshold
+              ? 'border cursor-pointer border-2 text-white'
+              : 'border-2'
+          "
+                 :style=" englishScore >= item.threshold ? `background-color: ${item.color}; border-color: ${item.color}; color: white;` :  `background color: white; border-color: ${item.color}; color: ${item.color};`">
+               <span style="
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 18px;
+          ">{{ item.title }}</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div v-else
+          class="p-2 transition font-bold min-h-[140px]"
           :class="
             englishScore >= item.threshold
               ? 'border cursor-pointer border-2 text-white'
               : 'border-2'
           "
           :style=" englishScore >= item.threshold ? `background-color: ${item.color}; border-color: ${item.color}; color: white;` :  `background color: white; border-color: ${item.color}; color: ${item.color};`"
+             style="line-height: 125px;"
         >
           <span style="
             display: inline-block;
@@ -82,68 +103,85 @@ import { ref } from "vue";
 
 const wrapperClass = "adx max-w-[90%] mx-auto";
 
+
 const slider = {
-  activate: {
-    title: "Activate prior knowledge",
-    threshold: 50,
-    link: "",
+  "activate": {
+    "title": "Activate prior knowledge",
+    "threshold": 50,
+    "link": "",
     color: "#4cc9f0"
   },
-      lectureIntro: {
-        title: "Lecture input (intro)",
-        threshold: 10,
-        link: "",
+  "lectureIntro-1-Group": {
+    "grouped": true,
+    "items": {
+      "lectureIntro": {
+        "title": "Lecture input (intro)",
+        "threshold": 10,
+        "link": "",
         color: "#fa6769"
       },
-      lecturePart1: {
-        title: "Lecture input (part 1)",
-        threshold: 25,
-        link: "",
+      "lecturePart1": {
+        "title": "Lecture input (part 1)",
+        "threshold": 25,
+        "link": "",
         color: "#f8961e"
       },
-  support: {
-    title: "Supporting students with subject specific vocabulary",
-    threshold: 50,
-    link: "",
+    }
+  },
+  "support": {
+    "title": "Supporting students with subject specific vocabulary",
+    "threshold": 50,
+    "link": "",
     color: "#f9c74f"
   },
-      lecturePart2: {
-        title: "Lecture input (part 2)",
-        threshold: 50,
-        link: "",
+  "lecture-2-3Group": {
+    "grouped": true,
+    "items": {
+      "lecturePart2": {
+        "title": "Lecture input (part 2)",
+        "threshold": 50,
+        "link": "",
         color: "#90be6d"
       },
-      lecturePart3: {
-        title: "Lecture input (part 3)",
-        threshold: 75,
-        link: "",
+      "lecturePart3": {
+        "title": "Lecture input (part 3)",
+        "threshold": 75,
+        "link": "",
         color: "#43aa8b"
       },
-  check: {
-    title: "Checking and consolidating understanding",
-    threshold: 25,
-    link: "",
+    }
+  },
+  "check":{
+    "title": "Checking and consolidating understanding",
+    "threshold": 25,
+    "link": "",
     color: "#a279b5"
   },
-      lecturePart4: {
-        title: "Lecture input (part 4)",
-        threshold: 100,
-        link: "",
+  "lecture-4-conc-Group": {
+    "grouped": true,
+    "items": {
+      "lecturePart4": {
+        "title": "Lecture input (part 4)",
+        "threshold": 100,
+        "link": "",
         color: "#005a9c"
       },
-      lectureConclusion: {
-        title: "Lecture input (conclusion)",
-        threshold: 100,
-        link: "",
+      "lectureConclusion": {
+        "title": "Lecture input (conclusion)",
+        "threshold": 100,
+        "link": "",
         color: "#102535"
-      },
-  summary: {
-    title: "Summary",
-    threshold: 10,
-    link: "",
-    color: "#d40000"
+      }
+    }
   },
-};
+  "summary": {
+    "title": "Summary",
+    "threshold": 10,
+    "link": "",
+    color: "#d40000"
+  }
+}
+
 
 const tiles = [
   { name: "Flipped learning" },
