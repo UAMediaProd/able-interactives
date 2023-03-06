@@ -1,11 +1,11 @@
 <template>
   <div :class="wrapperClass">
-    <h2>Slider</h2>
+    <h2>EMI Active Learning Tool</h2>
     <div class="flex flex-wrap justify-center items-center">
       <div
         v-for="(item, index, idx) in slider"
         :key="index"
-        class="max-w-[200px] min-h-[140px] text-center flex"
+        class="max-w-[170px] min-h-[140px] text-center flex"
       >
 
 
@@ -66,7 +66,7 @@
       Percentage of your class taught in English:
       <strong>{{ englishScore }}%</strong>
     </p>
-    <h2>Browse</h2>
+    <h2>Browse suggestable activities</h2>
     <div
       class="tileHolder grid md:grid-cols-5 sm:grid-cols-3 gap-4 items-stretch justify-center items-center"
     >
@@ -85,7 +85,7 @@
         >
       </div>
     </div>
-    <h2>Results</h2>
+    <h2>Find a suitable activity</h2>
     <div id="results">
       <div class="filterCont border p-1 grid grid-cols-4 gap-5">
         <p class="m-2 mb-0" v-for="(filter, idx) in filters">
@@ -110,10 +110,10 @@ const wrapperClass = "adx max-w-[90%] mx-auto";
 
 const slider = {
   "activate": {
-    "title": "Activate prior knowledge",
+    "title": "Activating prior knowledge",
     "threshold": 50,
     "link": "",
-    color: "#a279b5"
+    color: "#bcd8a7"
   },
   "lectureIntro-1-Group": {
     "grouped": true,
@@ -122,13 +122,13 @@ const slider = {
         "title": "Lecture input (intro)",
         "threshold": 10,
         "link": "",
-        color: "#fa6769"
+        color: "#94dff6"
       },
       "lecturePart1": {
         "title": "Lecture input (part 1)",
         "threshold": 25,
         "link": "",
-        color: "#f8961e"
+        color: "#4cc9f0"
       },
     }
   },
@@ -136,7 +136,7 @@ const slider = {
     "title": "Supporting students with subject specific vocabulary",
     "threshold": 50,
     "link": "",
-    color: "#f9c74f"
+    color: "#90be6d"
   },
   "lecture-2-3Group": {
     "grouped": true,
@@ -145,13 +145,13 @@ const slider = {
         "title": "Lecture input (part 2)",
         "threshold": 50,
         "link": "",
-        color: "#90be6d"
+        color: "#669cc4"
       },
       "lecturePart3": {
         "title": "Lecture input (part 3)",
         "threshold": 75,
         "link": "",
-        color: "#43aa8b"
+        color: "#337bb0"
       },
     }
   },
@@ -159,7 +159,7 @@ const slider = {
     "title": "Checking and consolidating understanding",
     "threshold": 25,
     "link": "",
-    color: "#4cc9f0"
+    color: "#8eccb9"
 
   },
   "lecture-4-conc-Group": {
@@ -180,17 +180,17 @@ const slider = {
     }
   },
   "summary": {
-    "title": "Summary",
+    "title": "Summarising content",
     "threshold": 10,
     "link": "",
-    color: "#d40000"
+    color: "#43aa8b"
   }
 }
 
 
 const tiles = [
   { name: "Flipped learning" },
-  { name: "Working with TAs" },
+  { name: "Working with teaching assistants" },
   { name: "Scaffolding ideas" },
   { name: "Translanguaging" },
   { name: "Questioning" },
@@ -200,8 +200,8 @@ const tiles = [
   { name: "Checking and consolidating prior knowledge" },
   { name: "Giving feedback" },
   { name: "Summarising content" },
-  { name: "Supporting students with subject-specific vocabulary" },
-  { name: "Active learning in the sciences" },
+  { name: "Supporting students with subject specific vocabulary" },
+  { name: "Active learning in STEM" },
 ];
 
 let englishScore = ref(0);
