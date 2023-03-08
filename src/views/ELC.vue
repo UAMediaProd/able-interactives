@@ -1,15 +1,12 @@
 <template>
   <div :class="wrapperClass">
-    <h2>EMI Active Learning Tool</h2>
+    <h2>EMI active learning tool</h2>
     <div class="flex flex-wrap justify-center items-center">
       <div
         v-for="(item, index, idx) in slider"
         :key="index"
         class="max-w-[170px] min-h-[140px] text-center flex"
       >
-
-
-
         <div v-if="item.grouped" class="">
           <div v-for="(item, index) in item.items" :key="index">
             <div class="p-4 transition font-bold mt-[-2px] min-h-[73px]"   :class="
@@ -67,11 +64,33 @@
       <strong>{{ englishScore }}%</strong>
     </p>
     <h2>Browse suggestable activities</h2>
+    <h4 class="my-6">Browse by stage</h4>
     <div
-      class="tileHolder grid md:grid-cols-5 sm:grid-cols-3 gap-4 items-stretch justify-center items-center"
+    class="tileHolder flex gap-4 items-stretch justify-center items-center"
+    >
+    <div
+        class="transition px-2 max-w-[250px] text-center border border-brand-darkblue hover:bg-brand-darkblue hover:text-white hover:cursor-pointer min-h-[100px]"
+        v-for="(tile, index) in stages"
+        style="line-height: 100px"
+    >
+        <span
+            style="
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 24px;
+          "
+        >{{ tile.name }}</span
+        >
+    </div>
+  </div>
+    <br>
+
+    <h4 class="my-6">Browse additional resources</h4>
+    <div
+      class="tileHolder mb-4 flex flex-wrap gap-4 items-stretch justify-center items-center"
     >
       <div
-        class="transition px-2 text-center border border-brand-darkblue hover:bg-brand-darkblue hover:text-white hover:cursor-pointer h-[100px]"
+        class="transition px-2 text-center border border-brand-darkblue hover:bg-brand-darkblue hover:text-white hover:cursor-pointer min-h-[100px]"
         v-for="(tile, index) in tiles"
         style="line-height: 100px"
       >
@@ -111,7 +130,7 @@ const wrapperClass = "adx max-w-[90%] mx-auto";
 const slider = {
   "activate": {
     "title": "Activating prior knowledge",
-    "threshold": 50,
+    "threshold": 25,
     "link": "",
     color: "#bcd8a7"
   },
@@ -134,7 +153,7 @@ const slider = {
   },
   "support": {
     "title": "Supporting students with subject specific vocabulary",
-    "threshold": 50,
+    "threshold": 10,
     "link": "",
     color: "#90be6d"
   },
@@ -157,7 +176,7 @@ const slider = {
   },
   "check":{
     "title": "Checking and consolidating understanding",
-    "threshold": 25,
+    "threshold": 50,
     "link": "",
     color: "#8eccb9"
 
@@ -181,7 +200,7 @@ const slider = {
   },
   "summary": {
     "title": "Summarising content",
-    "threshold": 10,
+    "threshold": 75,
     "link": "",
     color: "#43aa8b"
   }
@@ -196,35 +215,38 @@ const tiles = [
   { name: "Questioning" },
   { name: "Collaborative activities" },
   { name: "Discussion-based activities" },
-  { name: "Activating prior knowledge" },
-  { name: "Checking and consolidating prior knowledge" },
   { name: "Giving feedback" },
-  { name: "Summarising content" },
-  { name: "Supporting students with subject specific vocabulary" },
-  { name: "Active learning in STEM" },
+  { name: "Active learning in STEM" }
 ];
+
+const stages = [
+  { name: "Activating prior knowledge" },
+  { name: "Supporting students with subject specific vocabulary" },
+  { name: "Checking and consolidating prior knowledge" },
+  { name: "Summarising content" }
+]
 
 let englishScore = ref(0);
 let filters = ref({
-  Size: {
-    Small: false,
-    Medium: false,
-    Large: false,
+  "Class size": {
+    "Small": false,
+    "Medium": false,
+    "Large": false,
   },
-  Mode: {
+  "Mode of delivery": {
     "Face-to-face": false,
-    Online: false,
-    both: false,
+    "Online": false,
+    "Both": false,
   },
   "Class time": {
-    "<5": false,
-    "5-10": false,
-    "10+": false,
+    "<5 minutes": false,
+    "5-10 minutes": false,
+    "10+ minutes": false,
   },
-  "Prep time": {
-    "<5": false,
-    "5-10": false,
-    "10+": false,
+  "Preparation time": {
+    "<5 minutes": false,
+    "5-10 minutes": false,
+    "10+ minutes": false,
   },
 });
 
