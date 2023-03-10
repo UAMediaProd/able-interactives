@@ -63,13 +63,15 @@
       Percentage of your class taught in English:
       <strong>{{ englishScore }}%</strong>
     </p>
-    <h2>Browse suggestable activities</h2>
+    <h2>Browse suggested activities</h2>
     <h4 class="my-6">Browse by stage</h4>
     <div
     class="tileHolder flex gap-4 items-stretch justify-center items-center"
     >
     <div
-        class="transition px-2 max-w-[250px] text-center border border-brand-darkblue hover:bg-brand-darkblue hover:text-white hover:cursor-pointer min-h-[100px]"
+        class=""
+        :class="tile.color"
+       :style="`border-color: ${tile.color}; `"
         v-for="(tile, index) in stages"
         style="line-height: 100px"
     >
@@ -220,10 +222,10 @@ const tiles = [
 ];
 
 const stages = [
-  { name: "Activating prior knowledge" },
-  { name: "Supporting students with subject specific vocabulary" },
-  { name: "Checking and consolidating prior knowledge" },
-  { name: "Summarising content" }
+  { name: "Activating prior knowledge", color: "transition px-2 max-w-[250px] text-center hover:cursor-pointer min-h-[100px] border border-2 border-chartreuse-light hover:bg-chartreuse-light hover:text-white" },
+  { name: "Supporting students with subject specific vocabulary",  color: "transition px-2 max-w-[250px] text-center hover:cursor-pointer min-h-[100px] border border-2 border-chartreuse-mid hover:bg-chartreuse-mid hover:text-white" },
+  { name: "Checking and consolidating prior knowledge", color: "transition px-2 max-w-[250px] text-center hover:cursor-pointer min-h-[100px] border border-chartreuse-dark border-2 hover:bg-chartreuse-dark hover:text-white" },
+  { name: "Summarising content", color: "transition px-2 max-w-[250px] text-center hover:cursor-pointer min-h-[100px] border border-2 border-chartreuse-darkest hover:bg-chartreuse-darkest hover:text-white" }
 ]
 
 let englishScore = ref(0);

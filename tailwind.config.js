@@ -61,6 +61,11 @@ module.exports = {
         'brand-darkblue-dark': '#0d1a25',
         'brand-darkblue-darker': '#0d1821',
         'brand-darkblue-darkest': '#0d151c',
+
+        'chartreuse-light': '#bcd8a7',
+        'chartreuse-mid': '#90be6d',
+        'chartreuse-dark': '#8eccb9',
+        'chartreuse-darkest': '#43aa8b',
       }
     },
     fontSize: {
