@@ -125,7 +125,7 @@
       </div>
       <h4>Recommended activities</h4>
         <TransitionGroup class="resultBox grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4" name="list" tag="div">
-        <a :href="result.link" target="_blank" class="p-4 m-4 shadow-lg border text-center transition hover:shadow-xl hover:-translate-y-1 hover:cursor-pointer" v-for="result in filteredResults">
+        <a :href="result.link" target="_blank" class="p-4 m-4 shadow-lg border text-center transition hover:shadow-xl hover:-translate-y-1 hover:cursor-pointer" v-for="(result,idx) in filteredResults" :key="idx">
           <h5 class="mb-4"><strong>{{result.name}}</strong></h5>
          <div class="flex flex-wrap"><p class="m-1">Class size:</p><span class="px-4 m-1 bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-medium rounded-full" v-for="classSize in result.filters['Class size']"><small>{{classSize}}</small></span></div>
           <div class="flex flex-wrap"><p class="m-1">Mode:</p><span class="px-4 m-1 bg-blue-200 hover:bg-blue-300 text-blue-800 text-sm font-medium rounded-full" v-for="delivery in result.filters['Mode of delivery']"><small>{{delivery}}</small></span></div>
@@ -351,14 +351,16 @@ h2 {
   letter-spacing: 0.02rem;
 }
 
+.list-move, /* apply transition to moving elements */
 .list-enter-active,
 .list-leave-active {
   transition: all 0.5s ease;
-  transform: translateX(0px);
 }
+
 .list-enter-from,
 .list-leave-to {
   opacity: 0;
-  transform: translateX(30px);
+  transform: translateY(-30px);
 }
+
 </style>
