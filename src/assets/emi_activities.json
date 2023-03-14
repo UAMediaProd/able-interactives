@@ -1,0 +1,218 @@
+{
+  "Prediction": {
+    "name": "Prediction",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14078",
+    "stage": ["Activating prior knowledge"],
+    "tiles": ["Collaborative activities", "Discussion based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["5-10 minutes"],
+      "Preparation time": ["<5 minutes", "5-10 minutes"]
+    }
+  },
+  "Quiz": {
+    "name": "Quiz",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14079",
+    "stage": ["Activating prior knowledge","Supporting students with subject specific vocabulary", "Checking and consolidating prior knowledge","Summarising content"],
+    "tiles": ["Collaborative activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
+      "Preparation time": ["<5 minutes", "5-10 minutes", "10+ minutes"]
+    }
+  },
+  "WordCloud": {
+    "name": "Word Clouds",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14080",
+    "stage": ["Activating prior knowledge","Supporting students with subject specific vocabulary"],
+    "tiles": [null],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["5-10 minutes"],
+      "Preparation time": ["<5 minutes"]
+    }
+  },
+  "ReviewQ": {
+    "name": "Review Questions",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14081",
+    "stage": ["Activating prior knowledge"],
+    "tiles": ["Discussion based activities","Collaborative activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["5-10 minutes"],
+      "Preparation time": ["<5 minutes", "5-10 minutes"]
+    }
+  },
+  "Brainstorming": {
+    "name": "Brainstorming",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14082",
+    "stage": ["Activating prior knowledge","Supporting students with subject specific vocabulary"],
+    "tiles": ["Collaborative activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes"]
+    }
+  },
+  "Gallery": {
+    "name": "Gallery",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14083",
+    "stage": ["Activating prior knowledge"],
+    "tiles": ["Discussion based activities"],
+    "filters": {
+      "Class size": ["Small"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["5-10 minutes", "10+ minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes", "10+ minutes"]
+    }
+  },
+  "ThinkPairShare": {
+    "name": "Think, Pair, Share",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14085",
+    "stage": ["Activating prior knowledge", "Checking and consolidating prior knowledge", "Summarising content"],
+    "tiles": ["Discussion based activities","Collaborative activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
+      "Preparation time": ["<5 minutes"]
+    }
+  },
+  "ShortVid": {
+    "name": "Short Video & Task",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14086",
+    "stage": ["Activating prior knowledge", "Checking and consolidating prior knowledge"],
+    "tiles": ["Discussion based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
+      "Preparation time": ["5-10 minutes", "10+ minutes"]
+    }
+  },
+  "MCQ": {
+    "name": "Multiple Choice Questions (MCQs)",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14087",
+    "stage": ["Activating prior knowledge","Supporting students with subject specific vocabulary", "Checking and consolidating prior knowledge","Summarising content"],
+    "tiles": [null],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["5-10 minutes"]
+    }
+  },
+  "Polls": {
+    "name": "Polls",
+    "link": "",
+    "stage": ["Activating prior knowledge","Summarising content"],
+    "tiles": [null],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes"]
+    }
+  },
+  "backsBoard": {
+    "name": "Backs to the Board",
+    "link": "",
+    "stage": ["Activating prior knowledge","Supporting students with subject specific vocabulary"],
+    "tiles": ["Collaborative activities"],
+    "filters": {
+      "Class size": ["Small"],
+      "Mode of delivery": ["Face-to-face"],
+      "Class time": ["5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes"]
+    }
+  },
+  "LabellingTasks": {
+    "name": "Labelling Tasks",
+    "link": "",
+    "stage": ["Supporting students with subject specific vocabulary"],
+    "tiles": ["Collaborative activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes"]
+    }
+  },
+  "Sorting": {
+    "name": "Sorting Tasks",
+    "link": "",
+    "stage": ["Supporting students with subject specific vocabulary"],
+    "tiles": ["Collaborative activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes"]
+    }
+  },
+  "CCQ": {
+    "name": "Concept Checking Questions (CCQs)",
+    "link": "",
+    "stage": ["Supporting students with subject specific vocabulary", "Checking and consolidating prior knowledge"],
+    "tiles": [null],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["<5 minutes"],
+      "Preparation time": ["<5 minutes"]
+    }
+  },
+  "Peer": {
+    "name": "Peer Check",
+    "link": "",
+    "stage": ["Supporting students with subject specific vocabulary", "Checking and consolidating prior knowledge"],
+    "tiles": [null],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["<5 minutes"],
+      "Preparation time": ["<5 minutes"]
+    }
+  },
+  "Holup": {
+    "name": "Hold Ups",
+    "link": "",
+    "stage": ["Supporting students with subject specific vocabulary", "Checking and consolidating prior knowledge"],
+    "tiles": ["Collaborative activities"],
+    "filters": {
+      "Class size": ["Small"],
+      "Mode of delivery": ["Face-to-face"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes"]
+    }
+  },
+  "Pictionary": {
+    "name": "Pictionary",
+    "link": "",
+    "stage": ["Supporting students with subject specific vocabulary"],
+    "tiles": [null],
+    "filters": {
+      "Class size": ["Small"],
+      "Mode of delivery": ["Face-to-face"],
+      "Class time": ["5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes", "5-10 minutes"]
+    }
+  },
+  "Discuss": {
+    "name": "Discussion Questions",
+    "link": "",
+    "stage": ["?"],
+    "tiles": [null],
+    "filters": {
+      "Class size": ["?"],
+      "Mode of delivery": ["?"],
+      "Class time": ["?"],
+      "Preparation time": ["?"]
+    }
+  }
+}
