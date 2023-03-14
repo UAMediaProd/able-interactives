@@ -29,7 +29,7 @@
           class="p-2 transition font-bold min-h-[140px]"
           :class="
             englishScore >= item.threshold
-              ? 'border cursor-pointer border-2 text-white'
+              ? 'border border-2 text-white'
               : 'border-2'
           "
           :style=" englishScore >= item.threshold ? `background-color: ${item.color}; border-color: ${item.color}; color: white;` :  `background color: white; border-color: ${item.color}; color: ${item.color};`"
