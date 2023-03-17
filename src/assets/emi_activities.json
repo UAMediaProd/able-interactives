@@ -14,7 +14,7 @@
   "Quiz": {
     "name": "Quiz",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14079",
-    "stage": ["Activating prior knowledge","Supporting students with subject specific vocabulary", "Checking and consolidating prior knowledge","Summarising content"],
+    "stage": ["Activating prior knowledge","Supporting students with subject specific vocabulary", "Checking and consolidating understanding","Summarising content"],
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
@@ -74,7 +74,7 @@
   "ThinkPairShare": {
     "name": "Think, Pair, Share",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14085",
-    "stage": ["Activating prior knowledge", "Checking and consolidating prior knowledge", "Summarising content"],
+    "stage": ["Activating prior knowledge", "Checking and consolidating understanding", "Summarising content"],
     "tiles": ["Discussion based activities","Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
@@ -86,7 +86,7 @@
   "ShortVid": {
     "name": "Short Video & Task",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14086",
-    "stage": ["Activating prior knowledge", "Checking and consolidating prior knowledge"],
+    "stage": ["Activating prior knowledge", "Checking and consolidating understanding"],
     "tiles": ["Discussion based activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
@@ -98,7 +98,7 @@
   "MCQ": {
     "name": "Multiple Choice Questions (MCQs)",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14087",
-    "stage": ["Activating prior knowledge","Supporting students with subject specific vocabulary", "Checking and consolidating prior knowledge","Summarising content"],
+    "stage": ["Activating prior knowledge","Supporting students with subject specific vocabulary", "Checking and consolidating understanding","Summarising content"],
     "tiles": [null],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
@@ -158,7 +158,7 @@
   "CCQ": {
     "name": "Concept Checking Questions (CCQs)",
     "link": "",
-    "stage": ["Supporting students with subject specific vocabulary", "Checking and consolidating prior knowledge"],
+    "stage": ["Supporting students with subject specific vocabulary", "Checking and consolidating understanding"],
     "tiles": [null],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
@@ -170,7 +170,7 @@
   "Peer": {
     "name": "Peer Check",
     "link": "",
-    "stage": ["Supporting students with subject specific vocabulary", "Checking and consolidating prior knowledge"],
+    "stage": ["Supporting students with subject specific vocabulary", "Checking and consolidating understanding"],
     "tiles": [null],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
@@ -182,7 +182,7 @@
   "Holup": {
     "name": "Hold Ups",
     "link": "",
-    "stage": ["Supporting students with subject specific vocabulary", "Checking and consolidating prior knowledge"],
+    "stage": ["Supporting students with subject specific vocabulary", "Checking and consolidating understanding"],
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small"],

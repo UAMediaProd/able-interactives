@@ -1,6 +1,12 @@
 <template>
   <div :class="wrapperClass">
     <h2>EMI active learning tool</h2>
+    <div class="my-4">
+    <p class="my-4">Use this visual tool to help you determine when and how to interject English into your teaching. Move the slider along the bar to indicate how much English you want to use in your class. Suggested lesson stages for the intended percentage of English use are highlighted.</p>
+
+      <p class="my-4">You may then browse associated activities for the lesson stages shown in green in the Browse by stage section below
+    </p>
+    </div>
     <div class="flex flex-wrap justify-center items-center">
       <div
         v-for="(item, index, idx) in slider"
@@ -47,6 +53,7 @@
         </div>
       </div>
     </div>
+    <div class="mb-4">
     <input
       v-model="englishScore"
       type="range"
@@ -59,11 +66,20 @@
     <datalist id="tickMarks">
       <option v-for="n in 100" :value="n" :label="`${n}`"></option>
     </datalist>
-    <p>
+    <p  class="my-4"><strong>
       Percentage of your class taught in English:
-      <strong>{{ englishScore }}%</strong>
+      {{ englishScore }}%</strong>
     </p>
+    </div>
+
+    <p class="my-4"><small>{{englishScoreFeedback}}</small></p>
+
     <h2>Browse suggested activities</h2>
+    <div class="my-4">
+      <p class="my-4">Click on the tiles below to browse activities by category. You may browse activities by the lesson stage they are used, which reflect the lesson stages in EMI active learning tool above. You may also browse the additional resource categories to expand your teaching repertoire. </p>
+
+      <p class="my-4">Use the filter tool below to narrow your search and identify resources that are best for your context. Tiles for recommended activities will appear at the bottom of this screen. You may reset your search at any time.   </p>
+    </div>
     <h4 class="my-6">Browse by stage</h4>
     <div
     class="tileHolder flex gap-4 items-stretch justify-center items-center"
@@ -111,6 +127,7 @@
 
     </div>
     <h2>Find a suitable activity</h2>
+    <p><strong>Filter:</strong></p>
     <div id="results">
       <div class="filterCont border p-1 grid grid-cols-4 gap-5">
         <p class="m-2 mb-0" v-for="(filter, idx) in appliedFilters">
@@ -192,7 +209,7 @@ const slider = {
     }
   },
   "check":{
-    "title": "Checking and consolidating prior knowledge",
+    "title": "Checking and consolidating understanding",
     "threshold": 50,
     "link": "",
     color: "#8eccb9"
@@ -226,7 +243,7 @@ const slider = {
 const stages = [
   { name: "Activating prior knowledge", color: "border-chartreuse-light hover:bg-chartreuse-light hover:text-white", selected: "border-chartreuse-light bg-chartreuse-light text-white font-bold" },
   { name: "Supporting students with subject specific vocabulary",  color: "border-chartreuse-mid hover:bg-chartreuse-mid hover:text-white",  selected: "border-chartreuse-mid bg-chartreuse-mid text-white font-bold" },
-  { name: "Checking and consolidating prior knowledge", color: "border-chartreuse-dark border-2 hover:bg-chartreuse-dark hover:text-white",  selected: "border-chartreuse-dark bg-chartreuse-dark text-white font-bold" },
+  { name: "Checking and consolidating understanding", color: "border-chartreuse-dark border-2 hover:bg-chartreuse-dark hover:text-white",  selected: "border-chartreuse-dark bg-chartreuse-dark text-white font-bold" },
   { name: "Summarising content", color: "border-chartreuse-darkest hover:bg-chartreuse-darkest hover:text-white",  selected: " border-chartreuse-darkest bg-chartreuse-darkest text-white font-bold" }
 ]
 
@@ -262,6 +279,22 @@ let appliedFilters = ref({
 });
 
 let englishScore = ref(0);
+
+const englishScoreFeedback = computed ( () => {
+  if(englishScore.value == 10) {
+    return "Take the first step to injecting English into your lesson by delivering the lecture introduction in English. Also, support students to develop subject specific vocabulary through activities given in the Browse by stage category below. A strong understanding of related terminology in English is essential. These activities are interactive, dynamic and easy to plan in advance."
+  } else if (englishScore.value == 25) {
+    return "Increase the amount of English you are using by extending your lecture input to include part 1 of the lecture. Additionally, use English when you activate students’ prior knowledge from past study through activities given in the Browse by stage category below. Use the activities to create explicit links between prior and new learning"
+  } else if (englishScore.value == 50) {
+    return "Teach half of the lesson in English by delivering part 2 of the lecture in English. You may also check and consolidate understanding through activities given in the Browse by stage category below. Now, you can check the extent to which students have understood and can express targeted concepts in English."
+  } else if (englishScore.value == 75) {
+    return "Extend your use of English in a lesson further by also delivering part 3 of the lecture and summarising the lesson in English. Find activities to support you to summarise the content in the Browse by stage category below.  "
+  }  else if (englishScore.value == 100) {
+    return "Facilitate the entire lesson in English by additionally delivering part 4 and the conclusion of the lecture in English. Remember that you can use translanguaging at any time to offer clarity, scaffold learning and provide a meaningful learning experience."
+  } else {
+    return " "
+  }
+})
 
 let stageSelected = ref();
 let tileSelected = ref();
@@ -362,5 +395,6 @@ h2 {
   opacity: 0;
   transform: translateY(-30px);
 }
+
 
 </style>
