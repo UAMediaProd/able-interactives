@@ -11,7 +11,7 @@
       <div
         v-for="(item, index, idx) in slider"
         :key="index"
-        class="max-w-[170px] min-h-[140px] text-center flex"
+        class="max-w-[145px] min-h-[140px] text-center flex"
       >
         <div v-if="item.grouped" class="">
           <div v-for="(item, index) in item.items" :key="index">
@@ -49,7 +49,7 @@
         </div>
 
         <div v-if="idx < Object.keys(slider).length - 1">
-          <span style="line-height: 140px;" class="p-2 text-3xl font-bold">+</span>
+          <span style="line-height: 140px;" class="p-1 text-2xl font-bold">+</span>
         </div>
       </div>
     </div>
