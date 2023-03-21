@@ -121,7 +121,7 @@
   },
   "backsBoard": {
     "name": "Backs to the Board",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14144",
     "stage": ["Activating prior knowledge","Supporting students with subject specific vocabulary"],
     "tiles": ["Collaborative activities"],
     "filters": {
@@ -133,7 +133,7 @@
   },
   "LabellingTasks": {
     "name": "Labelling Tasks",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14146",
     "stage": ["Supporting students with subject specific vocabulary"],
     "tiles": ["Collaborative activities"],
     "filters": {
@@ -145,7 +145,7 @@
   },
   "Sorting": {
     "name": "Sorting Tasks",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14147",
     "stage": ["Supporting students with subject specific vocabulary"],
     "tiles": ["Collaborative activities"],
     "filters": {
@@ -157,7 +157,7 @@
   },
   "CCQ": {
     "name": "Concept Checking Questions (CCQs)",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14148",
     "stage": ["Supporting students with subject specific vocabulary", "Checking and consolidating understanding"],
     "tiles": [null],
     "filters": {
@@ -169,7 +169,7 @@
   },
   "Peer": {
     "name": "Peer Check",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14149",
     "stage": ["Supporting students with subject specific vocabulary", "Checking and consolidating understanding"],
     "tiles": [null],
     "filters": {
@@ -181,7 +181,7 @@
   },
   "Holup": {
     "name": "Hold Ups",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14150",
     "stage": ["Supporting students with subject specific vocabulary", "Checking and consolidating understanding"],
     "tiles": ["Collaborative activities"],
     "filters": {
@@ -193,7 +193,7 @@
   },
   "Pictionary": {
     "name": "Pictionary",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14151",
     "stage": ["Supporting students with subject specific vocabulary"],
     "tiles": [null],
     "filters": {
@@ -206,13 +206,157 @@
   "Discuss": {
     "name": "Discussion Questions",
     "link": "",
-    "stage": ["?"],
+    "stage": ["Checking and consolidating understanding", "Summarising content"],
+    "tiles": ["Collaborative activities","Discussion based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["5-10 minutes", "10+ minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes"]
+    }
+  },
+  "Worked": {
+    "name": "Worked Examples",
+    "link": "",
+    "stage": ["Checking and consolidating understanding"],
+    "tiles": ["Collaborative activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes","10+ minutes"]
+    }
+  },
+  "Ranking": {
+    "name": "Ranging & Ordering Tasks",
+    "link": "",
+    "stage": ["Checking and consolidating understanding"],
+    "tiles": ["Collaborative activities", "Discussion based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes"]
+    }
+  },
+  "Jigsaw": {
+    "name": "Jigsaw Reading & Listening Tasks",
+    "link": "",
+    "stage": ["Checking and consolidating understanding"],
+    "tiles": ["Collaborative activities", "Discussion based activities"],
+    "filters": {
+      "Class size": ["Small"],
+      "Mode of delivery": ["Face-to-face"],
+      "Class time": ["10+ minutes"],
+      "Preparation time": ["5-10 minutes","10+ minutes"]
+    }
+  },
+  "InformationGaps": {
+    "name": "Information Gaps",
+    "link": "",
+    "stage": ["Checking and consolidating understanding"],
+    "tiles": ["Collaborative activities"],
+    "filters": {
+      "Class size": ["Small"],
+      "Mode of delivery": ["Face-to-face"],
+      "Class time": ["5-10 minutes", "10+ minutes"],
+      "Preparation time": ["5-10 minutes","10+ minutes"]
+    }
+  },
+  "Minute": {
+    "name": "Minute Paper",
+    "link": "",
+    "stage": ["Summarising content"],
     "tiles": [null],
     "filters": {
-      "Class size": ["?"],
-      "Mode of delivery": ["?"],
-      "Class time": ["?"],
-      "Preparation time": ["?"]
+      "Class size": ["Small", "Medium"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["<5 minutes"],
+      "Preparation time": ["<5 minutes"]
+    }
+  },
+  "321": {
+    "name": "3-2-1 Summary",
+    "link": "",
+    "stage": ["Summarising content"],
+    "tiles": [null],
+    "filters": {
+      "Class size": ["Small"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["5-10 minutes"],
+      "Preparation time": ["<5 minutes"]
+    }
+  },
+  "DiceQ": {
+    "name": "Roll the Dice & Questions",
+    "link": "",
+    "stage": ["Checking and consolidating understanding","Summarising content"],
+    "tiles": ["Collaborative activities", "Discussion based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["5-10 minutes", "10+ minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes"]
+    }
+  },
+  "Dictogloss": {
+    "name": "Dictogloss",
+    "link": "",
+    "stage": ["Summarising content"],
+    "tiles": ["Collaborative activities", "Discussion based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["5-10 minutes", "10+ minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes"]
+    }
+  },
+  "DicPic": {
+    "name": "Picture Dictation",
+    "link": "",
+    "stage": ["Supporting students with subject specific vocabulary"],
+    "tiles": ["Collaborative activities"],
+    "filters": {
+      "Class size": ["Small"],
+      "Mode of delivery": ["Face-to-face"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes"]
+    }
+  },
+  "Matching": {
+    "name": "Matching Tasks",
+    "link": "",
+    "stage": ["Supporting students with subject specific vocabulary"],
+    "tiles": ["Collaborative activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes"]
+    }
+  },
+  "CaseStudies": {
+    "name": "Case Studies",
+    "link": "",
+    "stage": ["Checking and consolidating understanding", "Summarising content"],
+    "tiles": ["Collaborative activities", "Discussion based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium"],
+      "Mode of delivery": ["Both"],
+      "Class time": ["10+ minutes"],
+      "Preparation time": ["10+ minutes"]
+    }
+  },
+  "Pyramid": {
+    "name": "Pyramid Discussion",
+    "link": "",
+    "stage": ["Summarising content"],
+    "tiles": ["Collaborative activities","Discussion based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium"],
+      "Mode of delivery": ["Face-to-face"],
+      "Class time": ["10+ minutes"],
+      "Preparation time": ["5-10 minutes","10+ minutes"]
     }
   }
 }
