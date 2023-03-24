@@ -6,7 +6,7 @@
     "tiles": ["Collaborative activities", "Discussion based activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes"],
       "Preparation time": ["<5 minutes", "5-10 minutes"]
     }
@@ -18,7 +18,7 @@
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes", "5-10 minutes", "10+ minutes"]
     }
@@ -30,7 +30,7 @@
     "tiles": [null],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes"],
       "Preparation time": ["<5 minutes"]
     }
@@ -42,7 +42,7 @@
     "tiles": ["Discussion based activities","Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes"],
       "Preparation time": ["<5 minutes", "5-10 minutes"]
     }
@@ -54,7 +54,7 @@
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes"]
     }
@@ -66,7 +66,7 @@
     "tiles": ["Discussion based activities"],
     "filters": {
       "Class size": ["Small"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes", "10+ minutes"]
     }
@@ -78,7 +78,7 @@
     "tiles": ["Discussion based activities","Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes"]
     }
@@ -90,7 +90,7 @@
     "tiles": ["Discussion based activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
       "Preparation time": ["5-10 minutes", "10+ minutes"]
     }
@@ -102,7 +102,7 @@
     "tiles": [null],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["5-10 minutes"]
     }
@@ -114,7 +114,7 @@
     "tiles": [null],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"]
     }
@@ -138,7 +138,7 @@
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"]
     }
@@ -150,7 +150,7 @@
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"]
     }
@@ -162,7 +162,7 @@
     "tiles": [null],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes"],
       "Preparation time": ["<5 minutes"]
     }
@@ -174,7 +174,7 @@
     "tiles": [null],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes"],
       "Preparation time": ["<5 minutes"]
     }
@@ -210,7 +210,7 @@
     "tiles": ["Collaborative activities","Discussion based activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"]
     }
@@ -222,7 +222,7 @@
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes","10+ minutes"]
     }
@@ -234,7 +234,7 @@
     "tiles": ["Collaborative activities", "Discussion based activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"]
     }
@@ -270,7 +270,7 @@
     "tiles": [null],
     "filters": {
       "Class size": ["Small", "Medium"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes"],
       "Preparation time": ["<5 minutes"]
     }
@@ -282,7 +282,7 @@
     "tiles": [null],
     "filters": {
       "Class size": ["Small"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes"],
       "Preparation time": ["<5 minutes"]
     }
@@ -294,7 +294,7 @@
     "tiles": ["Collaborative activities", "Discussion based activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"]
     }
@@ -306,7 +306,7 @@
     "tiles": ["Collaborative activities", "Discussion based activities"],
     "filters": {
       "Class size": ["Small", "Medium"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"]
     }
@@ -330,7 +330,7 @@
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"]
     }
@@ -342,7 +342,7 @@
     "tiles": ["Collaborative activities", "Discussion based activities"],
     "filters": {
       "Class size": ["Small", "Medium"],
-      "Mode of delivery": ["Both"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["10+ minutes"],
       "Preparation time": ["10+ minutes"]
     }

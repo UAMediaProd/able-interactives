@@ -11,13 +11,13 @@
       <div
         v-for="(item, index, idx) in slider"
         :key="index"
-        class="max-w-[145px] min-h-[140px] text-center flex"
+        class="max-w-[145px] text-center flex text-sm"
       >
         <div v-if="item.grouped" class="">
           <div v-for="(item, index) in item.items" :key="index">
-            <div class="p-4 transition font-bold mt-[-2px] min-h-[73px]"   :class="
+            <div class=" transition font-bold mt-[-2px] p-1 min-h-[25px]"   :class="
             englishScore >= item.threshold
-              ? 'border cursor-pointer border-2 text-white'
+              ? 'border border-2 text-white'
               : 'border-2'
           "
                  :style=" englishScore >= item.threshold ? `background-color: ${item.color}; border-color: ${item.color}; color: white;` :  `background color: white; border-color: ${item.color}; color: ${item.color};`">
@@ -25,6 +25,7 @@
             display: inline-block;
             vertical-align: middle;
             line-height: 18px;
+
           ">{{ item.title }}</span>
             </div>
           </div>
@@ -32,24 +33,29 @@
 
 
         <div v-else
-          class="p-2 transition font-bold min-h-[140px]"
+          class="p-1 my-auto transition font-bold min-h-[94px]"
           :class="
             englishScore >= item.threshold
               ? 'border border-2 text-white'
               : 'border-2'
           "
           :style=" englishScore >= item.threshold ? `background-color: ${item.color}; border-color: ${item.color}; color: white;` :  `background color: white; border-color: ${item.color}; color: ${item.color};`"
-             style="line-height: 125px;"
+             style="display:table"
+
         >
           <span style="
-            display: inline-block;
+            display: table-cell;
             vertical-align: middle;
             line-height: 18px;
+
           ">{{ item.title }}</span>
         </div>
 
         <div v-if="idx < Object.keys(slider).length - 1">
-          <span style="line-height: 140px;" class="p-1 text-2xl font-bold">+</span>
+          <span style="line-height: 94px" class="p-1 text-2xl font-bold">+</span>
+        </div>
+        <div v-else>
+          <span style="line-height: 94px" class="p-1 text-2xl font-bold"></span>
         </div>
       </div>
     </div>
@@ -145,7 +151,6 @@
         <a :href="result.link" target="_blank" class="p-4 m-4 shadow-lg border text-center transition hover:shadow-xl hover:-translate-y-1 hover:cursor-pointer" v-for="(result,idx) in filteredResults" :key="idx">
           <h5 class="mb-4"><strong>{{result.name}}</strong></h5>
          <div class="flex flex-wrap"><p class="m-1">Class size:</p><span class="px-4 m-1 bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-medium rounded-full" v-for="classSize in result.filters['Class size']"><small>{{classSize}}</small></span></div>
-          <div class="flex flex-wrap"><p class="m-1">Mode:</p><span class="px-4 m-1 bg-blue-200 hover:bg-blue-300 text-blue-800 text-sm font-medium rounded-full" v-for="delivery in result.filters['Mode of delivery']"><small>{{delivery}}</small></span></div>
           <div class="flex flex-wrap"><p class="m-1">Class time:</p><span class="px-4 m-1 bg-green-200 hover:bg-green-300 text-green-800 text-sm font-medium rounded-full" v-for="time in result.filters['Class time']"><small>{{time}}</small></span></div>
           <div class="flex flex-wrap"><p class="m-1">Prep time:</p><span class="px-4 m-1 bg-purple-200 hover:bg-purple-300 text-purple-800 text-sm font-medium rounded-full" v-for="time in result.filters['Preparation time']"><small>{{time}}</small></span></div>
         </a>
