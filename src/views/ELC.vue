@@ -286,15 +286,15 @@ let appliedFilters = ref({
 let englishScore = ref(0);
 
 const englishScoreFeedback = computed ( () => {
-  if(englishScore.value == 10) {
+  if(englishScore.value >= 10 && englishScore.value < 25) {
     return "Take the first step to injecting English into your lesson by delivering the lecture introduction in English. Also, support students to develop subject specific vocabulary through activities given in the Browse by stage category below. A strong understanding of related terminology in English is essential. These activities are interactive, dynamic and easy to plan in advance."
-  } else if (englishScore.value == 25) {
+  } else if (englishScore.value >= 25 && englishScore.value < 50) {
     return "Increase the amount of English you are using by extending your lecture input to include part 1 of the lecture. Additionally, use English when you activate students’ prior knowledge from past study through activities given in the Browse by stage category below. Use the activities to create explicit links between prior and new learning"
-  } else if (englishScore.value == 50) {
+  } else if (englishScore.value >= 50 && englishScore.value < 75) {
     return "Teach half of the lesson in English by delivering part 2 of the lecture in English. You may also check and consolidate understanding through activities given in the Browse by stage category below. Now, you can check the extent to which students have understood and can express targeted concepts in English."
-  } else if (englishScore.value == 75) {
+  } else if (englishScore.value >= 75 && englishScore.value < 100) {
     return "Extend your use of English in a lesson further by also delivering part 3 of the lecture and summarising the lesson in English. Find activities to support you to summarise the content in the Browse by stage category below.  "
-  }  else if (englishScore.value == 100) {
+  }  else if (englishScore.value >= 100) {
     return "Facilitate the entire lesson in English by additionally delivering part 4 and the conclusion of the lecture in English. Remember that you can use translanguaging at any time to offer clarity, scaffold learning and provide a meaningful learning experience."
   } else {
     return " "
