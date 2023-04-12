@@ -27,7 +27,6 @@
     @apply text-sm
   }
 
-
   .resultBox a {
     break-inside: avoid-column;
   }

@@ -205,7 +205,7 @@
   },
   "Discuss": {
     "name": "Discussion Questions",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14195",
     "stage": ["Checking and consolidating understanding", "Summarising content"],
     "tiles": ["Collaborative activities","Discussion based activities"],
     "filters": {
@@ -217,7 +217,7 @@
   },
   "Worked": {
     "name": "Worked Examples",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14196",
     "stage": ["Checking and consolidating understanding"],
     "tiles": ["Collaborative activities"],
     "filters": {
@@ -228,8 +228,8 @@
     }
   },
   "Ranking": {
-    "name": "Ranging & Ordering Tasks",
-    "link": "",
+    "name": "Ranking & Ordering Tasks",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14197",
     "stage": ["Checking and consolidating understanding"],
     "tiles": ["Collaborative activities", "Discussion based activities"],
     "filters": {
@@ -241,7 +241,7 @@
   },
   "Jigsaw": {
     "name": "Jigsaw Reading & Listening Tasks",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14198",
     "stage": ["Checking and consolidating understanding"],
     "tiles": ["Collaborative activities", "Discussion based activities"],
     "filters": {
@@ -253,7 +253,7 @@
   },
   "InformationGaps": {
     "name": "Information Gaps",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14199",
     "stage": ["Checking and consolidating understanding"],
     "tiles": ["Collaborative activities"],
     "filters": {
@@ -265,7 +265,7 @@
   },
   "Minute": {
     "name": "Minute Paper",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14200",
     "stage": ["Summarising content"],
     "tiles": [null],
     "filters": {
@@ -277,7 +277,7 @@
   },
   "321": {
     "name": "3-2-1 Summary",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14201",
     "stage": ["Summarising content"],
     "tiles": [null],
     "filters": {
@@ -289,7 +289,7 @@
   },
   "DiceQ": {
     "name": "Roll the Dice & Questions",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14202",
     "stage": ["Checking and consolidating understanding","Summarising content"],
     "tiles": ["Collaborative activities", "Discussion based activities"],
     "filters": {
@@ -301,7 +301,7 @@
   },
   "Dictogloss": {
     "name": "Dictogloss",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14203",
     "stage": ["Summarising content"],
     "tiles": ["Collaborative activities", "Discussion based activities"],
     "filters": {
@@ -313,7 +313,7 @@
   },
   "DicPic": {
     "name": "Picture Dictation",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14204",
     "stage": ["Supporting students with subject specific vocabulary"],
     "tiles": ["Collaborative activities"],
     "filters": {
@@ -325,7 +325,7 @@
   },
   "Matching": {
     "name": "Matching Tasks",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14205",
     "stage": ["Supporting students with subject specific vocabulary"],
     "tiles": ["Collaborative activities"],
     "filters": {
@@ -337,7 +337,7 @@
   },
   "CaseStudies": {
     "name": "Case Studies",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14210",
     "stage": ["Checking and consolidating understanding", "Summarising content"],
     "tiles": ["Collaborative activities", "Discussion based activities"],
     "filters": {
@@ -349,7 +349,7 @@
   },
   "Pyramid": {
     "name": "Pyramid Discussion",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14217",
     "stage": ["Summarising content"],
     "tiles": ["Collaborative activities","Discussion based activities"],
     "filters": {
@@ -357,6 +357,246 @@
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["10+ minutes"],
       "Preparation time": ["5-10 minutes","10+ minutes"]
+    }
+  },
+  "Truths": {
+    "name": "Two Truths and a Lie",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14218",
+    "stage": ["Checking and consolidating understanding"],
+    "tiles": ["Collaborative activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes"]
+    }
+  },
+  "Flashcards": {
+    "name": "Flashcards",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14219",
+    "stage": ["Supporting students with subject specific vocabulary"],
+    "tiles": [""],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes"]
+    }
+    },
+  "ThinkPairShareSTEM": {
+    "name": "Think Pair Share for STEM",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14220",
+    "stage": ["Activating prior knowledge", "Checking and consolidating understanding", "Summarising content"],
+    "tiles": ["Active learning in STEM"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes"]
+    }
+  },
+  "OrderingSTEM": {
+    "name": "Ordering Processes in STEM",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14221",
+    "stage": ["Checking and consolidating understanding"],
+    "tiles": ["Active learning in STEM"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes"]
+    }
+  },
+"RankingSTEM": {
+    "name": "Ranking Tasks in STEM",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14222",
+    "stage": ["Checking and consolidating understanding"],
+    "tiles": ["Active learning in STEM"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes"]
+    }
+  },
+  "TruthsSTEM": {
+    "name": "Two Truths and a Lie in STEM",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14223",
+    "stage": ["Checking and consolidating understanding", "Summarising content"],
+    "tiles": ["Active learning in STEM"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes"]
+    }
+  },
+  "CCQsSTEM": {
+    "name": "Concept Checking Questions (CCQs) in STEM",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14224",
+    "stage": ["Checking and consolidating understanding", "Supporting students with subject specific vocabulary"],
+    "tiles": ["Active learning in STEM"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes"],
+      "Preparation time": ["<5 minutes"]
+    }
+  },
+  "MCQsSTEM": {
+    "name": "Multiple Choice Questions (MCQs) in STEM",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14244",
+    "stage": ["Checking and consolidating understanding", "Summarising content", "Supporting students with subject specific vocabulary", "Activating prior knowledge"],
+    "tiles": ["Active learning in STEM"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes", "5-10 minutes"]
+    }
+  },
+  "QuizSTEM": {
+    "name": "Quizzes in STEM",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14245",
+    "stage": ["Checking and consolidating understanding", "Summarising content", "Supporting students with subject specific vocabulary", "Activating prior knowledge"],
+    "tiles": ["Active learning in STEM", "Collaborative activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes", "5-10 minutes", "10+ minutes"]
+    }
+  },
+  "VidSTEM": {
+    "name": "Short Video & Task in STEM",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14246",
+    "stage": ["Checking and consolidating understanding", "Activating prior knowledge"],
+    "tiles": ["Active learning in STEM", "Discussion based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
+      "Preparation time": ["5-10 minutes", "10+ minutes"]
+    }
+  },
+  "PollsSTEM": {
+    "name": "Polls in STEM",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14247",
+    "stage": ["Activating prior knowledge", "Summarising content"],
+    "tiles": ["Active learning in STEM"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes", "5-10 minutes"]
+    }
+  },
+  "BacksSTEM": {
+    "name": "Backs to the Board in STEM",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14248",
+    "stage": ["Activating prior knowledge", "Supporting students with subject specific vocabulary"],
+    "tiles": ["Active learning in STEM"],
+    "filters": {
+      "Class size": ["Small"],
+      "Mode of delivery": ["Face-to-face"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes"]
+    }
+  },
+  "LabelsSTEM": {
+    "name": "Labelling Tasks in STEM",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14249",
+    "stage": ["Supporting students with subject specific vocabulary"],
+    "tiles": ["Active learning in STEM"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes"],
+      "Preparation time": ["<5 minutes", "5-10 minutes"]
+    }
+  },
+  "PictionarySTEM": {
+    "name": "Pictionary in STEM",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14250",
+    "stage": ["Supporting students with subject specific vocabulary"],
+    "tiles": ["Active learning in STEM"],
+    "filters": {
+      "Class size": ["Small"],
+      "Mode of delivery": ["Face-to-face"],
+      "Class time": ["5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes", "5-10 minutes"]
+    }
+  },
+  "Scaffolding": {
+    "name": "Scaffolding",
+    "link": "",
+    "stage": [""],
+    "tiles": [""],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes", "5-10 minutes", "10+ minutes"]
+    }
+  },
+  "TA": {
+    "name": "Working with Teaching Assistants",
+    "link": "",
+    "stage": [""],
+    "tiles": [""],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes", "5-10 minutes", "10+ minutes"]
+    }
+  },
+  "Questioning": {
+    "name": "Questioning",
+    "link": "",
+    "stage": [""],
+    "tiles": [""],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes", "5-10 minutes", "10+ minutes"]
+    }
+  },
+  "GivingFeedback": {
+    "name": "Giving Feedback",
+    "link": "",
+    "stage": [""],
+    "tiles": [""],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes", "5-10 minutes", "10+ minutes"]
+    }
+  },
+  "Flipped": {
+    "name": "Flipped Learning",
+    "link": "",
+    "stage": [""],
+    "tiles": [""],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes", "5-10 minutes", "10+ minutes"]
+    }
+  },
+  "TransLang": {
+    "name": "Translanguaging",
+    "link": "",
+    "stage": [""],
+    "tiles": [""],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes", "5-10 minutes", "10+ minutes"]
     }
   }
 }
