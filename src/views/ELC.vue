@@ -7,7 +7,7 @@
       <p class="my-4">You may then browse associated activities for the lesson stages shown in green in the Browse by stage section below
     </p>
     </div>
-    <div class="flex flex-wrap justify-center items-center">
+    <div class="flex justify-center items-center">
       <div
         v-for="(item, index, idx) in slider"
         :key="index"
