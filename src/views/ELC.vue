@@ -77,8 +77,7 @@
       {{ englishScore }}%</strong>
     </p>
     </div>
-
-    <p class="my-4"><small>{{englishScoreFeedback}}</small></p>
+    <div class="adx-cue" v-if="englishScoreFeedback.length > 1"><small>{{englishScoreFeedback}}</small></div>
 
     <h2>Browse suggested activities</h2>
     <div class="my-4">
@@ -88,16 +87,15 @@
     </div>
     <h4 class="my-6">Browse by stage</h4>
     <div
-    class="tileHolder flex gap-4 items-stretch justify-center items-center"
+    class="tileHolder flex gap-2 items-stretch justify-center items-center"
     >
     <div
-        class="transition px-2 max-w-[250px] text-center hover:cursor-pointer min-h-[100px] border border-2 "
+        class="transition text-sm px-2 max-w-[250px] text-center hover:cursor-pointer min-h-[60px] border border-2 "
         :class=" stageSelected === tile.name ? tile.selected : tile.color"
         v-for="(tile, index) in stages"
-        style="line-height: 100px"
+        style="line-height: 70px"
         @click="stageSelected === tile.name ? stageSelected = null : stageSelected = tile.name"
     >
-
         <span
             style="
             display: inline-block;
@@ -112,13 +110,13 @@
 
     <h4 class="my-6">Browse additional resources</h4>
     <div
-      class="tileHolder mb-4 flex flex-wrap gap-4 items-stretch justify-center items-center"
+      class="tileHolder text-sm mb-2 flex flex-wrap gap-2 items-stretch justify-center"
     >
       <div
-        class="transition px-2 text-center border border-brand-darkblue hover:bg-brand-darkblue hover:text-white hover:cursor-pointer min-h-[100px]"
+        class="transition px-2 text-center border border-brand-darkblue hover:bg-brand-darkblue hover:text-white hover:cursor-pointer min-h-[50px]"
         :class="tileSelected === tile.name ? 'bg-brand-darkblue-dark hover:bg-brand-darkblue-dark font-bold text-white' : ''"
         v-for="(tile, index) in tiles"
-        style="line-height: 100px"
+        style="line-height: 50px"
         @click="tileSelected === tile.name ? tileSelected = null : tileSelected = tile.name"
       >
         <span
@@ -126,16 +124,16 @@
             display: inline-block;
             vertical-align: middle;
             line-height: 24px;
-          "
-          >{{ tile.name }}</span
+          ">{{ tile.name }}</span
         >
+
       </div>
 
     </div>
     <h2>Find a suitable activity</h2>
     <p><strong>Filter:</strong></p>
     <div id="results">
-      <div class="filterCont border p-1 grid grid-cols-4 gap-5">
+      <div class="filterCont border p-1 grid grid-cols-4">
         <p class="m-2 mb-0" v-for="(filter, idx) in appliedFilters">
           <small>
             <strong>{{idx}}</strong>
@@ -146,13 +144,13 @@
           </small>
         </p>
       </div>
-      <h4>Recommended activities</h4>
-        <TransitionGroup class="resultBox grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4" name="list" tag="div">
-        <a :href="result.link" target="_blank" class="p-4 m-4 shadow-lg border text-center transition hover:shadow-xl hover:-translate-y-1 hover:cursor-pointer" v-for="(result,idx) in filteredResults" :key="idx">
+      <h4 id="resultsView">Recommended activities</h4>
+        <TransitionGroup  class="resultBox lg:columns-3 md:columns-2 sm:columns-1 gap-2" name="list" tag="div">
+        <a :href="result.link" target="_blank" class="w-full block p-4 mb-2 shadow-lg border text-center transition hover:shadow-xl hover:-translate-y-1 hover:cursor-pointer" v-for="(result,idx) in filteredResults" :key="idx">
           <h5 class="mb-4"><strong>{{result.name}}</strong></h5>
-         <div class="flex flex-wrap"><p class="m-1">Class size:</p><span class="px-4 m-1 bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-medium rounded-full" v-for="classSize in result.filters['Class size']"><small>{{classSize}}</small></span></div>
-          <div class="flex flex-wrap"><p class="m-1">Class time:</p><span class="px-4 m-1 bg-green-200 hover:bg-green-300 text-green-800 text-sm font-medium rounded-full" v-for="time in result.filters['Class time']"><small>{{time}}</small></span></div>
-          <div class="flex flex-wrap"><p class="m-1">Prep time:</p><span class="px-4 m-1 bg-purple-200 hover:bg-purple-300 text-purple-800 text-sm font-medium rounded-full" v-for="time in result.filters['Preparation time']"><small>{{time}}</small></span></div>
+         <div class="flex flex-wrap"><p class="m-1">Class size:</p><span class="px-2 m-1 bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-medium rounded-full" v-for="classSize in result.filters['Class size']"><small>{{classSize}}</small></span></div>
+          <div class="flex flex-wrap"><p class="m-1">Class time:</p><span class="px-2 m-1 bg-green-200 hover:bg-green-300 text-green-800 text-sm font-medium rounded-full" v-for="time in result.filters['Class time']"><small>{{time}}</small></span></div>
+          <div class="flex flex-wrap"><p class="m-1">Prep time:</p><span class="px-2 m-1 bg-purple-200 hover:bg-purple-300 text-purple-800 text-sm font-medium rounded-full" v-for="time in result.filters['Preparation time']"><small>{{time}}</small></span></div>
         </a>
         </TransitionGroup>
 
@@ -164,7 +162,7 @@
 import { ref, computed } from "vue";
 import activities from "@/assets/emi_activities.json"
 
-const wrapperClass = "adx mx-auto";
+const wrapperClass = "adx mx-auto max-w-[800px]";
 
 const slider = {
   "activate": {

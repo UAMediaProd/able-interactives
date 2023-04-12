@@ -18,4 +18,17 @@
   .input-underline-primary {
     @apply border-b border-primary-darker p-1 outline-0 w-full
   }
+
+  .resultBox p {
+    @apply text-xs text-primary-darker
+  }
+
+  .resultBox h5 {
+    @apply text-sm
+  }
+
+
+  .resultBox a {
+    break-inside: avoid-column;
+  }
 }
