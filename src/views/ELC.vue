@@ -162,7 +162,7 @@
 import { ref, computed } from "vue";
 import activities from "@/assets/emi_activities.json"
 
-const wrapperClass = "adx mx-auto max-w-[800px]";
+const wrapperClass = "adx mx-auto";
 
 const slider = {
   "activate": {
