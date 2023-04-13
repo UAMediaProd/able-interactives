@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-import {ref, computed, onMounted} from "vue";
+import {ref, computed, onMounted, onBeforeMount} from "vue";
 import {useRoute} from "vue-router";
 import activities from "@/assets/emi_activities.json"
 
@@ -34,7 +34,7 @@ import activities from "@/assets/emi_activities.json"
 6: "Active learning in STEM"
  */
 
-onMounted(() => {
+onBeforeMount(() => {
 
   //get query params
   const route = useRoute();
