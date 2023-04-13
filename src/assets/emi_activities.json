@@ -8,7 +8,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes"],
-      "Preparation time": ["<5 minutes", "5-10 minutes"]
+      "Preparation time": ["<5 minutes", "5-10 minutes"],
+      "Stage or other resource": ["Activating prior knowledge","Collaborative activities", "Discussion based activities"]
     }
   },
   "Quiz": {
@@ -20,7 +21,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
-      "Preparation time": ["<5 minutes", "5-10 minutes", "10+ minutes"]
+      "Preparation time": ["<5 minutes", "5-10 minutes", "10+ minutes"],
+      "Stage or other resource": ["Activating prior knowledge","Supporting students with subject specific vocabulary", "Checking and consolidating understanding","Summarising content","Collaborative activities"]
     }
   },
   "WordCloud": {
@@ -32,7 +34,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes"],
-      "Preparation time": ["<5 minutes"]
+      "Preparation time": ["<5 minutes"],
+      "Stage or other resource": ["Activating prior knowledge","Supporting students with subject specific vocabulary"]
     }
   },
   "ReviewQ": {
@@ -44,7 +47,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes"],
-      "Preparation time": ["<5 minutes", "5-10 minutes"]
+      "Preparation time": ["<5 minutes", "5-10 minutes"],
+      "Stage or other resource": ["Activating prior knowledge","Discussion based activities","Collaborative activities"]
     }
   },
   "Brainstorming": {
@@ -56,7 +60,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes"]
+      "Preparation time": ["<5 minutes"],
+      "Stage or other resource": ["Activating prior knowledge","Supporting students with subject specific vocabulary","Collaborative activities"]
     }
   },
   "Gallery": {
@@ -68,7 +73,8 @@
       "Class size": ["Small"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
-      "Preparation time": ["<5 minutes","5-10 minutes", "10+ minutes"]
+      "Preparation time": ["<5 minutes","5-10 minutes", "10+ minutes"],
+      "Stage or other resource": ["Activating prior knowledge","Discussion based activities"]
     }
   },
   "ThinkPairShare": {
@@ -80,7 +86,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
-      "Preparation time": ["<5 minutes"]
+      "Preparation time": ["<5 minutes"],
+      "Stage or other resource": ["Activating prior knowledge", "Checking and consolidating understanding", "Summarising content","Discussion based activities","Collaborative activities"]
     }
   },
   "ShortVid": {
@@ -92,7 +99,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
-      "Preparation time": ["5-10 minutes", "10+ minutes"]
+      "Preparation time": ["5-10 minutes", "10+ minutes"],
+      "Stage or other resource": ["Activating prior knowledge", "Checking and consolidating understanding","Discussion based activities"]
     }
   },
   "MCQ": {
@@ -104,7 +112,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["5-10 minutes"]
+      "Preparation time": ["5-10 minutes"],
+      "Stage or other resource": ["Activating prior knowledge","Supporting students with subject specific vocabulary", "Checking and consolidating understanding","Summarising content"]
     }
   },
   "Polls": {
@@ -116,7 +125,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes","5-10 minutes"]
+      "Preparation time": ["<5 minutes","5-10 minutes"],
+      "Stage or other resource": ["Activating prior knowledge","Summarising content"]
     }
   },
   "backsBoard": {
@@ -128,7 +138,8 @@
       "Class size": ["Small"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["5-10 minutes","10+ minutes"],
-      "Preparation time": ["<5 minutes"]
+      "Preparation time": ["<5 minutes"],
+      "Stage or other resource": ["Activating prior knowledge","Supporting students with subject specific vocabulary","Collaborative activities"]
     }
   },
   "LabellingTasks": {
@@ -140,7 +151,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes","5-10 minutes"]
+      "Preparation time": ["<5 minutes","5-10 minutes"],
+      "Stage or other resource": ["Supporting students with subject specific vocabulary","Collaborative activities"]
     }
   },
   "Sorting": {
@@ -152,7 +164,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes","5-10 minutes"]
+      "Preparation time": ["<5 minutes","5-10 minutes"],
+      "Stage or other resource": ["Supporting students with subject specific vocabulary","Collaborative activities"]
     }
   },
   "CCQ": {
@@ -164,7 +177,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes"],
-      "Preparation time": ["<5 minutes"]
+      "Preparation time": ["<5 minutes"],
+      "Stage or other resource": ["Supporting students with subject specific vocabulary", "Checking and consolidating understanding"]
     }
   },
   "Peer": {
@@ -176,7 +190,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes"],
-      "Preparation time": ["<5 minutes"]
+      "Preparation time": ["<5 minutes"],
+      "Stage or other resource": ["Supporting students with subject specific vocabulary", "Checking and consolidating understanding"]
     }
   },
   "Holup": {
@@ -188,7 +203,8 @@
       "Class size": ["Small"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes"]
+      "Preparation time": ["<5 minutes"],
+      "Stage or other resource": ["Supporting students with subject specific vocabulary", "Checking and consolidating understanding","Collaborative activities"]
     }
   },
   "Pictionary": {
@@ -200,7 +216,8 @@
       "Class size": ["Small"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["5-10 minutes","10+ minutes"],
-      "Preparation time": ["<5 minutes", "5-10 minutes"]
+      "Preparation time": ["<5 minutes", "5-10 minutes"],
+      "Stage or other resource": ["Supporting students with subject specific vocabulary"]
     }
   },
   "Discuss": {
@@ -212,7 +229,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
-      "Preparation time": ["<5 minutes","5-10 minutes"]
+      "Preparation time": ["<5 minutes","5-10 minutes"],
+      "Stage or other resource": ["Checking and consolidating understanding", "Summarising content","Collaborative activities","Discussion based activities"]
     }
   },
   "Worked": {
@@ -224,7 +242,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
-      "Preparation time": ["<5 minutes","5-10 minutes","10+ minutes"]
+      "Preparation time": ["<5 minutes","5-10 minutes","10+ minutes"],
+      "Stage or other resource": ["Checking and consolidating understanding","Collaborative activities"]
     }
   },
   "Ranking": {
@@ -236,7 +255,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes","5-10 minutes"]
+      "Preparation time": ["<5 minutes","5-10 minutes"],
+      "Stage or other resource": ["Checking and consolidating understanding","Collaborative activities","Discussion based activities"]
     }
   },
   "Jigsaw": {
@@ -248,7 +268,8 @@
       "Class size": ["Small"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["10+ minutes"],
-      "Preparation time": ["5-10 minutes","10+ minutes"]
+      "Preparation time": ["5-10 minutes","10+ minutes"],
+      "Stage or other resource": ["Checking and consolidating understanding","Collaborative activities","Discussion based activities"]
     }
   },
   "InformationGaps": {
@@ -260,7 +281,8 @@
       "Class size": ["Small"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["5-10 minutes", "10+ minutes"],
-      "Preparation time": ["5-10 minutes","10+ minutes"]
+      "Preparation time": ["5-10 minutes","10+ minutes"],
+      "Stage or other resource": ["Checking and consolidating understanding","Collaborative activities"]
     }
   },
   "Minute": {
@@ -272,7 +294,8 @@
       "Class size": ["Small", "Medium"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes"],
-      "Preparation time": ["<5 minutes"]
+      "Preparation time": ["<5 minutes"],
+      "Stage or other resource": ["Summarising content"]
     }
   },
   "321": {
@@ -284,7 +307,8 @@
       "Class size": ["Small"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes"],
-      "Preparation time": ["<5 minutes"]
+      "Preparation time": ["<5 minutes"],
+      "Stage or other resource": ["Summarising content"]
     }
   },
   "DiceQ": {
@@ -296,7 +320,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
-      "Preparation time": ["<5 minutes","5-10 minutes"]
+      "Preparation time": ["<5 minutes","5-10 minutes"],
+      "Stage or other resource": ["Checking and consolidating understanding","Summarising content","Collaborative activities","Discussion based activities"]
     }
   },
   "Dictogloss": {
@@ -308,7 +333,8 @@
       "Class size": ["Small", "Medium"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
-      "Preparation time": ["<5 minutes","5-10 minutes"]
+      "Preparation time": ["<5 minutes","5-10 minutes"],
+      "Stage or other resource": ["Summarising content","Collaborative activities","Discussion based activities"]
     }
   },
   "DicPic": {
@@ -320,7 +346,8 @@
       "Class size": ["Small"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes","5-10 minutes"]
+      "Preparation time": ["<5 minutes","5-10 minutes"],
+      "Stage or other resource": ["Supporting students with subject specific vocabulary","Collaborative activities"]
     }
   },
   "Matching": {
@@ -332,7 +359,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes","5-10 minutes"]
+      "Preparation time": ["<5 minutes","5-10 minutes"],
+      "Stage or other resource": ["Supporting students with subject specific vocabulary","Collaborative activities"]
     }
   },
   "CaseStudies": {
@@ -344,7 +372,8 @@
       "Class size": ["Small", "Medium"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["10+ minutes"],
-      "Preparation time": ["10+ minutes"]
+      "Preparation time": ["10+ minutes"],
+      "Stage or other resource": ["Checking and consolidating understanding","Summarising content","Collaborative activities","Discussion based activities"]
     }
   },
   "Pyramid": {
@@ -356,7 +385,8 @@
       "Class size": ["Small", "Medium"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["10+ minutes"],
-      "Preparation time": ["5-10 minutes","10+ minutes"]
+      "Preparation time": ["5-10 minutes","10+ minutes"],
+      "Stage or other resource": ["Summarising content","Collaborative activities","Discussion based activities"]
     }
   },
   "Truths": {
@@ -368,7 +398,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes"]
+      "Preparation time": ["<5 minutes"],
+      "Stage or other resource": ["Checking and consolidating understanding","Collaborative activities"]
     }
   },
   "Flashcards": {
@@ -380,7 +411,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes","5-10 minutes"]
+      "Preparation time": ["<5 minutes","5-10 minutes"],
+      "Stage or other resource": ["Supporting students with subject specific vocabulary"]
     }
     },
   "ThinkPairShareSTEM": {
@@ -392,7 +424,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
-      "Preparation time": ["<5 minutes"]
+      "Preparation time": ["<5 minutes"],
+      "Stage or other resource": ["Activating prior knowledge","Checking and consolidating understanding","Summarising content","Active learning in STEM"]
     }
   },
   "OrderingSTEM": {
@@ -404,7 +437,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes","5-10 minutes"]
+      "Preparation time": ["<5 minutes","5-10 minutes"],
+      "Stage or other resource": ["Checking and consolidating understanding","Active learning in STEM"]
     }
   },
 "RankingSTEM": {
@@ -416,7 +450,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes","5-10 minutes"]
+      "Preparation time": ["<5 minutes","5-10 minutes"],
+      "Stage or other resource": ["Checking and consolidating understanding","Active learning in STEM"]
     }
   },
   "TruthsSTEM": {
@@ -428,7 +463,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes"]
+      "Preparation time": ["<5 minutes"],
+      "Stage or other resource": ["Checking and consolidating understanding","Summarising content","Active learning in STEM"]
     }
   },
   "CCQsSTEM": {
@@ -440,7 +476,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes"],
-      "Preparation time": ["<5 minutes"]
+      "Preparation time": ["<5 minutes"],
+      "Stage or other resource": ["Checking and consolidating understanding","Supporting students with subject specific vocabulary","Active learning in STEM"]
     }
   },
   "MCQsSTEM": {
@@ -452,7 +489,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes", "5-10 minutes"]
+      "Preparation time": ["<5 minutes", "5-10 minutes"],
+      "Stage or other resource": ["Checking and consolidating understanding","Summarising content","Supporting students with subject specific vocabulary","Activating prior knowledge","Active learning in STEM"]
     }
   },
   "QuizSTEM": {
@@ -464,7 +502,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
-      "Preparation time": ["<5 minutes", "5-10 minutes", "10+ minutes"]
+      "Preparation time": ["<5 minutes", "5-10 minutes", "10+ minutes"],
+      "Stage or other resource": ["Checking and consolidating understanding","Summarising content","Supporting students with subject specific vocabulary","Activating prior knowledge","Active learning in STEM","Collaborative activities"]
     }
   },
   "VidSTEM": {
@@ -476,7 +515,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
-      "Preparation time": ["5-10 minutes", "10+ minutes"]
+      "Preparation time": ["5-10 minutes", "10+ minutes"],
+      "Stage or other resource": ["Checking and consolidating understanding","Activating prior knowledge","Active learning in STEM","Discussion based activities"]
     }
   },
   "PollsSTEM": {
@@ -488,7 +528,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes", "5-10 minutes"]
+      "Preparation time": ["<5 minutes", "5-10 minutes"],
+      "Stage or other resource": ["Activating prior knowledge","Summarising content","Active learning in STEM"]
     }
   },
   "BacksSTEM": {
@@ -500,7 +541,8 @@
       "Class size": ["Small"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes"]
+      "Preparation time": ["<5 minutes"],
+      "Stage or other resource": ["Activating prior knowledge","Supporting students with subject specific vocabulary","Active learning in STEM"]
     }
   },
   "LabelsSTEM": {
@@ -512,7 +554,8 @@
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
-      "Preparation time": ["<5 minutes", "5-10 minutes"]
+      "Preparation time": ["<5 minutes", "5-10 minutes"],
+      "Stage or other resource": ["Supporting students with subject specific vocabulary","Active learning in STEM"]
     }
   },
   "PictionarySTEM": {
@@ -524,7 +567,8 @@
       "Class size": ["Small"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["5-10 minutes","10+ minutes"],
-      "Preparation time": ["<5 minutes", "5-10 minutes"]
+      "Preparation time": ["<5 minutes", "5-10 minutes"],
+      "Stage or other resource": ["Supporting students with subject specific vocabulary","Active learning in STEM"]
     }
   }
 }

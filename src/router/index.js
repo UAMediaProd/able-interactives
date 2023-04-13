@@ -22,8 +22,12 @@ const routes = [
   {
     path: '/elc',
     name: 'ELC Active Learning Tasks',
-
-    component: () => import('../views/ELC.vue')
+    component: () => import('../views/ELC.vue'),
+  },
+  {
+    path: '/elc-landing',
+    name: 'ELC Landing Page',
+    component: () => import('../views/ELCLanding.vue')
   }
 ]
 
