@@ -132,7 +132,7 @@
     </div>
     <h2>Find a suitable activity</h2>
     <p><strong>Filter:</strong></p>
-    <div id="results">
+    <div id="results" class="overflow-y-scroll max-h-[700px] pb-8">
       <div class="filterCont border p-1 grid grid-cols-4">
         <p class="m-2 mb-0" v-for="(filter, idx) in appliedFilters">
           <small>
@@ -145,7 +145,7 @@
         </p>
       </div>
       <h4 id="resultsView">Recommended activities</h4>
-        <TransitionGroup  class="resultBox lg:columns-4 md:columns-3 sm:columns-2 gap-2" name="list" tag="div">
+        <TransitionGroup  class="resultBox lg:columns-4 md:columns-3 sm:columns-2 gap-2 overflow-scroll" name="list" tag="div">
         <a :href="result.link" target="_blank" class="w-full block p-4 mb-2 shadow-lg border text-center transition hover:shadow-xl hover:-translate-y-1 hover:cursor-pointer" v-for="(result,idx) in filteredResults" :key="idx">
           <h5 class="mb-4"><strong>{{result.name}}</strong></h5>
          <div class="flex flex-wrap"><p class="m-1">Class size:</p><span class="px-2 m-1 bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-medium rounded-full" v-for="classSize in result.filters['Class size']"><small>{{classSize}}</small></span></div>
