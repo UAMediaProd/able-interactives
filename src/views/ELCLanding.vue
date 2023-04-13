@@ -137,6 +137,7 @@ const tiles = [
   { name: "Collaborative activities", link:"https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14431" },
   { name: "Discussion based activities", link:"https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14432" },
   { name: "Giving feedback", link:"https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14257" },
+  { name: "Active learning in STEM", link:"https://canvas.catalog.adelaide.edu.au/courses/900/pages/active-learning-in-stem"}
 
 ];
 
