@@ -9,33 +9,33 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes"],
       "Preparation time": ["<5 minutes", "5-10 minutes"],
-      "Stage or other resource": ["Activating prior knowledge","Collaborative activities", "Discussion based activities"]
+      "Stage/resource": ["Activating prior knowledge","Collaborative activities", "Discussion based activities"]
     }
   },
   "Quiz": {
     "name": "Quiz",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14079",
-    "stage": ["Activating prior knowledge","Supporting students with subject specific vocabulary", "Checking and consolidating understanding","Summarising content"],
+    "stage": ["Activating prior knowledge","Supporting students with subject-specific vocabulary", "Checking and consolidating understanding","Summarising content"],
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes", "5-10 minutes", "10+ minutes"],
-      "Stage or other resource": ["Activating prior knowledge","Supporting students with subject specific vocabulary", "Checking and consolidating understanding","Summarising content","Collaborative activities"]
+      "Stage/resource": ["Activating prior knowledge","Supporting students with subject-specific vocabulary", "Checking and consolidating understanding","Summarising content","Collaborative activities"]
     }
   },
   "WordCloud": {
     "name": "Word Clouds",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14080",
-    "stage": ["Activating prior knowledge","Supporting students with subject specific vocabulary"],
+    "stage": ["Activating prior knowledge","Supporting students with subject-specific vocabulary"],
     "tiles": [null],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes"],
       "Preparation time": ["<5 minutes"],
-      "Stage or other resource": ["Activating prior knowledge","Supporting students with subject specific vocabulary"]
+      "Stage/resource": ["Activating prior knowledge","Supporting students with subject-specific vocabulary"]
     }
   },
   "ReviewQ": {
@@ -48,20 +48,20 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes"],
       "Preparation time": ["<5 minutes", "5-10 minutes"],
-      "Stage or other resource": ["Activating prior knowledge","Discussion based activities","Collaborative activities"]
+      "Stage/resource": ["Activating prior knowledge","Discussion based activities","Collaborative activities"]
     }
   },
   "Brainstorming": {
     "name": "Brainstorming",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14082",
-    "stage": ["Activating prior knowledge","Supporting students with subject specific vocabulary"],
+    "stage": ["Activating prior knowledge","Supporting students with subject-specific vocabulary"],
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes"],
-      "Stage or other resource": ["Activating prior knowledge","Supporting students with subject specific vocabulary","Collaborative activities"]
+      "Stage/resource": ["Activating prior knowledge","Supporting students with subject-specific vocabulary","Collaborative activities"]
     }
   },
   "Gallery": {
@@ -74,7 +74,7 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes", "10+ minutes"],
-      "Stage or other resource": ["Activating prior knowledge","Discussion based activities"]
+      "Stage/resource": ["Activating prior knowledge","Discussion based activities"]
     }
   },
   "ThinkPairShare": {
@@ -87,7 +87,7 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes"],
-      "Stage or other resource": ["Activating prior knowledge", "Checking and consolidating understanding", "Summarising content","Discussion based activities","Collaborative activities"]
+      "Stage/resource": ["Activating prior knowledge", "Checking and consolidating understanding", "Summarising content","Discussion based activities","Collaborative activities"]
     }
   },
   "ShortVid": {
@@ -100,20 +100,20 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
       "Preparation time": ["5-10 minutes", "10+ minutes"],
-      "Stage or other resource": ["Activating prior knowledge", "Checking and consolidating understanding","Discussion based activities"]
+      "Stage/resource": ["Activating prior knowledge", "Checking and consolidating understanding","Discussion based activities"]
     }
   },
   "MCQ": {
     "name": "Multiple Choice Questions (MCQs)",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14087",
-    "stage": ["Activating prior knowledge","Supporting students with subject specific vocabulary", "Checking and consolidating understanding","Summarising content"],
+    "stage": ["Activating prior knowledge","Supporting students with subject-specific vocabulary", "Checking and consolidating understanding","Summarising content"],
     "tiles": [null],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["5-10 minutes"],
-      "Stage or other resource": ["Activating prior knowledge","Supporting students with subject specific vocabulary", "Checking and consolidating understanding","Summarising content"]
+      "Stage/resource": ["Activating prior knowledge","Supporting students with subject-specific vocabulary", "Checking and consolidating understanding","Summarising content"]
     }
   },
   "Polls": {
@@ -126,98 +126,98 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage or other resource": ["Activating prior knowledge","Summarising content"]
+      "Stage/resource": ["Activating prior knowledge","Summarising content"]
     }
   },
   "backsBoard": {
     "name": "Backs to the Board",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14144",
-    "stage": ["Activating prior knowledge","Supporting students with subject specific vocabulary"],
+    "stage": ["Activating prior knowledge","Supporting students with subject-specific vocabulary"],
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["5-10 minutes","10+ minutes"],
       "Preparation time": ["<5 minutes"],
-      "Stage or other resource": ["Activating prior knowledge","Supporting students with subject specific vocabulary","Collaborative activities"]
+      "Stage/resource": ["Activating prior knowledge","Supporting students with subject-specific vocabulary","Collaborative activities"]
     }
   },
   "LabellingTasks": {
     "name": "Labelling Tasks",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14146",
-    "stage": ["Supporting students with subject specific vocabulary"],
+    "stage": ["Supporting students with subject-specific vocabulary"],
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage or other resource": ["Supporting students with subject specific vocabulary","Collaborative activities"]
+      "Stage/resource": ["Supporting students with subject-specific vocabulary","Collaborative activities"]
     }
   },
   "Sorting": {
     "name": "Sorting Tasks",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14147",
-    "stage": ["Supporting students with subject specific vocabulary"],
+    "stage": ["Supporting students with subject-specific vocabulary"],
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage or other resource": ["Supporting students with subject specific vocabulary","Collaborative activities"]
+      "Stage/resource": ["Supporting students with subject-specific vocabulary","Collaborative activities"]
     }
   },
   "CCQ": {
     "name": "Concept Checking Questions (CCQs)",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14148",
-    "stage": ["Supporting students with subject specific vocabulary", "Checking and consolidating understanding"],
+    "stage": ["Supporting students with subject-specific vocabulary", "Checking and consolidating understanding"],
     "tiles": [null],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes"],
       "Preparation time": ["<5 minutes"],
-      "Stage or other resource": ["Supporting students with subject specific vocabulary", "Checking and consolidating understanding"]
+      "Stage/resource": ["Supporting students with subject-specific vocabulary", "Checking and consolidating understanding"]
     }
   },
   "Peer": {
     "name": "Peer Check",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14149",
-    "stage": ["Supporting students with subject specific vocabulary", "Checking and consolidating understanding"],
+    "stage": ["Supporting students with subject-specific vocabulary", "Checking and consolidating understanding"],
     "tiles": [null],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes"],
       "Preparation time": ["<5 minutes"],
-      "Stage or other resource": ["Supporting students with subject specific vocabulary", "Checking and consolidating understanding"]
+      "Stage/resource": ["Supporting students with subject-specific vocabulary", "Checking and consolidating understanding"]
     }
   },
   "Holup": {
     "name": "Hold Ups",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14150",
-    "stage": ["Supporting students with subject specific vocabulary", "Checking and consolidating understanding"],
+    "stage": ["Supporting students with subject-specific vocabulary", "Checking and consolidating understanding"],
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes"],
-      "Stage or other resource": ["Supporting students with subject specific vocabulary", "Checking and consolidating understanding","Collaborative activities"]
+      "Stage/resource": ["Supporting students with subject-specific vocabulary", "Checking and consolidating understanding","Collaborative activities"]
     }
   },
   "Pictionary": {
     "name": "Pictionary",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14151",
-    "stage": ["Supporting students with subject specific vocabulary"],
+    "stage": ["Supporting students with subject-specific vocabulary"],
     "tiles": [null],
     "filters": {
       "Class size": ["Small"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["5-10 minutes","10+ minutes"],
       "Preparation time": ["<5 minutes", "5-10 minutes"],
-      "Stage or other resource": ["Supporting students with subject specific vocabulary"]
+      "Stage/resource": ["Supporting students with subject-specific vocabulary"]
     }
   },
   "Discuss": {
@@ -230,7 +230,7 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage or other resource": ["Checking and consolidating understanding", "Summarising content","Collaborative activities","Discussion based activities"]
+      "Stage/resource": ["Checking and consolidating understanding", "Summarising content","Collaborative activities","Discussion based activities"]
     }
   },
   "Worked": {
@@ -243,7 +243,7 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes","10+ minutes"],
-      "Stage or other resource": ["Checking and consolidating understanding","Collaborative activities"]
+      "Stage/resource": ["Checking and consolidating understanding","Collaborative activities"]
     }
   },
   "Ranking": {
@@ -256,7 +256,7 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage or other resource": ["Checking and consolidating understanding","Collaborative activities","Discussion based activities"]
+      "Stage/resource": ["Checking and consolidating understanding","Collaborative activities","Discussion based activities"]
     }
   },
   "Jigsaw": {
@@ -269,7 +269,7 @@
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["10+ minutes"],
       "Preparation time": ["5-10 minutes","10+ minutes"],
-      "Stage or other resource": ["Checking and consolidating understanding","Collaborative activities","Discussion based activities"]
+      "Stage/resource": ["Checking and consolidating understanding","Collaborative activities","Discussion based activities"]
     }
   },
   "InformationGaps": {
@@ -282,7 +282,7 @@
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["5-10 minutes", "10+ minutes"],
       "Preparation time": ["5-10 minutes","10+ minutes"],
-      "Stage or other resource": ["Checking and consolidating understanding","Collaborative activities"]
+      "Stage/resource": ["Checking and consolidating understanding","Collaborative activities"]
     }
   },
   "Minute": {
@@ -295,7 +295,7 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes"],
       "Preparation time": ["<5 minutes"],
-      "Stage or other resource": ["Summarising content"]
+      "Stage/resource": ["Summarising content"]
     }
   },
   "321": {
@@ -308,7 +308,7 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes"],
       "Preparation time": ["<5 minutes"],
-      "Stage or other resource": ["Summarising content"]
+      "Stage/resource": ["Summarising content"]
     }
   },
   "DiceQ": {
@@ -321,7 +321,7 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage or other resource": ["Checking and consolidating understanding","Summarising content","Collaborative activities","Discussion based activities"]
+      "Stage/resource": ["Checking and consolidating understanding","Summarising content","Collaborative activities","Discussion based activities"]
     }
   },
   "Dictogloss": {
@@ -334,33 +334,33 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage or other resource": ["Summarising content","Collaborative activities","Discussion based activities"]
+      "Stage/resource": ["Summarising content","Collaborative activities","Discussion based activities"]
     }
   },
   "DicPic": {
     "name": "Picture Dictation",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14204",
-    "stage": ["Supporting students with subject specific vocabulary"],
+    "stage": ["Supporting students with subject-specific vocabulary"],
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage or other resource": ["Supporting students with subject specific vocabulary","Collaborative activities"]
+      "Stage/resource": ["Supporting students with subject-specific vocabulary","Collaborative activities"]
     }
   },
   "Matching": {
     "name": "Matching Tasks",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14205",
-    "stage": ["Supporting students with subject specific vocabulary"],
+    "stage": ["Supporting students with subject-specific vocabulary"],
     "tiles": ["Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage or other resource": ["Supporting students with subject specific vocabulary","Collaborative activities"]
+      "Stage/resource": ["Supporting students with subject-specific vocabulary","Collaborative activities"]
     }
   },
   "CaseStudies": {
@@ -373,7 +373,7 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["10+ minutes"],
       "Preparation time": ["10+ minutes"],
-      "Stage or other resource": ["Checking and consolidating understanding","Summarising content","Collaborative activities","Discussion based activities"]
+      "Stage/resource": ["Checking and consolidating understanding","Summarising content","Collaborative activities","Discussion based activities"]
     }
   },
   "Pyramid": {
@@ -386,7 +386,7 @@
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["10+ minutes"],
       "Preparation time": ["5-10 minutes","10+ minutes"],
-      "Stage or other resource": ["Summarising content","Collaborative activities","Discussion based activities"]
+      "Stage/resource": ["Summarising content","Collaborative activities","Discussion based activities"]
     }
   },
   "Truths": {
@@ -399,20 +399,20 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes"],
-      "Stage or other resource": ["Checking and consolidating understanding","Collaborative activities"]
+      "Stage/resource": ["Checking and consolidating understanding","Collaborative activities"]
     }
   },
   "Flashcards": {
     "name": "Flashcards",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14219",
-    "stage": ["Supporting students with subject specific vocabulary"],
+    "stage": ["Supporting students with subject-specific vocabulary"],
     "tiles": [""],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage or other resource": ["Supporting students with subject specific vocabulary"]
+      "Stage/resource": ["Supporting students with subject-specific vocabulary"]
     }
     },
   "ThinkPairShareSTEM": {
@@ -425,7 +425,7 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
       "Preparation time": ["<5 minutes"],
-      "Stage or other resource": ["Activating prior knowledge","Checking and consolidating understanding","Summarising content","Active learning in STEM"]
+      "Stage/resource": ["Activating prior knowledge","Checking and consolidating understanding","Summarising content","Active learning in STEM"]
     }
   },
   "OrderingSTEM": {
@@ -438,7 +438,7 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage or other resource": ["Checking and consolidating understanding","Active learning in STEM"]
+      "Stage/resource": ["Checking and consolidating understanding","Active learning in STEM"]
     }
   },
 "RankingSTEM": {
@@ -451,7 +451,7 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage or other resource": ["Checking and consolidating understanding","Active learning in STEM"]
+      "Stage/resource": ["Checking and consolidating understanding","Active learning in STEM"]
     }
   },
   "TruthsSTEM": {
@@ -464,46 +464,46 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes"],
-      "Stage or other resource": ["Checking and consolidating understanding","Summarising content","Active learning in STEM"]
+      "Stage/resource": ["Checking and consolidating understanding","Summarising content","Active learning in STEM"]
     }
   },
   "CCQsSTEM": {
     "name": "Concept Checking Questions (CCQs) in STEM",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14224",
-    "stage": ["Checking and consolidating understanding", "Supporting students with subject specific vocabulary"],
+    "stage": ["Checking and consolidating understanding", "Supporting students with subject-specific vocabulary"],
     "tiles": ["Active learning in STEM"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes"],
       "Preparation time": ["<5 minutes"],
-      "Stage or other resource": ["Checking and consolidating understanding","Supporting students with subject specific vocabulary","Active learning in STEM"]
+      "Stage/resource": ["Checking and consolidating understanding","Supporting students with subject-specific vocabulary","Active learning in STEM"]
     }
   },
   "MCQsSTEM": {
     "name": "Multiple Choice Questions (MCQs) in STEM",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14244",
-    "stage": ["Checking and consolidating understanding", "Summarising content", "Supporting students with subject specific vocabulary", "Activating prior knowledge"],
+    "stage": ["Checking and consolidating understanding", "Summarising content", "Supporting students with subject-specific vocabulary", "Activating prior knowledge"],
     "tiles": ["Active learning in STEM"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes", "5-10 minutes"],
-      "Stage or other resource": ["Checking and consolidating understanding","Summarising content","Supporting students with subject specific vocabulary","Activating prior knowledge","Active learning in STEM"]
+      "Stage/resource": ["Checking and consolidating understanding","Summarising content","Supporting students with subject-specific vocabulary","Activating prior knowledge","Active learning in STEM"]
     }
   },
   "QuizSTEM": {
     "name": "Quizzes in STEM",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14245",
-    "stage": ["Checking and consolidating understanding", "Summarising content", "Supporting students with subject specific vocabulary", "Activating prior knowledge"],
+    "stage": ["Checking and consolidating understanding", "Summarising content", "Supporting students with subject-specific vocabulary", "Activating prior knowledge"],
     "tiles": ["Active learning in STEM", "Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
       "Preparation time": ["<5 minutes", "5-10 minutes", "10+ minutes"],
-      "Stage or other resource": ["Checking and consolidating understanding","Summarising content","Supporting students with subject specific vocabulary","Activating prior knowledge","Active learning in STEM","Collaborative activities"]
+      "Stage/resource": ["Checking and consolidating understanding","Summarising content","Supporting students with subject-specific vocabulary","Activating prior knowledge","Active learning in STEM","Collaborative activities"]
     }
   },
   "VidSTEM": {
@@ -516,7 +516,7 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
       "Preparation time": ["5-10 minutes", "10+ minutes"],
-      "Stage or other resource": ["Checking and consolidating understanding","Activating prior knowledge","Active learning in STEM","Discussion based activities"]
+      "Stage/resource": ["Checking and consolidating understanding","Activating prior knowledge","Active learning in STEM","Discussion based activities"]
     }
   },
   "PollsSTEM": {
@@ -529,46 +529,46 @@
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes", "5-10 minutes"],
-      "Stage or other resource": ["Activating prior knowledge","Summarising content","Active learning in STEM"]
+      "Stage/resource": ["Activating prior knowledge","Summarising content","Active learning in STEM"]
     }
   },
   "BacksSTEM": {
     "name": "Backs to the Board in STEM",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14248",
-    "stage": ["Activating prior knowledge", "Supporting students with subject specific vocabulary"],
+    "stage": ["Activating prior knowledge", "Supporting students with subject-specific vocabulary"],
     "tiles": ["Active learning in STEM"],
     "filters": {
       "Class size": ["Small"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes"],
-      "Stage or other resource": ["Activating prior knowledge","Supporting students with subject specific vocabulary","Active learning in STEM"]
+      "Stage/resource": ["Activating prior knowledge","Supporting students with subject-specific vocabulary","Active learning in STEM"]
     }
   },
   "LabelsSTEM": {
     "name": "Labelling Tasks in STEM",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14249",
-    "stage": ["Supporting students with subject specific vocabulary"],
+    "stage": ["Supporting students with subject-specific vocabulary"],
     "tiles": ["Active learning in STEM"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes", "5-10 minutes"],
-      "Stage or other resource": ["Supporting students with subject specific vocabulary","Active learning in STEM"]
+      "Stage/resource": ["Supporting students with subject-specific vocabulary","Active learning in STEM"]
     }
   },
   "PictionarySTEM": {
     "name": "Pictionary in STEM",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14250",
-    "stage": ["Supporting students with subject specific vocabulary"],
+    "stage": ["Supporting students with subject-specific vocabulary"],
     "tiles": ["Active learning in STEM"],
     "filters": {
       "Class size": ["Small"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["5-10 minutes","10+ minutes"],
       "Preparation time": ["<5 minutes", "5-10 minutes"],
-      "Stage or other resource": ["Supporting students with subject specific vocabulary","Active learning in STEM"]
+      "Stage/resource": ["Supporting students with subject-specific vocabulary","Active learning in STEM"]
     }
   }
 }
