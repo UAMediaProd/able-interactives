@@ -118,7 +118,7 @@
   },
   "Polls": {
     "name": "Polls",
-    "link": "",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/polls",
     "stage": ["Activating prior knowledge","Summarising content"],
     "tiles": [null],
     "filters": {

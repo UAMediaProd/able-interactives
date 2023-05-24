@@ -313,8 +313,6 @@ const englishScoreFeedback = computed ( () => {
   }
 })
 
-
-
 let filteredResults = computed(() => {
 
     return Object.values(activities).filter(activity => {
