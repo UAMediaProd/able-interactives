@@ -3,13 +3,13 @@
     "name": "Prediction",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14078",
     "stage": ["Activating prior knowledge"],
-    "tiles": ["Collaborative activities", "Discussion based activities"],
+    "tiles": ["Collaborative activities", "Discussion-based activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes"],
       "Preparation time": ["<5 minutes", "5-10 minutes"],
-      "Stage/resource": ["Activating prior knowledge","Collaborative activities", "Discussion based activities"]
+      "Stage/resource": ["Activating prior knowledge","Collaborative activities", "Discussion-based activities"]
     }
   },
   "Quiz": {
@@ -42,13 +42,13 @@
     "name": "Review Questions",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14081",
     "stage": ["Activating prior knowledge"],
-    "tiles": ["Discussion based activities","Collaborative activities"],
+    "tiles": ["Discussion-based activities","Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes"],
       "Preparation time": ["<5 minutes", "5-10 minutes"],
-      "Stage/resource": ["Activating prior knowledge","Discussion based activities","Collaborative activities"]
+      "Stage/resource": ["Activating prior knowledge","Discussion-based activities","Collaborative activities"]
     }
   },
   "Brainstorming": {
@@ -68,39 +68,39 @@
     "name": "Gallery",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14083",
     "stage": ["Activating prior knowledge"],
-    "tiles": ["Discussion based activities"],
+    "tiles": ["Discussion-based activities"],
     "filters": {
       "Class size": ["Small"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes", "10+ minutes"],
-      "Stage/resource": ["Activating prior knowledge","Discussion based activities"]
+      "Stage/resource": ["Activating prior knowledge","Discussion-based activities"]
     }
   },
   "ThinkPairShare": {
     "name": "Think, Pair, Share",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14085",
     "stage": ["Activating prior knowledge", "Checking and consolidating understanding", "Summarising content"],
-    "tiles": ["Discussion based activities","Collaborative activities"],
+    "tiles": ["Discussion-based activities","Collaborative activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes"],
-      "Stage/resource": ["Activating prior knowledge", "Checking and consolidating understanding", "Summarising content","Discussion based activities","Collaborative activities"]
+      "Stage/resource": ["Activating prior knowledge", "Checking and consolidating understanding", "Summarising content","Discussion-based activities","Collaborative activities"]
     }
   },
   "ShortVid": {
     "name": "Short Video & Task",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14086",
     "stage": ["Activating prior knowledge", "Checking and consolidating understanding"],
-    "tiles": ["Discussion based activities"],
+    "tiles": ["Discussion-based activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes", "10+ minutes"],
       "Preparation time": ["5-10 minutes", "10+ minutes"],
-      "Stage/resource": ["Activating prior knowledge", "Checking and consolidating understanding","Discussion based activities"]
+      "Stage/resource": ["Activating prior knowledge", "Checking and consolidating understanding","Discussion-based activities"]
     }
   },
   "MCQ": {
@@ -224,13 +224,13 @@
     "name": "Discussion Questions",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14195",
     "stage": ["Checking and consolidating understanding", "Summarising content"],
-    "tiles": ["Collaborative activities","Discussion based activities"],
+    "tiles": ["Collaborative activities","Discussion-based activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage/resource": ["Checking and consolidating understanding", "Summarising content","Collaborative activities","Discussion based activities"]
+      "Stage/resource": ["Checking and consolidating understanding", "Summarising content","Collaborative activities","Discussion-based activities"]
     }
   },
   "Worked": {
@@ -250,26 +250,26 @@
     "name": "Ranking & Ordering Tasks",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14197",
     "stage": ["Checking and consolidating understanding"],
-    "tiles": ["Collaborative activities", "Discussion based activities"],
+    "tiles": ["Collaborative activities", "Discussion-based activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage/resource": ["Checking and consolidating understanding","Collaborative activities","Discussion based activities"]
+      "Stage/resource": ["Checking and consolidating understanding","Collaborative activities","Discussion-based activities"]
     }
   },
   "Jigsaw": {
     "name": "Jigsaw Reading & Listening Tasks",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14198",
     "stage": ["Checking and consolidating understanding"],
-    "tiles": ["Collaborative activities", "Discussion based activities"],
+    "tiles": ["Collaborative activities", "Discussion-based activities"],
     "filters": {
       "Class size": ["Small"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["10+ minutes"],
       "Preparation time": ["5-10 minutes","10+ minutes"],
-      "Stage/resource": ["Checking and consolidating understanding","Collaborative activities","Discussion based activities"]
+      "Stage/resource": ["Checking and consolidating understanding","Collaborative activities","Discussion-based activities"]
     }
   },
   "InformationGaps": {
@@ -315,26 +315,26 @@
     "name": "Roll the Dice & Questions",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14202",
     "stage": ["Checking and consolidating understanding","Summarising content"],
-    "tiles": ["Collaborative activities", "Discussion based activities"],
+    "tiles": ["Collaborative activities", "Discussion-based activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage/resource": ["Checking and consolidating understanding","Summarising content","Collaborative activities","Discussion based activities"]
+      "Stage/resource": ["Checking and consolidating understanding","Summarising content","Collaborative activities","Discussion-based activities"]
     }
   },
   "Dictogloss": {
     "name": "Dictogloss",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14203",
     "stage": ["Summarising content"],
-    "tiles": ["Collaborative activities", "Discussion based activities"],
+    "tiles": ["Collaborative activities", "Discussion-based activities"],
     "filters": {
       "Class size": ["Small", "Medium"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["5-10 minutes", "10+ minutes"],
       "Preparation time": ["<5 minutes","5-10 minutes"],
-      "Stage/resource": ["Summarising content","Collaborative activities","Discussion based activities"]
+      "Stage/resource": ["Summarising content","Collaborative activities","Discussion-based activities"]
     }
   },
   "DicPic": {
@@ -367,26 +367,26 @@
     "name": "Case Studies",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14210",
     "stage": ["Checking and consolidating understanding", "Summarising content"],
-    "tiles": ["Collaborative activities", "Discussion based activities"],
+    "tiles": ["Collaborative activities", "Discussion-based activities"],
     "filters": {
       "Class size": ["Small", "Medium"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["10+ minutes"],
       "Preparation time": ["10+ minutes"],
-      "Stage/resource": ["Checking and consolidating understanding","Summarising content","Collaborative activities","Discussion based activities"]
+      "Stage/resource": ["Checking and consolidating understanding","Summarising content","Collaborative activities","Discussion-based activities"]
     }
   },
   "Pyramid": {
     "name": "Pyramid Discussion",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14217",
     "stage": ["Summarising content"],
-    "tiles": ["Collaborative activities","Discussion based activities"],
+    "tiles": ["Collaborative activities","Discussion-based activities"],
     "filters": {
       "Class size": ["Small", "Medium"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["10+ minutes"],
       "Preparation time": ["5-10 minutes","10+ minutes"],
-      "Stage/resource": ["Summarising content","Collaborative activities","Discussion based activities"]
+      "Stage/resource": ["Summarising content","Collaborative activities","Discussion-based activities"]
     }
   },
   "Truths": {
@@ -510,13 +510,13 @@
     "name": "Short Video & Task in STEM",
     "link": "https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14246",
     "stage": ["Checking and consolidating understanding", "Activating prior knowledge"],
-    "tiles": ["Active learning in STEM", "Discussion based activities"],
+    "tiles": ["Active learning in STEM", "Discussion-based activities"],
     "filters": {
       "Class size": ["Small", "Medium", "Large"],
       "Mode of delivery": ["Both","Face-to-face","Online"],
       "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
       "Preparation time": ["5-10 minutes", "10+ minutes"],
-      "Stage/resource": ["Checking and consolidating understanding","Activating prior knowledge","Active learning in STEM","Discussion based activities"]
+      "Stage/resource": ["Checking and consolidating understanding","Activating prior knowledge","Active learning in STEM","Discussion-based activities"]
     }
   },
   "PollsSTEM": {

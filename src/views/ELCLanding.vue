@@ -135,14 +135,14 @@ const tiles = [
   { name: "Translanguaging", link:"https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14260" },
   { name: "Questioning", link:"https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14253" },
   { name: "Collaborative activities", link:"https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14431" },
-  { name: "Discussion based activities", link:"https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14432" },
+  { name: "Discussion-based activities", link:"https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14432" },
   { name: "Giving feedback", link:"https://canvas.catalog.adelaide.edu.au/courses/900/modules/items/14257" },
   { name: "Active learning in STEM", link:"https://canvas.catalog.adelaide.edu.au/courses/900/pages/active-learning-in-stem"}
 ];
 
 let appliedFilters = ref({
   "Stage/resource": {
-    "labels": ["Activating prior knowledge","Supporting students with subject-specific vocabulary", "Checking and consolidating understanding", "Summarising content", "Collaborative activities", "Discussion based activities", "Active learning in STEM"],
+    "labels": ["Activating prior knowledge","Supporting students with subject-specific vocabulary", "Checking and consolidating understanding", "Summarising content", "Collaborative activities", "Discussion-based activities", "Active learning in STEM"],
     "selected": null
   },
   "Class size": {
