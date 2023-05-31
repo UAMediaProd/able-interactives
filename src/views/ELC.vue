@@ -81,7 +81,7 @@
 
     <h2>Browse suggested activities</h2>
     <div class="my-4">
-      <p class="my-4">Click on the tiles below to browse activities by category. You may browse activities by the lesson stage they are used, which reflect the lesson stages in EMI active learning tool above. You may also browse the additional resource categories to expand your teaching repertoire. </p>
+      <p class="my-4">Click on the tiles below to browse activities by category. You may browse activities by lesson stages, as in the EMI active learning tool above. You may also browse the additional resource categories to expand your teaching repertoire. </p>
 
       <p class="my-4">Use the filter tool below to narrow your search and identify resources that are best for your context. Tiles for recommended activities will appear at the bottom of this screen. You may reset your search at any time.   </p>
     </div>
