@@ -28,6 +28,11 @@ const routes = [
     path: '/elc-landing',
     name: 'ELC Landing Page',
     component: () => import('../views/ELCLanding.vue')
+  },
+  {
+    path: '/roadmap',
+    name: 'APP Course Roadmap',
+    component: () => import('../views/CourseRoadmap.vue')
   }
 ]
 
