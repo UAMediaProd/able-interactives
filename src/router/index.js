@@ -32,6 +32,11 @@ const routes = [
   {
     path: '/roadmap',
     name: 'APP Course Roadmap',
+    component: () => import('../views/CourseRoadmap.vue')
+  },
+  {
+    path: '/roadmapDraft',
+    name: 'APP Course Roadmap Draft',
     component: () => import('../views/CourseRoadmapDraft.vue')
   }
 ]
