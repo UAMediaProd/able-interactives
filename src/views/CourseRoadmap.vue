@@ -1,7 +1,7 @@
 <template>
   <div :class="wrapperClass">
     <div class="flex flex-wrap justify-center">
-      <div class="m-2 min-w-[240px] rounded-lg" v-for="(phase, key) in phases" :style="'border: 3px solid ' + phase.color[1]">
+      <div class="m-2 w-[250px] rounded-lg" v-for="(phase, key) in phases" :style="'border: 3px solid ' + phase.color[1]">
 
         <div class="phaseHead" :style="'background-color: ' + phase.color[0] +'; border-bottom: 3px solid ' + phase.color[1] + ';'">
           <h2 class="deloitteHead"><strong>Phase {{key+1}}</strong></h2>
@@ -9,9 +9,9 @@
 
         <h3 class="deloitteHead"><strong>{{ phase.title }}</strong></h3>
 
-        <ul class="py-2 px-2">
+        <ul class="my-2 mx-2">
           <li v-for="lesson in phase.lessons">
-            <button @click="showLinks(lesson, phase)" @mouseenter="getRelatedLessons(lesson.id)" @mouseleave="allRelatedLessons = []" :class="allRelatedLessons.includes(lesson.id) ? phase.title+'linked' : phase.title+'butt'" class="w-full rounded px-1 pb-2 pt-2.5 font-medium text-base btn-roadmap">
+            <button @click="showLinks(lesson, phase)" @mouseenter="getRelatedLessons(lesson.id)" @mouseleave="allRelatedLessons = []" :class="allRelatedLessons.includes(lesson.id) ? phase.title+'linked' : phase.title+'butt'" class="w-full rounded px-1 pb-2 pt-2.5 font-medium text-[15px] btn-roadmap">
               {{ lesson.title }}
             </button>
           </li>
