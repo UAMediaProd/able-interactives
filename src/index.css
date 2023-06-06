@@ -6,6 +6,15 @@
   .btn-primary {
     @apply  my-auto rounded py-2 px-4 border-2 border-primary-darker text-sm font-semibold text-primary-darker bg-primary-dark-lightest hover:text-white hover:bg-primary-darker disabled:opacity-40 disabled:hover:text-primary-darker disabled:bg-primary-dark-lightest;
   }
+  .btn-danger {
+    @apply border-2 border-secondary rounded py-2 px-4 my-auto text-secondary font-semibold hover:bg-secondary hover:text-white disabled:opacity-50 disabled:hover:bg-white disabled:hover:text-secondary;
+  }
+
+  .btn-roadmap {
+    @apply  my-auto rounded py-2 px-4 border-2 border-primary-darker text-sm font-semibold text-primary-darker bg-white disabled:opacity-40 disabled:bg-primary-dark-lightest hover:border-[3px] hover:my-[-1px];
+  }
+
+
 
   .btn-pill-solid-primary {
     @apply rounded-full py-0.5 px-4 my-auto text-white text-sm font-semibold bg-primary hover:bg-primary-dark disabled:opacity-50 disabled:hover:bg-primary
@@ -13,6 +22,9 @@
 
   .btn-pill-outline-danger {
     @apply rounded-full py-0.5 px-4 my-auto text-secondary text-sm font-semibold border-2 border-secondary bg-white hover:bg-secondary hover:text-white
+  }
+  .btn-text-danger {
+    @apply py-2 px-4 my-auto border-0 text-secondary bg-transparent font-semibold hover:underline hover:text-secondary-dark;
   }
 
   .input-underline-primary {
@@ -29,5 +41,8 @@
 
   .resultBox a {
     break-inside: avoid-column;
+  }
+  .modal {
+    @apply m-4 py-4 px-8 bg-white rounded min-w-[200px] max-w-[800px];
   }
 }
