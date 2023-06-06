@@ -1,7 +1,7 @@
 <template>
   <div :class="wrapperClass">
     <div class="flex flex-wrap justify-center">
-      <div class="m-2 min-w-[263px] rounded-lg" v-for="(phase, key) in phases" :style="'border: 3px solid ' + phase.color[1]">
+      <div class="m-2 min-w-[240px] rounded-lg" v-for="(phase, key) in phases" :style="'border: 3px solid ' + phase.color[1]">
 
         <div class="phaseHead" :style="'background-color: ' + phase.color[0] +'; border-bottom: 3px solid ' + phase.color[1] + ';'">
           <h2 class="deloitteHead"><strong>Phase {{key+1}}</strong></h2>
@@ -157,7 +157,7 @@ h3.deloitteHead {
 <script setup>
 import {ref} from 'vue'
 
-const wrapperClass = "adx mx-auto max-w-[1100px]"
+const wrapperClass = "adx mx-auto max-w-[802px]"
 let allRelatedLessons = ref([])
 let selected = ref()
 let showModal = ref(false)
