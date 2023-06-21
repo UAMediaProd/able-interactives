@@ -212,8 +212,8 @@ const phases = [
       {
         id: "2-4",
         title: "Individual Research Report",
-        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081168",
-        relatedLessons: ["3-5", "5-4","6-3"],
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3111073",
+        relatedLessons: ["3-5", "4-5"],
       }
     ]
   },
@@ -248,8 +248,8 @@ const phases = [
       {
         id: "3-5",
         title: "Preparing for Group Report",
-        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3108991",
-        relatedLessons: ["2-4", "5-4","6-3"],
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3111075",
+        relatedLessons: ["2-4", "4-5"],
       }
     ]
   },
@@ -283,9 +283,9 @@ const phases = [
       },
       {
         id: "4-5",
-        title: "Preparing to reflect",
-        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3108992",
-        relatedLessons: [],
+        title: "Preparing for Reflective Journal",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3111076",
+        relatedLessons: ["2-4", "3-5"],
       }
     ]
   },
@@ -315,7 +315,7 @@ const phases = [
         id: "5-4",
         title: "Group Report",
         link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3108993",
-        relatedLessons: ["2-4", "3-5", "6-3"],
+        relatedLessons: [],
       }
     ]
   },
@@ -339,7 +339,7 @@ const phases = [
         id: "6-3",
         title: "Reflective Journal",
         link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081202",
-        relatedLessons: ["2-4", "3-5", "5-4"],
+        relatedLessons: [],
       }
     ]
   },
