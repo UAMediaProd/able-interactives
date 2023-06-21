@@ -8,7 +8,7 @@
         <h3 class="deloitteHead"><strong>{{ phase.title }}</strong></h3>
         <ul class="my-2 mx-2">
           <li v-for="lesson in phase.lessons">
-            <a :href="lesson.link" @mouseenter="getRelatedLessons(lesson.id)" @mouseleave="allRelatedLessons = []" :class="allRelatedLessons.includes(lesson.id) ? phase.title+'linked' : phase.title+'butt'" class="w-full rounded px-1 pb-2 pt-2.5 font-medium text-[15px] btn-roadmap block text-center">
+            <a target="_blank" :href="lesson.link" @mouseenter="getRelatedLessons(lesson.id)" @mouseleave="allRelatedLessons = []" :class="allRelatedLessons.includes(lesson.id) ? phase.title+'linked' : phase.title+'butt'" class="w-full rounded px-1 pb-2 pt-2.5 font-medium text-[15px] btn-roadmap block text-center">
                 {{ lesson.title }}
             </a>
           </li>
