@@ -13,9 +13,7 @@
   .btn-roadmap {
     @apply  my-auto rounded py-2 px-4 border-2 border-primary-darker text-sm font-semibold text-primary-darker bg-white disabled:opacity-40 disabled:bg-primary-dark-lightest hover:border-[3px] hover:my-[-1px];
   }
-
-
-
+  
   .btn-pill-solid-primary {
     @apply rounded-full py-0.5 px-4 my-auto text-white text-sm font-semibold bg-primary hover:bg-primary-dark disabled:opacity-50 disabled:hover:bg-primary
   }

@@ -2,43 +2,38 @@
   <div :class="wrapperClass">
     <div class="flex flex-wrap justify-center">
       <div class="m-2 w-[250px] rounded-lg" v-for="(phase, key) in phases" :style="'border: 3px solid ' + phase.color[1]">
-
         <div class="phaseHead" :style="'background-color: ' + phase.color[0] +'; border-bottom: 3px solid ' + phase.color[1] + ';'">
           <h2 class="deloitteHead"><strong>Phase {{key+1}}</strong></h2>
         </div>
-
         <h3 class="deloitteHead"><strong>{{ phase.title }}</strong></h3>
-
         <ul class="my-2 mx-2">
           <li v-for="lesson in phase.lessons">
-            <button @click="showLinks(lesson, phase)" @mouseenter="getRelatedLessons(lesson.id)" @mouseleave="allRelatedLessons = []" :class="allRelatedLessons.includes(lesson.id) ? phase.title+'linked' : phase.title+'butt'" class="w-full rounded px-1 pb-2 pt-2.5 font-medium text-[15px] btn-roadmap">
-              {{ lesson.title }}
-            </button>
+            <a :href="lesson.link" @mouseenter="getRelatedLessons(lesson.id)" @mouseleave="allRelatedLessons = []" :class="allRelatedLessons.includes(lesson.id) ? phase.title+'linked' : phase.title+'butt'" class="w-full rounded px-1 pb-2 pt-2.5 font-medium text-[15px] btn-roadmap block text-center">
+                {{ lesson.title }}
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </div>
-  <Modal v-model="showModal" :closeClickDimmed="false">
-    <div class="modal w-[80%]">
-      <div class="rounded-lg" :style="'border: 2px solid ' + selected.p.color[1]">
-        <div class="phaseHead rounded-t-md" :style="'background-color: ' + selected.p.color[0] +'; border-bottom: 2px solid ' + selected.p.color[1] + ';'">
-          <h2 class="deloitteHead"><strong>Phase {{selected.key+1}}: {{ selected.l.title }}</strong></h2>
-        </div>
-        <ul class="py-4 px-4">
-          <li v-for="link in selected.l.links" class="my-4">
-            <a :href="link.href" :class="selected.p.title+'butt'" class="w-full rounded px-2 pb-2 pt-2.5 font-medium text-lg btn-roadmap block text-center">{{link.title}}</a>
-          </li>
-        </ul>
-      </div>
-      <div class="flex justify-end my-4">
-        <button class="btn-text-danger" @click="closeModal">Close</button>
-      </div>
-    </div>
-  </Modal>
-
+<!--  <Modal v-model="showModal" :closeClickDimmed="false">-->
+<!--    <div class="modal w-[80%]">-->
+<!--      <div class="rounded-lg" :style="'border: 2px solid ' + selected.p.color[1]">-->
+<!--        <div class="phaseHead rounded-t-md" :style="'background-color: ' + selected.p.color[0] +'; border-bottom: 2px solid ' + selected.p.color[1] + ';'">-->
+<!--          <h2 class="deloitteHead"><strong>Phase {{selected.key+1}}: {{ selected.l.title }}</strong></h2>-->
+<!--        </div>-->
+<!--        <ul class="py-4 px-4">-->
+<!--          <li v-for="link in selected.l.links" class="my-4">-->
+<!--            <a :href="link.href" :class="selected.p.title+'butt'" class="w-full rounded px-2 pb-2 pt-2.5 font-medium text-lg btn-roadmap block text-center">{{link.title}}</a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--      <div class="flex justify-end my-4">-->
+<!--        <button class="btn-text-danger" @click="closeModal">Close</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </Modal>-->
 </template>
-
 <style>
 
 h2.deloitteHead{
@@ -71,7 +66,7 @@ h3.deloitteHead {
   border-color: #65854C;
 }
 
-.Unpackingbutt:hover {
+.Explorationbutt:hover {
   background-color: #43aa8baa;
   border-color: #2f7761;
 }
@@ -106,7 +101,7 @@ h3.deloitteHead {
 
 }
 
-.Unpackinglinked {
+.Explorationlinked {
   background-color: #43aa8b77;
   border-color: #2f7761;
   border-style: dashed;
@@ -133,7 +128,7 @@ h3.deloitteHead {
   margin-bottom: -1px;
 }
 
-.Validationbuttlinked {
+.Validationlinked {
   background-color: #fa676977;
   border-color: #af484a;
   border-style: dashed;
@@ -153,7 +148,6 @@ h3.deloitteHead {
 
 
 </style>
-
 <script setup>
 import {ref} from 'vue'
 
@@ -170,59 +164,56 @@ const phases = [
       {
         id: "1-1",
         title: "Project Kick-off",
-        links: [
-          { title: "Introduction", href: "" },
-          { title: "Complexity", href: "" },
-          { title: "Snowden & Boone, 2008", href: "" },
-          { title: "Video", href: "" }
-        ],
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081123",
         relatedLessons: [],
       },
       {
         id: "1-2",
-        title: "Team Building",
-        links: [
-          { title: "", href: "" }
-        ],
+        title: "Complexity",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3107359",
         relatedLessons: [],
       },
       {
         id: "1-3",
-        title: "Preparing for a Brief",
-        links: [
-          { title: "", href: "" }
-        ],
+        title: "Team Building",
+        link:"https://myuni.adelaide.edu.au/courses/85852/modules/items/3081124",
+        relatedLessons: [],
+      },
+      {
+        id: "1-4",
+        title: "Understanding the Context",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081125",
         relatedLessons: [],
       }
     ]
   },
   {
-    title: "Unpacking",
+    title: "Exploration",
     color: ['#43aa8b','#2f7761'],
     lessons: [
       {
         id: "2-1",
-        title: "Inquiry Listening & Questioning",
-        links: [
-          { title: "", href: "" }
-        ],
+        title: "Inquiry",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081126",
         relatedLessons: [],
       },
       {
         id: "2-2",
-        title: "Unpacking the Client Brief",
-        links: [
-          { title: "", href: "" }
-        ],
+        title: "Unpacking a Client Brief",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081166",
         relatedLessons: [],
       },
       {
         id: "2-3",
         title: "Conducting Research",
-        links: [
-          { title: "", href: "" }
-        ],
-        relatedLessons: ["3-2"],
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081167",
+        relatedLessons: [],
+      },
+      {
+        id: "2-4",
+        title: "Individual Research Report",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081168",
+        relatedLessons: ["3-5", "5-4","6-3"],
       }
     ]
   },
@@ -233,34 +224,32 @@ const phases = [
       {
         id: "3-1",
         title: "Shared Team Understanding",
-        links: [
-          { title: "", href: "" }
-        ],
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081169",
         relatedLessons: [],
       },
       {
         id: "3-2",
-        title: "Group Report",
-        links: [
-          { title: "", href: "" }
-        ],
-        relatedLessons: ["2-3", "6-3"],
+        title: "Problem Definitions & Analysis",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081171",
+        relatedLessons: [],
       },
       {
         id: "3-3",
-        title: "Root Cause Analysis",
-        links: [
-          { title: "", href: "" }
-        ],
+        title: "Problem Validation",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081172",
         relatedLessons: [],
       },
       {
         id: "3-4",
-        title: "Problem Validation",
-        links: [
-          { title: "", href: "" }
-        ],
-        relatedLessons: [""],
+        title: "Project Management",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3108990",
+        relatedLessons: [],
+      },
+      {
+        id: "3-5",
+        title: "Preparing for Group Report",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3108991",
+        relatedLessons: ["2-4", "5-4","6-3"],
       }
     ]
   },
@@ -270,34 +259,32 @@ const phases = [
     lessons: [
       {
         id: "4-1",
-        title: "Defined Problem Statement",
-        links: [
-          { title: "", href: "" }
-        ],
+        title: "Framing and Reframing",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081192",
         relatedLessons: [],
       },
       {
         id: "4-2",
         title: "Solution Generation",
-        links: [
-          { title: "", href: "" }
-        ],
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081193",
         relatedLessons: [],
       },
       {
         id: "4-3",
         title: "Project Status Update",
-        links: [
-          { title: "", href: "" }
-        ],
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081194",
         relatedLessons: [],
       },
       {
         id: "4-4",
         title: "Solution Validation",
-        links: [
-          { title: "", href: "" }
-        ],
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081195",
+        relatedLessons: [],
+      },
+      {
+        id: "4-5",
+        title: "Preparing to reflect",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3108992",
         relatedLessons: [],
       }
     ]
@@ -308,19 +295,27 @@ const phases = [
     lessons: [
       {
         id: "5-1",
-        title: "Solution Validated Final Criteria",
-        links: [
-          { title: "", href: "" }
-        ],
+        title: "Ethical Decision Making",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081196",
         relatedLessons: [],
       },
       {
         id: "5-2",
-        title: "Sharing Insights with the Client",
-        links: [
-          { title: "", href: "" }
-        ],
+        title: "Refining Solutions",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081198",
         relatedLessons: [],
+      },
+      {
+        id: "5-3",
+        title: "Preparing to Communicate",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081199",
+        relatedLessons: [],
+      },
+      {
+        id: "5-4",
+        title: "Group Report",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3108993",
+        relatedLessons: ["2-4", "3-5", "6-3"],
       }
     ]
   },
@@ -330,27 +325,21 @@ const phases = [
     lessons: [
       {
         id: "6-1",
-        title: "Prepare Recommendation(s)",
-        links: [
-          { title: "", href: "" }
-        ],
+        title: "Present to Client & Discuss",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081200",
         relatedLessons: [],
       },
       {
         id: "6-2",
-        title: "Present to Client & Discuss",
-        links: [
-          { title: "", href: "" }
-        ],
+        title: "Reflect & Review",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081201",
         relatedLessons: [],
       },
       {
         id: "6-3",
-        title: "Reflect & Review",
-        links: [
-          { title: "", href: "" }
-        ],
-        relatedLessons: ["3-2"],
+        title: "Reflective Journal",
+        link: "https://myuni.adelaide.edu.au/courses/85852/modules/items/3081202",
+        relatedLessons: ["2-4", "3-5", "5-4"],
       }
     ]
   },
@@ -369,14 +358,14 @@ function getRelatedLessons(lessonID) {
   allRelatedLessons.value = relatedLessons
 }
 
-function showLinks(lesson, phase) {
-  if (lesson.links.length > 0) {
-    showModal.value = true
-    selected.value = {l: lesson, p: phase, key: phases.findIndex(p => p.title === phase.title)}
-  }
-}
-
-function closeModal() {
-  showModal.value = false
-}
+// function showLinks(lesson, phase) {
+//   if (lesson.links.length > 0) {
+//     showModal.value = true
+//     selected.value = {l: lesson, p: phase, key: phases.findIndex(p => p.title === phase.title)}
+//   }
+// }
+//
+// function closeModal() {
+//   showModal.value = false
+// }
 </script>
