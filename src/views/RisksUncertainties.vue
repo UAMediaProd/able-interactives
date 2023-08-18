@@ -58,6 +58,7 @@
   <div v-if="state===1" class="p-2">
     <h3 class="text-center my-2">Arrange the risks and uncertainties you identified in the order of the “managerial control” (Low to High). </h3>
 
+
     <div class="flex justify-center">
       <div class="m-3 w-2/5 min-w-[250px] max-w-[400px]">
         <h3 class="text-center mt-5 mb-4">
@@ -492,6 +493,7 @@ function resetOptions() {
     {text: "", id: 3}
   ]
   nextButton()
+  console.log(optionsListQ1.value)
 }
 
 function stepClass(step) {

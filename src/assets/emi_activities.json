@@ -200,7 +200,7 @@
     "stage": ["Supporting students with subject-specific vocabulary", "Checking and consolidating understanding"],
     "tiles": ["Collaborative activities"],
     "filters": {
-      "Class size": ["Small"],
+      "Class size": ["Small", "Medium","Large"],
       "Mode of delivery": ["Face-to-face"],
       "Class time": ["<5 minutes","5-10 minutes"],
       "Preparation time": ["<5 minutes"],

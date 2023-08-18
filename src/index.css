@@ -6,6 +6,10 @@
   .btn-primary {
     @apply  my-auto rounded py-2 px-4 border-2 border-primary-darker text-sm font-semibold text-primary-darker bg-primary-dark-lightest hover:text-white hover:bg-primary-darker disabled:opacity-40 disabled:hover:text-primary-darker disabled:bg-primary-dark-lightest;
   }
+
+  .btn-secondary {
+    @apply my-auto rounded py-2 px-4 border-2 border-primary text-sm font-semibold text-primary bg-primary hover:text-white hover:bg-primary disabled:opacity-40 disabled:hover:text-secondary-darker disabled:bg-secondary-dark-lightest;
+  }
   .btn-danger {
     @apply border-2 border-secondary rounded py-2 px-4 my-auto text-secondary font-semibold hover:bg-secondary hover:text-white disabled:opacity-50 disabled:hover:bg-white disabled:hover:text-secondary;
   }
