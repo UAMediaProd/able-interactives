@@ -570,5 +570,70 @@
       "Preparation time": ["<5 minutes", "5-10 minutes"],
       "Stage/resource": ["Supporting students with subject-specific vocabulary","Active learning in STEM"]
     }
+  },
+  "CircleSquareTriangle": {
+    "name": "Circle Square Triangle",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/circle-square-triangle",
+    "stage": ["Checking and consolidating understanding"],
+    "tiles": [null],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Both","Face-to-face","Online"],
+      "Class time": ["5-10 minutes"],
+      "Preparation time": ["<5 minutes"],
+      "Stage/resource": ["Checking and consolidating understanding"]
+    }
+  },
+  "Onion": {
+    "name": "Onion Activity",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/onion-activity",
+    "stage": ["Activating prior knowledge", "Checking and consolidating understanding", "Summarising content"],
+    "tiles": ["Collaborative activities", "Discussion-based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium"],
+      "Mode of delivery": ["Face-to-face"],
+      "Class time": ["10+ minutes"],
+      "Preparation time": ["5-10 minutes"],
+      "Stage/resource": ["Activating prior knowledge", "Checking and consolidating understanding", "Summarising content","Collaborative activities", "Discussion-based activities"]
+    }
+  },
+  "PassPaper": {
+    "name": "Pass the Paper",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/pass-the-paper",
+    "stage": ["Activating prior knowledge", "Checking and consolidating understanding", "Summarising content"],
+    "tiles": ["Collaborative activities"],
+    "filters": {
+      "Class size": ["Small", "Medium"],
+      "Mode of delivery": ["Face-to-face"],
+      "Class time": ["10+ minutes"],
+      "Preparation time": ["5-10 minutes"],
+      "Stage/resource": ["Activating prior knowledge", "Checking and consolidating understanding", "Summarising content","Collaborative activities"]
+    }
+  },
+  "RunningDict": {
+    "name": "Running Dictation",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/running-dictation",
+    "stage": ["Checking and consolidating understanding"],
+    "tiles": ["Collaborative activities"],
+    "filters": {
+      "Class size": ["Small", "Medium"],
+      "Mode of delivery": ["Face-to-face"],
+      "Class time": ["10+ minutes"],
+      "Preparation time": ["5-10 minutes"],
+      "Stage/resource": ["Checking and consolidating understanding","Collaborative activities"]
+    }
+  },
+  "WordBankGloss": {
+    "name": "Word Banks and Glossary",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/word-bank-and-glossary",
+    "stage": ["Supporting students with subject-specific vocabulary"],
+    "tiles": [null],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Face-to-face"],
+      "Class time": ["10+ minutes"],
+      "Preparation time": ["5-10 minutes"],
+      "Stage/resource": ["Supporting students with subject-specific vocabulary"]
+    }
   }
 }
