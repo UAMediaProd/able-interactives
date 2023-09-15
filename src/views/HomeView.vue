@@ -14,6 +14,9 @@
           <li class="my-2">
             <RouterLink to="/elc" :class="linkClass">ELC Active Learning Tasks</RouterLink>
           </li>
+          <li class="my-2">
+            <RouterLink to="/glossary" :class="linkClass">Pedagogy Glossary</RouterLink>
+          </li>
         </ul>
       </div>
     </div>

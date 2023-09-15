@@ -1,0 +1,596 @@
+{
+   "classicQuiz": {
+    "name": "Classic Quizzes and Question Banks",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["MyUni Functions"],
+    "type": "child"
+  },
+  "newQuiz": {
+    "name": "New Quizzes and Item Banks",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["MyUni Functions"],
+    "type": "child"
+  },
+  "ass": {
+    "name": "Assignments",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["MyUni Functions"],
+    "type": "child"
+  },
+  "disc": {
+    "name": "Discussions",
+    "link": "#!",
+    "section": ["Educational Technologies","Online Engagement","Designing Assessment"],
+    "subsection": ["MyUni Functions","Promoting Active Learning","Formative Assessment"],
+    "subsub": ["Formative Assessment"],
+    "type": "child"
+  },
+  "rubric": {
+    "name": "Rubrics",
+    "link": "#!",
+    "section": ["Educational Technologies","Designing Assessment"],
+    "subsection": ["MyUni Functions"],
+    "type": "child"
+  },
+  "collab": {
+    "name": "Collaborations",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["MyUni Functions"],
+    "type": "child"
+  },
+  "gBook": {
+    "name": "Gradebook",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["MyUni Functions"],
+    "type": "child"
+  },
+  "cadmus": {
+    "name": "Cadmus",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["External Tools"],
+    "type": "child"
+  },
+  "cidi": {
+    "name": "Cidilabs Design Tools",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["External Tools"],
+    "type": "child"
+  },
+  "echo": {
+    "name": "Echo360",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["External Tools"],
+    "type": "child"
+  },
+  "ff-peer": {
+    "name": "Feedback Fruits - Peer Review",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["External Tools"],
+    "type": "child"
+  },
+  "ff-group": {
+    "name": "Feedback Fruits - Group Member Evaluation",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["External Tools"],
+    "type": "child"
+  },
+  "gScope": {
+    "name": "Gradescope",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["External Tools"],
+    "type": "child"
+  },
+  "h5p": {
+    "name": "H5P",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["External Tools"],
+    "type": "child"
+  },
+  "matlab": {
+    "name": "Matlab Grader",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["External Tools"],
+    "type": "child"
+  },
+  "mobius": {
+    "name": "Mobius",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["External Tools"],
+    "type": "child"
+  },
+  "pebble": {
+    "name": "PebblePad",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["External Tools"],
+    "type": "child"
+  },
+  "lock": {
+    "name": "Lockdown Browser",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["External Tools"],
+    "type": "child"
+  },
+  "zoom": {
+    "name": "Zoom",
+    "link": "#!",
+    "section": ["Educational Technologies"],
+    "subsection": ["External Tools"],
+    "type": "child"
+  },
+  "lessonplanning": {
+    "name": "Lesson planning, chunking and active learning",
+    "link": "#!",
+    "section": ["Face to Face Learning"],
+    "subsection": ["Live Lectures"],
+    "type": "child"
+  },
+  "slides": {
+    "name": "Presentation Slide design",
+    "link": "#!",
+    "section": ["Face to Face Learning"],
+    "subsection": ["Live Lectures"],
+    "type": "child"
+  },
+  "echoLive": {
+    "name": "Echo360 Live streaming",
+    "link": "#!",
+    "section": ["Face to Face Learning","Online Engagement"],
+    "subsection": ["Live Lectures", "Promoting Active Learning"],
+    "subsub": ["Things to tell students about active learning"],
+    "type": "child"
+  },
+  "activeTech": {
+    "name": "Active Learning Technology",
+    "link": "#!",
+    "section": ["Face to Face Learning","Online Engagement","Designing Assessment"],
+    "subsection": ["Live Lectures", "Promoting Active Learning","Formative Assessment", "Tutorials"],
+    "subsub": ["Formative Assessment","Things to tell students about active learning"],
+    "type": "child"
+  },
+  "verbal": {
+    "name": "Verbal questions",
+    "link": "#!",
+    "section": ["Face to Face Learning", "Online Engagement"],
+    "subsection": ["Live Lectures", "Tutorials", "Promoting Active Learning"],
+    "subsub": ["Things to tell students about active learning"],
+    "type": "child"
+  },
+  "tuteDesign": {
+    "name": "Tutorial Design",
+    "link": "#!",
+    "section": ["Face to Face Learning"],
+    "subsection": ["Tutorials"],
+    "type": "child"
+  },
+  "expect": {
+    "name": "Expectations",
+    "link": "#!",
+    "section": ["Face to Face Learning"],
+    "subsection": ["Tutorials"],
+    "type": "child"
+  },
+  "tablework": {
+    "name": "Tablework",
+    "link": "#!",
+    "section": ["Face to Face Learning"],
+    "subsection": ["Tutorials"],
+    "type": "child"
+  },
+  "modelling": {
+    "name": "Modelling and Worked Examples",
+    "link": "#!",
+    "section": ["Face to Face Learning"],
+    "subsection": ["Tutorials", "Practicals"],
+    "type": "child"
+  },
+  "sync": {
+    "name": "Synchronous teacher presence",
+    "link": "#!",
+    "section": ["Face to Face Learning"],
+    "subsection": ["Tutorials"],
+    "type": "child"
+  },
+  "prelearning": {
+    "name": "Pre-learning",
+    "link": "#!",
+    "section": ["Face to Face Learning"],
+    "subsection": ["Tutorials"],
+    "type": "child"
+  },
+  "questioning": {
+    "name": "Questioning",
+    "link": "#!",
+    "section": ["Face to Face Learning"],
+    "subsection": ["Practicals"],
+    "type": "child"
+  },
+  "connections": {
+    "name": "Making connections",
+    "link": "#!",
+    "section": ["Face to Face Learning"],
+    "subsection": ["Practicals"],
+    "type": "child"
+  },
+  "scenario": {
+    "name": "Scenario-based learning",
+    "link": "#!",
+    "section": ["Face to Face Learning"],
+    "type": "child"
+  },
+  "pageDesign": {
+    "name": "Designing pages in a course",
+    "link": "#!",
+    "section": ["Online Engagement","Designing a Course or Program"],
+    "subsection": ["Blended Learning"],
+    "type": "child"
+  },
+  "quizzes": {
+    "name": "Quizzes",
+    "link": "#!",
+    "section": ["Online Engagement","Designing Assessment"],
+    "subsection": ["Promoting Active Learning","Formative Assessment"],
+    "subsub": ["Formative assessment"],
+    "type": "child"
+  },
+  "h5pAss": {
+    "name": "H5P Interactives",
+    "link": "#!",
+    "section": ["Online Engagement","Designing Assessment"],
+    "subsection": ["Promoting Active Learning","Formative Assessment"],
+    "subsub": ["Formative assessment"],
+    "type": "child"
+  },
+  "embedded": {
+    "name": "Embedded shared student responses",
+    "link": "#!",
+    "section": ["Online Engagement","Designing Assessment"],
+    "subsection": ["Promoting Active Learning","Formative Assessment"],
+    "subsub": ["Formative assessment"],
+    "type": "child"
+  },
+  "video": {
+    "name": "Utilising video",
+    "link": "#!",
+    "section": ["Online Engagement"],
+    "subsection": ["Promoting Active Learning"],
+    "type": "child"
+  },
+  "coopLearning": {
+    "name": "Embedding cooperative learning",
+    "link": "#!",
+    "section": ["Online Engagement"],
+    "subsection": ["Promoting Active Learning"],
+    "type": "child"
+  },
+  "addInt": {
+    "name": "Adding interactives",
+    "link": "#!",
+    "section": ["Online Engagement"],
+    "subsection": ["Promoting Active Learning"],
+    "type": "child"
+  },
+  "use360Vid": {
+    "name": "Utilising 360 video",
+    "link": "#!",
+    "section": ["Online Engagement"],
+    "subsection": ["Promoting Active Learning"],
+    "type": "child"
+  },
+  "plans": {
+    "name": "Lesson plans, chunking and active learning",
+    "link": "#!",
+    "section": ["Online Engagement"],
+    "subsection": ["Promoting Active Learning"],
+    "subsub": ["Things to tell students about active learning"],
+    "type": "child"
+  },
+  "promoting": {
+    "name": "Promoting Active Learning",
+    "link": "#!",
+    "section": ["Online Engagement"],
+    "subsection": ["Promoting Active Learning"],
+    "subsub": ["Things to tell students about active learning"],
+    "type": "child"
+  },
+  "voice": {
+    "name": "Including teacher voice on pages",
+    "link": "#!",
+    "section": ["Online Engagement"],
+    "subsection": ["Promoting Active Learning"],
+    "subsub": ["Things to tell students about active learning"],
+    "type": "child"
+  },
+  "groupWork": {
+    "name": "Group work",
+    "link": "#!",
+    "section": ["Online Engagement", "Collaborative Learning"],
+    "subsection": ["Promoting Active Learning"],
+    "subsub": ["Things to tell students about active learning"],
+    "type": "child"
+  },
+  "formAss": {
+    "name": "Formative assessment",
+    "link": "#!",
+    "section": ["Online Engagement"],
+    "subsection": ["Promoting Active Learning"],
+    "subsub": ["Things to tell students about active learning"],
+    "type": "child"
+  },
+  "collabDoc": {
+    "name": "Collaborative documents",
+    "link": "#!",
+    "section": ["Online Engagement"],
+    "subsection": ["Promoting Active Learning"],
+    "subsub": ["Things to tell students about active learning"],
+    "type": "child"
+  },
+  "tutorials": {
+    "name": "Tutorials",
+    "link": "#!",
+    "section": ["Online Engagement"],
+    "subsection": ["Promoting Active Learning"],
+    "subsub": ["Things to tell students about active learning"],
+    "type": "child"
+  },
+  "peerReview": {
+    "name": "Peer Review",
+    "link": "#!",
+    "section": ["Online Engagement","Collaborative Learning"],
+    "subsection": ["Promoting Active Learning"],
+    "subsub": ["Things to tell students about active learning"],
+    "type": "child"
+  },
+  "readings": {
+    "name": "Utilising readings",
+    "link": "#!",
+    "section": ["Online Engagement"],
+    "type": "child"
+  },
+  "teacherPres": {
+    "name": "Teacher presence",
+    "link": "#!",
+    "section": ["Online Engagement"],
+    "subsection": ["Including teacher voice on pages"],
+    "type": "child"
+  },
+  "metaPromote": {
+    "name": "Metacognitive promoting",
+    "link": "#!",
+    "section": ["Online Engagement"],
+    "subsection": ["Including teacher voice on pages"],
+    "type": "child"
+  },
+  "dataAnal": {
+    "name": "Using Data Analytics",
+    "link": "#!",
+    "section": ["Online Engagement"],
+    "type": "child"
+  },
+  "useGrade": {
+    "name": "Using the Gradebook",
+    "link": "#!",
+    "section": ["Online Engagement"],
+    "type": "child"
+  },
+  "studConst": {
+    "name": "Students constructing and editing a shared document",
+    "link": "#!",
+    "section": ["Collaborative Learning"],
+    "subsection": ["Collaborative Documents"],
+    "type": "child"
+  },
+  "collabCanvas": {
+    "name": "Collaborative Canvas pages editable by students",
+    "link": "#!",
+    "section": ["Collaborative Learning"],
+    "subsection": ["Collaborative Documents"],
+    "type": "child"
+  },
+  "sync": {
+    "name": "Synchronous",
+    "link": "#!",
+    "section": ["Collaborative Learning"],
+    "subsection": ["Communication"],
+    "type": "child"
+  },
+  "sync": {
+    "name": "Synchronous",
+    "link": "#!",
+    "section": ["Collaborative Learning"],
+    "subsection": ["Communication"],
+    "type": "child"
+  },
+  "async": {
+    "name": "Asynchronous",
+    "link": "#!",
+    "section": ["Collaborative Learning"],
+    "subsection": ["Communication"],
+    "type": "child"
+  },
+  "fileUp": {
+    "name": "File Upload",
+    "link": "#!",
+    "section": ["Designing Assessment"],
+    "subsection": ["Summative Assessment"],
+    "type": "child"
+  },
+  "scaff": {
+    "name": "Scaffolded iterative assessment",
+    "link": "#!",
+    "section": ["Designing Assessment"],
+    "subsection": ["Summative Assessment"],
+    "type": "child"
+  },
+  "media": {
+    "name": "Media",
+    "link": "#!",
+    "section": ["Designing Assessment"],
+    "subsection": ["Summative Assessment"],
+    "type": "child"
+  },
+  "autoGen": {
+    "name": "Auto-generated computer code assessment",
+    "link": "#!",
+    "section": ["Designing Assessment"],
+    "subsection": ["Summative Assessment"],
+    "type": "child"
+  },
+  "handDrawn": {
+    "name": "Hand-drawn assessment",
+    "link": "#!",
+    "section": ["Designing Assessment"],
+    "subsection": ["Summative Assessment"],
+    "type": "child"
+  },
+  "individual": {
+    "name": "Individualised summative assessment using quizzes",
+    "link": "#!",
+    "section": ["Designing Assessment"],
+    "subsection": ["Summative Assessment","Improving Academic Integrity"],
+    "type": "child"
+  },
+  "remoteExams": {
+    "name": "Remote Exams",
+    "link": "#!",
+    "section": ["Designing Assessment"],
+    "subsection": ["Summative Assessment"],
+    "subsub": ["Invigilated Exams"],
+    "type": "child"
+  },
+  "campExams": {
+    "name": "Campus Exams",
+    "link": "#!",
+    "section": ["Designing Assessment"],
+    "subsection": ["Summative Assessment"],
+    "subsub": ["Invigilated Exams"],
+    "type": "child"
+  },
+  "usefulFeed": {
+    "name": "Providing Useful Feedback",
+    "link": "#!",
+    "section": ["Designing Assessment"],
+    "type": "child"
+  },
+  "usingAI": {
+    "name": "Utilising and Defending against Artificial Intelligence",
+    "link": "#!",
+    "section": ["Designing Assessment"],
+    "type": "child"
+  },
+  "turnitin": {
+    "name": "Automated plagiarism checking (TurnItIn)",
+    "link": "#!",
+    "section": ["Designing Assessment"],
+    "subsection": ["Improving Academic Integrity"],
+    "type": "child"
+  },
+  "scaffAss": {
+    "name": "Scaffolded iterative assessment",
+    "link": "#!",
+    "section": ["Designing Assessment"],
+    "subsection": ["Improving Academic Integrity"],
+    "type": "child"
+  },
+  "AIass": {
+    "name": "Artificial Intelligence in teaching, learning and assessment",
+    "link": "#!",
+    "section": ["Designing Assessment"],
+    "subsection": ["Improving Academic Integrity"],
+    "type": "child"
+  },
+  "vers": {
+    "name": "Version checkers such as Google Docs",
+    "link": "#!",
+    "section": ["Designing Assessment"],
+    "subsection": ["Improving Academic Integrity"],
+    "type": "child"
+  },
+  "ldPrince": {
+    "name": "Learning Design Principles",
+    "link": "#!",
+    "section": ["Designing a Course or Program"],
+    "type": "child"
+  },
+  "clo": {
+    "name": "Designing Course Learning Outcomes (CLOs)",
+    "link": "#!",
+    "section": ["Designing a Course or Program"],
+    "subsection": ["Constructive Alignment"],
+    "type": "child"
+  },
+  "linkOutcomes": {
+    "name": "Linking outcomes to assessment",
+    "link": "#!",
+    "section": ["Designing a Course or Program"],
+    "subsection": ["Constructive Alignment"],
+    "type": "child"
+  },
+  "seq": {
+    "name": "Sequencing the content to satisfy alignment",
+    "link": "#!",
+    "section": ["Designing a Course or Program"],
+    "subsection": ["Constructive Alignment"],
+    "type": "child"
+  },
+  "flipped": {
+    "name": "Flipped Learning",
+    "link": "#!",
+    "section": ["Designing a Course or Program"],
+    "subsection": ["Blended Learning"],
+    "type": "child"
+  },
+  "webinar": {
+    "name": "Webinars",
+    "link": "#!",
+    "section": ["Designing a Course or Program"],
+    "subsection": ["Blended Learning"],
+    "type": "child"
+  },
+  "patterns": {
+    "name": "Learning Patterns and Activity Types",
+    "link": "#!",
+    "section": ["Designing a Course or Program"],
+    "type": "child"
+  },
+  "attention": {
+    "name": "Directing Students' attention",
+    "link": "#!",
+    "section": ["Foundation of Learning"],
+    "type": "child"
+  },
+  "connectKnow": {
+    "name": "Connecting Knowledge",
+    "link": "#!",
+    "section": ["Foundation of Learning"],
+    "type": "child"
+  },
+  "activeLearn": {
+    "name": "Active Learning",
+    "link": "#!",
+    "section": ["Foundation of Learning"],
+    "type": "child"
+  },
+  "teachingLearn": {
+    "name": "Teaching about Learning",
+    "link": "#!",
+    "section": ["Foundation of Learning"],
+    "type": "child"
+  }
+}
+
