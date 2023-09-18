@@ -61,8 +61,6 @@ let selected = ref(null)
 let subsection = ref(null)
 let subsub = ref(null)
 
-let subsections = ref([])
-let subsubs = ref([])
 
 let sections = computed(() => {
   //return sections, but all individual unique occurrences
@@ -73,35 +71,29 @@ let sections = computed(() => {
   return [...new Set(sections)]
 });
 
-//simple watch to return subsections when section changes
-watch(selected, (newVal) => {
-    //return subsections, but all individual unique occurrences
-    Object.values(activities).forEach((activity) => {
-      if (activity.section.includes(newVal)) {
-        if(activity.subsection){
-          subsections.value = [...subsections.value, ...activity.subsection]
-        }
-      }
-    })
-    subsections.value = [...new Set(subsections.value)]
-})
-
-watch(subsection, (newVal) => {
+//calculated value for the select list of subsections depending on what is availble inside the filteredResults
+let subsections = computed(() => {
   //return subsections, but all individual unique occurrences
-  Object.values(activities).forEach((activity) => {
-    if(activity.subsection) {
-      if (activity.subsection.includes(newVal)) {
-        if (activity.subsub) {
-          subsubs.value = [...subsubs.value, ...activity.subsub]
-        }
-      }
+  let subsections = []
+  Object.values(filteredResults.value).forEach((activity) => {
+    if (activity.subsection) {
+      subsections = [...subsections, ...activity.subsection]
     }
   })
-  subsubs.value = [...new Set(subsubs.value)]
-})
+  return [...new Set(subsections)]
+});
 
-
-
+//calculated value for the select list of subsub depending on what is availble inside the filteredResults
+let subsubs = computed(() => {
+  //return subsubs, but all individual unique occurrences
+  let subsubs = []
+  Object.values(filteredResults.value).forEach((activity) => {
+    if (activity.subsub) {
+      subsubs = [...subsubs, ...activity.subsub]
+    }
+  })
+  return [...new Set(subsubs)]
+});
 
 let filteredResults = computed(() => {
 

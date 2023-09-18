@@ -136,21 +136,21 @@
   "lessonplanning": {
     "name": "Lesson planning, chunking and active learning",
     "link": "#!",
-    "section": ["Face to Face Learning"],
+    "section": ["Synchronous Learning"],
     "subsection": ["Live Lectures"],
     "type": "child"
   },
   "slides": {
     "name": "Presentation Slide design",
     "link": "#!",
-    "section": ["Face to Face Learning"],
+    "section": ["Synchronous Learning"],
     "subsection": ["Live Lectures"],
     "type": "child"
   },
   "echoLive": {
     "name": "Echo360 Live streaming",
     "link": "#!",
-    "section": ["Face to Face Learning","Online Engagement"],
+    "section": ["Synchronous Learning","Online Engagement"],
     "subsection": ["Live Lectures", "Promoting Active Learning"],
     "subsub": ["Things to tell students about active learning"],
     "type": "child"
@@ -158,7 +158,7 @@
   "activeTech": {
     "name": "Active Learning Technology",
     "link": "#!",
-    "section": ["Face to Face Learning","Online Engagement","Designing Assessment"],
+    "section": ["Synchronous Learning","Online Engagement","Designing Assessment"],
     "subsection": ["Live Lectures", "Promoting Active Learning","Formative Assessment", "Tutorials"],
     "subsub": ["Formative Assessment","Things to tell students about active learning"],
     "type": "child"
@@ -166,7 +166,7 @@
   "verbal": {
     "name": "Verbal questions",
     "link": "#!",
-    "section": ["Face to Face Learning", "Online Engagement"],
+    "section": ["Synchronous Learning", "Online Engagement"],
     "subsection": ["Live Lectures", "Tutorials", "Promoting Active Learning"],
     "subsub": ["Things to tell students about active learning"],
     "type": "child"
@@ -174,63 +174,63 @@
   "tuteDesign": {
     "name": "Tutorial Design",
     "link": "#!",
-    "section": ["Face to Face Learning"],
+    "section": ["Synchronous Learning"],
     "subsection": ["Tutorials"],
     "type": "child"
   },
   "expect": {
     "name": "Expectations",
     "link": "#!",
-    "section": ["Face to Face Learning"],
+    "section": ["Synchronous Learning"],
     "subsection": ["Tutorials"],
     "type": "child"
   },
   "tablework": {
     "name": "Tablework",
     "link": "#!",
-    "section": ["Face to Face Learning"],
+    "section": ["Synchronous Learning"],
     "subsection": ["Tutorials"],
     "type": "child"
   },
   "modelling": {
     "name": "Modelling and Worked Examples",
     "link": "#!",
-    "section": ["Face to Face Learning"],
+    "section": ["Synchronous Learning"],
     "subsection": ["Tutorials", "Practicals"],
     "type": "child"
   },
-  "sync": {
+  "syncTeach": {
     "name": "Synchronous teacher presence",
     "link": "#!",
-    "section": ["Face to Face Learning"],
+    "section": ["Synchronous Learning"],
     "subsection": ["Tutorials"],
     "type": "child"
   },
   "prelearning": {
     "name": "Pre-learning",
     "link": "#!",
-    "section": ["Face to Face Learning"],
+    "section": ["Synchronous Learning"],
     "subsection": ["Tutorials"],
     "type": "child"
   },
   "questioning": {
     "name": "Questioning",
     "link": "#!",
-    "section": ["Face to Face Learning"],
+    "section": ["Synchronous Learning"],
     "subsection": ["Practicals"],
     "type": "child"
   },
   "connections": {
     "name": "Making connections",
     "link": "#!",
-    "section": ["Face to Face Learning"],
+    "section": ["Synchronous Learning"],
     "subsection": ["Practicals"],
     "type": "child"
   },
   "scenario": {
     "name": "Scenario-based learning",
     "link": "#!",
-    "section": ["Face to Face Learning"],
+    "section": ["Synchronous Learning"],
     "type": "child"
   },
   "pageDesign": {
@@ -245,7 +245,7 @@
     "link": "#!",
     "section": ["Online Engagement","Designing Assessment"],
     "subsection": ["Promoting Active Learning","Formative Assessment"],
-    "subsub": ["Formative assessment"],
+    "subsub": ["Formative Assessment"],
     "type": "child"
   },
   "h5pAss": {
@@ -253,7 +253,7 @@
     "link": "#!",
     "section": ["Online Engagement","Designing Assessment"],
     "subsection": ["Promoting Active Learning","Formative Assessment"],
-    "subsub": ["Formative assessment"],
+    "subsub": ["Formative Assessment"],
     "type": "child"
   },
   "embedded": {
@@ -261,7 +261,7 @@
     "link": "#!",
     "section": ["Online Engagement","Designing Assessment"],
     "subsection": ["Promoting Active Learning","Formative Assessment"],
-    "subsub": ["Formative assessment"],
+    "subsub": ["Formative Assessment"],
     "type": "child"
   },
   "video": {
@@ -325,7 +325,7 @@
     "type": "child"
   },
   "formAss": {
-    "name": "Formative assessment",
+    "name": "Formative Assessment",
     "link": "#!",
     "section": ["Online Engagement"],
     "subsection": ["Promoting Active Learning"],
@@ -400,13 +400,6 @@
     "link": "#!",
     "section": ["Collaborative Learning"],
     "subsection": ["Collaborative Documents"],
-    "type": "child"
-  },
-  "sync": {
-    "name": "Synchronous",
-    "link": "#!",
-    "section": ["Collaborative Learning"],
-    "subsection": ["Communication"],
     "type": "child"
   },
   "sync": {
