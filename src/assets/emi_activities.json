@@ -635,5 +635,70 @@
       "Preparation time": ["5-10 minutes"],
       "Stage/resource": ["Supporting students with subject-specific vocabulary"]
     }
+  },
+  "StandOrder": {
+    "name": "Stand in Order Of",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/stand-in-order-of",
+    "stage": ["Checking and consolidating understanding", "Questioning"],
+    "tiles": ["Discussion-based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium"],
+      "Mode of delivery": ["Face-to-face"],
+      "Class time": ["10+ minutes"],
+      "Preparation time": ["<5 minutes"],
+      "Stage/resource": ["Checking and consolidating understanding", "Questioning","Discussion-based activities"]
+    }
+  },
+  "OddWordOut": {
+    "name": "Odd Word Out",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/odd-word-out",
+    "stage": ["Checking and consolidating understanding", "Supporting students with subject-specific vocabulary"],
+    "tiles": ["Collaborative activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Face-to-face", "Online", "Both"],
+      "Class time": ["5-10 minutes"],
+      "Preparation time": ["<5 minutes"],
+      "Stage/resource": ["Checking and consolidating understanding", "Supporting students with subject-specific vocabulary","Collaborative activities"]
+    }
+  },
+  "QuestionSwap": {
+    "name": "Question Swap",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/question-swap",
+    "stage": ["Checking and consolidating understanding", "Summarising content"],
+    "tiles": ["Collaborative activities", "Discussion-based activities", "Questioning"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Face-to-face"],
+      "Class time": ["10+ minutes"],
+      "Preparation time": ["<5 minutes"],
+      "Stage/resource": ["Checking and consolidating understanding", "Summarising content","Collaborative activities", "Discussion-based activities", "Questioning"]
+    }
+  },
+  "LectureChallenge": {
+    "name": "Lecture Outline Challenge",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/lecture-outline-challenge",
+    "stage": ["Checking and consolidating understanding", "Summarising content"],
+    "tiles": ["Collaborative activities", "Discussion-based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Face-to-face", "Online", "Both"],
+      "Class time": ["10+ minutes"],
+      "Preparation time": ["5-10 minutes"],
+      "Stage/resource": ["Checking and consolidating understanding", "Summarising content","Collaborative activities", "Discussion-based activities"]
+    }
+  },
+  "LectureGapFill": {
+    "name": "Lecture Gap Fill",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/lecture-gap-fill",
+    "stage": ["Checking and consolidating understanding", "Summarising content"],
+    "tiles": ["Collaborative activities", "Discussion-based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Face-to-face", "Online", "Both"],
+      "Class time": ["10+ minutes"],
+      "Preparation time": ["5-10 minutes"],
+      "Stage/resource": ["Checking and consolidating understanding", "Summarising content","Collaborative activities", "Discussion-based activities"]
+    }
   }
 }
