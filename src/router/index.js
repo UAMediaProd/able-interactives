@@ -43,6 +43,11 @@ const routes = [
     path: '/glossary',
     name: 'Pedagogy Glossary',
     component: () => import('../views/PDIET.vue')
+  },
+  {
+    path: '/grantapps',
+    name: 'Grant Application Activity',
+    component: () => import('../views/GrantApps.vue')
   }
 ]
 

@@ -17,6 +17,9 @@
           <li class="my-2">
             <RouterLink to="/glossary" :class="linkClass">Pedagogy Glossary</RouterLink>
           </li>
+          <li class="my-2">
+            <RouterLink to="/grantapps" :class="linkClass">Grant Applications Activity</RouterLink>
+          </li>
         </ul>
       </div>
     </div>
