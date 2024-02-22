@@ -1,48 +1,48 @@
 <template>
   <div :class="wrapperClass" class="my-4">
     <Transition>
-    <div v-if="show"  class="absolute transition-all mx-auto shadow-lg w-fit px-4 py-2 bg-white rounded-lg" :style="{top: clickedLoc[1]+'px', left: clickedLoc[0]+'px'}">
+    <div v-if="show"  class="absolute  mx-auto shadow-lg w-fit px-4 py-2 bg-white rounded-lg" :style="{top: clickedLoc[1]+'px', left: clickedLoc[0]+'px'}">
       <p class="text-right"><span class="transition text-slate-400 hover:text-red-600 hover:cursor-pointer" @click="show = false"><i class="far fa-times"></i></span></p>
 
       <div class="grid grid-cols-4 gap-4 m-4 justify-center">
 
         <p @click="categorise('bg-orange-200')" class="relative hover:cursor-pointer group bg-orange-200 w-[30px] h-[30px] rounded-full text-center">iii
-          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-orange-200 p-2 text-sm opacity-0 transition-all before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">iii. culturally sensitive and culturally informed approach</span>
+          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-orange-200 p-2 text-sm opacity-0  before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">iii. culturally sensitive and culturally informed approach</span>
         </p>
         <p @click="categorise('bg-amber-200')" class="relative hover:cursor-pointer group bg-amber-200 w-[30px] h-[30px] rounded-full text-center">iv
-          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-amber-200 p-2 text-sm opacity-0 transition-all before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">iv. evidence-based approach and plans for evaluation</span></p>
+          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-amber-200 p-2 text-sm opacity-0  before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">iv. evidence-based approach and plans for evaluation</span></p>
         <p @click="categorise('bg-yellow-200')" class="relative hover:cursor-pointer group bg-yellow-200 w-[30px] h-[30px] rounded-full text-center">v
-          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-yellow-200 p-2 text-sm opacity-0 transition-all before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">v. benefits to recipients of project activities</span></p>
+          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-yellow-200 p-2 text-sm opacity-0  before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">v. benefits to recipients of project activities</span></p>
         <p @click="categorise('bg-emerald-200')" class="relative hover:cursor-pointer group bg-emerald-200 w-[30px] h-[30px] rounded-full text-center">vi
-          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-emerald-200 p-2 text-sm opacity-0 transition-all before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">vi. benefits to psychology/psychologists in target community</span></p>
+          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-emerald-200 p-2 text-sm opacity-0  before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">vi. benefits to psychology/psychologists in target community</span></p>
         <p @click="categorise('bg-teal-200')" class="relative hover:cursor-pointer group bg-teal-200 w-[30px] h-[30px] rounded-full text-center">vii
-          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-teal-200 p-2 text-sm opacity-0 transition-all before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">vii. feasibility of project and probability of successful completion</span></p>
+          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-teal-200 p-2 text-sm opacity-0  before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">vii. feasibility of project and probability of successful completion</span></p>
 
         <p @click="categorise('bg-blue-200')" class="relative hover:cursor-pointer group bg-blue-200 w-[30px] h-[30px] rounded-full text-center">viii
-          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-blue-200 p-2 text-sm opacity-0 transition-all before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">viii. sustainability after funding ends</span></p>
+          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-blue-200 p-2 text-sm opacity-0  before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">viii. sustainability after funding ends</span></p>
 
         <p @click="categorise('bg-indigo-200')" class="relative hover:cursor-pointer group bg-indigo-200 w-[30px] h-[30px] rounded-full text-center">ix
-          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-indigo-200 p-2 text-sm opacity-0 transition-all before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">ix. ongoing engagement with the APS</span></p>
+          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-indigo-200 p-2 text-sm opacity-0  before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">ix. ongoing engagement with the APS</span></p>
 
         <p @click="categorise('bg-violet-200')" class="relative hover:cursor-pointer group bg-violet-200 w-[30px] h-[30px] rounded-full text-center">x
-          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-violet-200 p-2 text-sm opacity-0 transition-all before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">x. evidence of innovation</span></p>
+          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-violet-200 p-2 text-sm opacity-0  before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">x. evidence of innovation</span></p>
 
 
         <p @click="categorise('bg-fuchsia-200')" class="relative hover:cursor-pointer group bg-fuchsia-200 w-[30px] h-[30px] rounded-full text-center">i
-          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-fuchsia-200 p-2 text-sm opacity-0 transition-all before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">i. clear rationale for all budget items</span></p>
+          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-fuchsia-200 p-2 text-sm opacity-0  before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">i. clear rationale for all budget items</span></p>
         <p @click="categorise('bg-pink-200')" class="relative hover:cursor-pointer group bg-pink-200 w-[30px] h-[30px] rounded-full text-center">j
-          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-pink-200 p-2 text-sm opacity-0 transition-all before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">j. evidence of need for grant in order for the project to proceed</span></p>
+          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-pink-200 p-2 text-sm opacity-0  before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">j. evidence of need for grant in order for the project to proceed</span></p>
         <p @click="categorise('bg-rose-200')" class="relative hover:cursor-pointer group bg-rose-200 w-[30px] h-[30px] rounded-full text-center">k
-          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-rose-200 p-2 text-sm opacity-0 transition-all before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">k. clear and accurate description of budget items</span></p>
+          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-rose-200 p-2 text-sm opacity-0  before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">k. clear and accurate description of budget items</span></p>
         <p @click="categorise('bg-red-200')" class="relative hover:cursor-pointer group bg-red-200 w-[30px] h-[30px] rounded-full text-center">l
-          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-red-200 p-2 text-sm opacity-0 transition-all before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">l. realistic and modest costings</span></p>
+          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-red-200 p-2 text-sm opacity-0  before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">l. realistic and modest costings</span></p>
 
 
 
 
 
         <p @click="categorise(null)" class="relative hover:cursor-pointer group bg-slate-200 w-[30px] h-[30px] rounded-full text-center">
-          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-slate-200 p-2 text-sm opacity-0 transition-all before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">clear selection</span>
+          <span role="tooltip" class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-56 -translate-x-1/2 rounded bg-slate-200 p-2 text-sm opacity-0  before:invisible  group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100">clear selection</span>
         </p>
       </div>
     </div>
@@ -202,15 +202,19 @@
     </div>
 
 
-    <!-- Component: Base primary basic button -->
-    <button @click="submitAnswers()" class="inline-flex items-center font-bold justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded focus-visible:outline-none whitespace-nowrap bg-sky-500 hover:bg-sky-600 focus:bg-sky-700 disabled:cursor-not-allowed disabled:border-sky-300 disabled:bg-sky-300 disabled:shadow-none">
-      <span>Check selections</span>
-    </button>
-    <!-- End Base primary basic button -->
-
     <div v-if="submitButt" class="p-4 my-4 mx-auto rounded" :class="correct ? 'bg-emerald-200 text-emerald-800' : 'bg-red-200 text-red-800'">
       <p>{{correct ? 'Well done, you successfully identified the matching criteria!' : 'Take another look at the criteria and the sections above and try again.'}}</p>
     </div>
+
+    <!-- Component: Base primary basic button -->
+    <div class="flex justify-end">
+      <button @click="submitAnswers()" class="font-bold h-10 gap-2 px-5 text-md font-medium tracking-wide text-white transition duration-300 rounded focus-visible:outline-none whitespace-nowrap bg-sky-500 hover:bg-sky-600 focus:bg-sky-700 disabled:cursor-not-allowed disabled:border-sky-300 disabled:bg-sky-300 disabled:shadow-none">
+        <span>Check selections</span>
+      </button>
+      <!-- End Base primary basic button -->
+    </div>
+
+
 
 
 
@@ -235,7 +239,7 @@ let hovered = ref(null)
 const correctSet = [ "bg-amber-200", "bg-red-200", "bg-fuchsia-200", "bg-orange-200", "bg-indigo-200" ]
 
 function showMenu(idx, event){
-  submitButt.value = false
+
 
   if(submitted.value[idx]){
     if(chosen.value[idx] === correctSet[idx]){
@@ -243,12 +247,14 @@ function showMenu(idx, event){
       return
     }
   }
+  submitButt.value = false
   clickedLoc.value = [event.pageX, event.pageY]
   selected.value = idx
   show.value = true
 }
 
 function categorise(c){
+  submitted.value[selected.value] = false;
   chosen.value[selected.value] = c
   show.value = !show.value
 }

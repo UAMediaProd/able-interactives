@@ -48,6 +48,11 @@ const routes = [
     path: '/grantapps',
     name: 'Grant Application Activity',
     component: () => import('../views/GrantApps.vue')
+  },
+  {
+    path: '/wheel',
+    name: 'Wheel of Fortune',
+    component: () => import('../views/WheelOfFortune.vue')
   }
 ]
 

@@ -20,6 +20,9 @@
           <li class="my-2">
             <RouterLink to="/grantapps" :class="linkClass">Grant Applications Activity</RouterLink>
           </li>
+          <li class="my-2">
+            <RouterLink to="/wheel" :class="linkClass">Wheel of Fortune</RouterLink>
+          </li>
         </ul>
       </div>
     </div>
