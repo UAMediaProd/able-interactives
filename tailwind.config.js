@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      listStyleType: {
+        disc: 'disc',
+        circle: 'circle'
+      },
       colors: {
         'primary': '#005a9c',
         'primary-dark': '#004d85',
