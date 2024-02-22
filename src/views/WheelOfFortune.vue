@@ -1,17 +1,31 @@
 <template>
   <div :class="wrapperClass" class="my-4">
-    <h1>This is an about page</h1>
+
+<!--
+
+First, we need a wheel. We can use the roulette library for this.
+use the data stored in wheelItems as the source for the wheel; some tweaking might be necessary, I'm not sure of what the library requires unfortunately.
+
+When the wheel finishes spinning, we need to call a function that opens up a modal with the result, bringing the long description of the item that was selected and prompting people to talk for 60 seconds about that topic.
+
+To that end, we also need a live timer inside the modal. When the timer reaches 0, show an animation (use the confetti emoji from SSB maybe?) and close the modal ready for another spin.
+
+This basic interaction loop is the core of the activity.
+
+I've provided some skeleton code to help get you started in case it helps - if it doesn't, feel free to delete it all and start from scratch.
+
+-->
+
+
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-
-const wrapperClass = 'max-w-[1100px] mx-auto'
-
 //possible library: https://roulette.nitocode.com/docs
 
-
+// VARIABLES
+const wrapperClass = 'max-w-[1100px] mx-auto'
 const wheelItems = ref([
   {
     'shortCode': 'Next TV Show',
@@ -54,6 +68,23 @@ const wheelItems = ref([
     'desc': 'Is it better to be a morning person or a night owl?'
   }
 ])
+
+// FUNCTIONS
+function onWheelEnd(){
+  //do something
+}
+
+function openModal(){
+  //do something
+}
+
+function startTimer(){
+  //do something
+}
+
+function closeAndResetModal(){
+  //do something
+}
 </script>
 
 <style>
