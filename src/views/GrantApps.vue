@@ -235,7 +235,6 @@ let hovered = ref(null)
 const correctSet = [ "bg-amber-200", "bg-red-200", "bg-fuchsia-200", "bg-orange-200", "bg-indigo-200" ]
 
 function showMenu(idx, event){
-  submitted.value[idx] =  false
   submitButt.value = false
 
   if(submitted.value[idx]){
