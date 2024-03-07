@@ -8,7 +8,7 @@ use the data stored in wheelItems as the source for the wheel; some tweaking mig
 
 -->
 
-    <Roulette ref="wheel" :items="wheelItems" @click="launchWheel" size=600 easing="bounce" horizontal-content  display-border display-indicator base-display base-background="#102535" indicator-position="top" base-display-indicator @wheel-start="onWheelStart" @wheel-end="onWheelEnd">
+    <Roulette ref="wheel" :items="wheelItems" @click="launchWheel" size=600 easing="bounce" horizontal-content  display-border display-indicator base-display base-background="#102535" indicator-position="top" base-display-indicator @wheel-start="onWheelStart" @wheel-end="onWheelEnd" duration="2">
     </Roulette>
 
     <!--
