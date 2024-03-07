@@ -8,7 +8,7 @@ use the data stored in wheelItems as the source for the wheel; some tweaking mig
 
 -->
 
-    <Roulette ref="wheel" :items="wheelItems" @click="launchWheel" size=600 easing="bounce" horizontal-content  display-border display-indicator base-display base-background="#102535" indicator-position="top" base-display-indicator @wheel-start="onWheelStart" @wheel-end="onWheelEnd" duration="2">
+    <Roulette ref="wheel" :items="wheelItems" @click="launchWheel" size=600 easing="ease" horizontal-content  display-border display-indicator base-display base-background="#102535" indicator-position="top" base-display-indicator @wheel-start="onWheelStart" @wheel-end="onWheelEnd" duration="2">
     </Roulette>
 
     <!--
@@ -136,15 +136,36 @@ function onWheelEnd(){
 function openModal(){
   //do something like set showModal to true
   showModal.value = true
+  startTimer();
 }
 
 function closeModal(){
   //do something like set showModal to false
   showModal.value = false
+  wheel.value.reset();
 }
 
 function startTimer(){
   //do something
+  let timeleft = 60;
+
+// Update the count down every 1 second
+  let countInt = setInterval(function() {
+    //whatever is inside this section happens every second
+    console.log("tick:", timeleft)
+    timeleft -= 1;
+    if(timeleft <= 0){
+      clearInterval(countInt);
+      endTimer();
+    }
+ }, 1000);
+
+
+}
+
+function endTimer(){
+  //do something when the timer ends
+  console.log("End")
 }
 
 function closeAndResetModal(){
