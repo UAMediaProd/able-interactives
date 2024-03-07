@@ -15,6 +15,7 @@
     "vue-router": "^4.0.3",
     "vue-universal-modal": "^1.1.4",
     "vue3-click-away": "^1.2.4",
+    "vue3-roulette": "^0.3.3",
     "vuedraggable": "^4.1.0"
   },
   "devDependencies": {
