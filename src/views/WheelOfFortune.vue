@@ -4,7 +4,8 @@
 <!--
 
 First, we need a wheel. We can use the roulette library for this.
-use the data stored in wheelItems as the source for the wheel; some tweaking might be necessary, I'm not sure of what the library requires unfortunately.
+
+Use the data stored in wheelItems as the source for the wheel; some tweaking might be necessary, I'm not sure of what the library requires unfortunately.
 
 -->
 
@@ -25,14 +26,27 @@ I've provided some skeleton code to help get you started in case it helps - if i
     <div v-if="showModal" class="fixed top-0 left-0 z-20 flex justify-center items-center w-full h-full backdrop-blur-sm overflow-hidden">
       <div class="flex max-h-[90%] md:max-h-[300px] w-11/12 max-w-2xl flex-col rounded-lg bg-white px-2 py-4 shadow-md drop-shadow-md">
         <div class="flex justify-between pl-6 mb-2">
-          <div class="text-2xl font-bold my-auto">Modal Title</div>
-          <div class="flex justify-center items-center w-8 h-8 -mt-1 rounded-full bg-primary-tint text-gray-400 transition-all duration-100 hover:bg-indigo-200 hover:text-gray-700 hover:rotate-90 cursor-pointer" @click="closeModal">
+          <div class="text-2xl overflow-y-scroll px-6 w-full font-bold my-auto content-center">{{wheel.itemSelected.htmlContent}}</div>
+<!--          <div class="flex justify-center items-center w-8 h-8 -mt-1 rounded-full bg-primary-tint text-gray-400 transition-all duration-100 hover:bg-indigo-200 hover:text-gray-700 hover:rotate-90 cursor-pointer" @click="closeModal">
             <i class="far fa-times text-lg" />
-          </div>
+          </div>-->
         </div>
         <div class="overflow-y-scroll px-6 w-full">
-          <div class="leading-5 mb-2">Modal Text</div>
-        <!--          provide the text from the data item (the full piece) and also show a timer here -->
+          <div class="leading-5 mb-2">
+            <p>{{introText}}</p>
+            <br>
+            <p>{{wheel.itemSelected.desc}}</p>
+            <h2 v-if="countDown > 1">Current time left: {{countDown}} seconds</h2>
+            <h2 v-else-if="countDown === 1">Current time left: {{countDown}} second</h2>
+            <h2 v-else-if="countDown === 0">Current time left: {{countDown}} seconds</h2>
+
+
+          </div>
+
+
+
+
+
 
 
 
@@ -54,6 +68,8 @@ import { Roulette } from 'vue3-roulette'
 const wrapperClass = 'max-w-[1100px] mx-auto'
 const wheel = ref(null)
 let showModal = ref(false)
+let introText = ref("Try to talk about this topic for a minute. A timer is provided to help you practice (and is definitely not there to stress you out).")
+let countDown = ref(60)
 
 // const items = [
 //   { id: 1, name: "Banana", htmlContent: "Banana", textColor: "", background: "" },
@@ -124,7 +140,7 @@ function launchWheel (){
 }
 
 function onWheelStart(){
-  console.log(wheel)
+
 }
 
 function onWheelEnd(){
@@ -133,8 +149,9 @@ function onWheelEnd(){
   openModal()
 }
 
-function openModal(){
+function openModal(selectedItem){
   //do something like set showModal to true
+ // console.log(selectedItem + "TEST")
   showModal.value = true
   startTimer();
 }
@@ -142,19 +159,20 @@ function openModal(){
 function closeModal(){
   //do something like set showModal to false
   showModal.value = false
-  wheel.value.reset();
+
+  //wheel.value.reset();
 }
 
 function startTimer(){
   //do something
-  let timeleft = 60;
+  countDown.value = 60;
 
 // Update the count down every 1 second
   let countInt = setInterval(function() {
     //whatever is inside this section happens every second
-    console.log("tick:", timeleft)
-    timeleft -= 1;
-    if(timeleft <= 0){
+    console.log("tick:", countDown.value)
+    countDown.value -= 1;
+    if(countDown.value <= 0){
       clearInterval(countInt);
       endTimer();
     }
