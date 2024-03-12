@@ -9,7 +9,7 @@ Use the data stored in wheelItems as the source for the wheel; some tweaking mig
 
 -->
 
-    <Roulette ref="wheel" :items="wheelItems" @click="launchWheel" size=600 easing="ease" horizontal-content  display-border display-indicator base-display base-background="#102535" indicator-position="top" base-display-indicator @wheel-start="onWheelStart" @wheel-end="onWheelEnd" duration="2">
+    <Roulette ref="wheel" :items="wheelItems" @click="launchWheel" result-variation="0" size=600 easing="ease" horizontal-content  display-border display-indicator base-display base-background="#102535" indicator-position="top" base-display-indicator @wheel-start="onWheelStart" @wheel-end="onWheelEnd" :duration="isReset ? 0.001 : 2">
     </Roulette>
 
     <!--
@@ -27,9 +27,9 @@ I've provided some skeleton code to help get you started in case it helps - if i
       <div class="flex max-h-[90%] md:max-h-[300px] w-11/12 max-w-2xl flex-col rounded-lg bg-white px-2 py-4 shadow-md drop-shadow-md">
         <div class="flex justify-between pl-6 mb-2">
           <div class="text-2xl overflow-y-scroll px-6 w-full font-bold my-auto content-center">{{wheel.itemSelected.htmlContent}}</div>
-<!--          <div class="flex justify-center items-center w-8 h-8 -mt-1 rounded-full bg-primary-tint text-gray-400 transition-all duration-100 hover:bg-indigo-200 hover:text-gray-700 hover:rotate-90 cursor-pointer" @click="closeModal">
+        <div v-if="countDown <= 0" class="flex justify-center items-center w-8 h-8 -mt-1 rounded-full bg-primary-tint text-gray-400 transition-all duration-100 hover:bg-indigo-200 hover:text-gray-700 hover:rotate-90 cursor-pointer" @click="closeModal">
             <i class="far fa-times text-lg" />
-          </div>-->
+          </div>
         </div>
         <div class="overflow-y-scroll px-6 w-full">
           <div class="leading-5 mb-2">
@@ -42,14 +42,6 @@ I've provided some skeleton code to help get you started in case it helps - if i
 
 
           </div>
-
-
-
-
-
-
-
-
 
         </div>
       </div>
@@ -66,19 +58,17 @@ import { Roulette } from 'vue3-roulette'
 
 // VARIABLES
 const wrapperClass = 'max-w-[1100px] mx-auto'
-const wheel = ref(null)
+const countDownTime = 2
+let wheel = ref(null)
 let showModal = ref(false)
-let introText = ref("Try to talk about this topic for a minute. A timer is provided to help you practice (and is definitely not there to stress you out).")
-let countDown = ref(60)
+let introText = ref("Try to talk about this topic for a minute. A timer is provided to help you practice.")
+let countDown = ref(countDownTime)
+const isReset = ref(false)
 
-// const items = [
-//   { id: 1, name: "Banana", htmlContent: "Banana", textColor: "", background: "" },
-//   { id: 2, name: "Apple", htmlContent: "Apple", textColor: "", background: "" },
-//   { id: 3, name: "Orange and Purple", htmlContent: "Orange<br>and Purple", textColor: "", background: "" },
-//   { id: 4, name: "Cherry", htmlContent: "Cherry", textColor: "", background: "" },
-// ];
 
-//included the documentation items here - the wheelItems below would work as-is but you can add extra data here, and use textColor or background to adjust individual colours if you like
+
+
+// The wheelItems below would work as-is but you can add extra data here, and use textColor or background to adjust individual colours if you like
 
 
 const wheelItems = ref([
@@ -130,12 +120,13 @@ const wheelItems = ref([
   {
     'id': 10,
     'htmlContent': 'Morning or night',
-    'desc': 'Is it better to be a morning person or a night owl?'
+    'desc': 'Is it better to be a morning person, a night owl or Batman?'
   }
 ])
 
 // FUNCTIONS
 function launchWheel (){
+
   wheel.value.launchWheel();
 }
 
@@ -144,12 +135,18 @@ function onWheelStart(){
 }
 
 function onWheelEnd(){
+  if (isReset.value) {
+    isReset.value = false
+    return
+  }
   //do something
-  console.log(wheel.value.itemSelected) //this is the item that was selected; I suggest you do something with this data (like opening the modal with the info and starting the timer)
+  //console.log(wheel.value.itemSelected) //this is the item that was selected; I suggest you do something with this data (like opening the modal with the info and starting the timer)
   openModal()
+
 }
 
 function openModal(selectedItem){
+
   //do something like set showModal to true
  // console.log(selectedItem + "TEST")
   showModal.value = true
@@ -158,19 +155,29 @@ function openModal(selectedItem){
 
 function closeModal(){
   //do something like set showModal to false
+  //wheel.value = null
   showModal.value = false
+  isReset.value = true
+  wheel.value.reset();
 
+
+
+
+
+  //wheel.value = null
   //wheel.value.reset();
+  //location.reload()
 }
 
 function startTimer(){
   //do something
-  countDown.value = 60;
+ //console.log(countDownTime + " TIMER");
+  countDown.value = countDownTime;
 
 // Update the count down every 1 second
   let countInt = setInterval(function() {
     //whatever is inside this section happens every second
-    console.log("tick:", countDown.value)
+    // console.log("tick:", countDown.value)
     countDown.value -= 1;
     if(countDown.value <= 0){
       clearInterval(countInt);
@@ -178,12 +185,12 @@ function startTimer(){
     }
  }, 1000);
 
-
 }
 
 function endTimer(){
   //do something when the timer ends
-  console.log("End")
+  // console.log("End")
+
 }
 
 function closeAndResetModal(){
