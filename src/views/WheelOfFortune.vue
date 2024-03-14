@@ -136,7 +136,7 @@ const wheelItems = ref([
   {
     'id': 10,
     'htmlContent': 'Morning or night',
-    'desc': 'Is it better to be a morning person, a night owl or Batman?',
+    'desc': 'Is it better to be a morning person or a night owl?',
     'background': "#d3e5c5",
   }
 ])
