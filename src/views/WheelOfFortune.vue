@@ -8,8 +8,9 @@ First, we need a wheel. We can use the roulette library for this.
 Use the data stored in wheelItems as the source for the wheel; some tweaking might be necessary, I'm not sure of what the library requires unfortunately.
 
 -->
+    <p class="font-bold">The Wheel of Fortune</p>
     <p>Click the wheel to spin for a random topic!</p><br>
-    <Roulette ref="wheel" :items="wheelItems" @click="launchWheel" result-variation="0" size=600 easing="ease" horizontal-content base-display base-background="#266578" indicator-position="top" base-size="45"  @wheel-start="onWheelStart" @wheel-end="onWheelEnd" :duration="isReset ? 0.001 : spinDuration" >
+    <Roulette ref="wheel" :items="wheelItems" @click="launchWheel" result-variation="0" size=600 easing="ease" horizontal-content base-display base-background="#266578" indicator-position="top" base-size="45" @wheel-start="onWheelStart" @wheel-end="onWheelEnd" :duration="isReset ? 0.001 : spinDuration" >
     </Roulette>
 
     <!--
@@ -50,10 +51,7 @@ I've provided some skeleton code to help get you started in case it helps - if i
               <img v-else-if="countDown === 0" src="https://i.giphy.com/media/1wX5TJZPqVw3HhyDYn/giphy.webp" class="mx-auto w-20" alt="Celebration animated gif">
 
             <button @click="closeModal" class="inline-block float-left rounded bg-neutral-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-600 shadow-light-3 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 focus:bg-neutral-200 focus:shadow-light-2 focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-light-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">Reset wheel</button>
-
-
-
-          </div>
+  </div>
         </div>
       </div>
     </div>
