@@ -37,7 +37,7 @@ I've provided some skeleton code to help get you started in case it helps - if i
 
         <div class="overflow-y-scroll px-6 w-full">
           <div class="leading-5 mb-2">
-            <p>{{introText}}"</p>
+            <p>{{introText}}</p>
 <br>
 
             <p><strong>"{{wheel.itemSelected.desc}}"</strong></p>
