@@ -1,0 +1,1 @@
+input:checked~.dot{transform:translateX(100%)}input:checked~.block{background-color:#f89621}.flip-list-move{transition:transform .5s}.no-move{transition:transform 0s}.ghost{opacity:.5}@media print{body{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
