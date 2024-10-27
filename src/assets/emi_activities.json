@@ -700,5 +700,70 @@
       "Preparation time": ["5-10 minutes"],
       "Stage/resource": ["Checking and consolidating understanding", "Summarising content","Collaborative activities", "Discussion-based activities"]
     }
+  },
+  "BeClear": {
+    "name": "Encouraging students to speak: Be clear about what you're asking for",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/how-can-i-encourage-students-to-speak-in-class-suggestion-1-be-clear-about-what-youre-asking-for?module_item_id=19230",
+    "stage": [],
+    "tiles": ["Discussion-based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Face-to-face", "Online", "Both"],
+      "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes", "10+ minutes"],
+      "Stage/resource": ["Discussion-based activities"]
+    }
+  },
+  "DecideDiscuss": {
+    "name": "Encouraging students to speak: Decide who starts the discussion",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/how-can-i-encourage-students-to-speak-in-class-suggestion-2-decide-who-starts-the-discussion?module_item_id=19231",
+    "stage": [],
+    "tiles": ["Discussion-based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Face-to-face", "Online", "Both"],
+      "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes", "10+ minutes"],
+      "Stage/resource": ["Discussion-based activities"]
+    }
+  },
+  "TechTools": {
+    "name": "Encouraging students to speak: Use tech tools",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/how-can-i-encourage-students-to-speak-in-class-suggestion-3-use-tech-tools?module_item_id=19232",
+    "stage": [],
+    "tiles": ["Discussion-based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Face-to-face", "Online", "Both"],
+      "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes", "10+ minutes"],
+      "Stage/resource": ["Discussion-based activities"]
+    }
+  },
+  "CollabBoards": {
+    "name": "Encouraging students to speak: Use collaborative boards",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/how-can-i-encourage-students-to-speak-in-class-suggestion-4-use-collaborative-boards?module_item_id=19233",
+    "stage": [],
+    "tiles": ["Discussion-based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Face-to-face", "Online", "Both"],
+      "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes", "10+ minutes"],
+      "Stage/resource": ["Discussion-based activities"]
+    }
+  },
+  "EncourageLanguage": {
+    "name": "Encouraging students to speak: Use encouraging language when asking questions",
+    "link": "https://canvas.catalog.adelaide.edu.au/courses/900/pages/how-can-i-encourage-students-to-speak-in-class-suggestion-5-use-encouraging-language-when-asking-questions?module_item_id=19234",
+    "stage": [],
+    "tiles": ["Discussion-based activities"],
+    "filters": {
+      "Class size": ["Small", "Medium", "Large"],
+      "Mode of delivery": ["Face-to-face", "Online", "Both"],
+      "Class time": ["<5 minutes","5-10 minutes","10+ minutes"],
+      "Preparation time": ["<5 minutes","5-10 minutes", "10+ minutes"],
+      "Stage/resource": ["Discussion-based activities"]
+    }
   }
-}
+  }
